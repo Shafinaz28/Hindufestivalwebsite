@@ -1,0 +1,2518 @@
+{
+  "year": 2026,
+  "assetBasePath": "images/festivals/2026/",
+  "months": [
+    {
+      "month": "JANUARY",
+      "items": [
+        {
+          "name": "Pradosh Vrat",
+          "date": "01-Jan-26",
+          "day": "Thursday",
+          "hinduMonth": "Pausha",
+          "tithi": "Trayodashi",
+          "img": "images/Pradosh Vrat.jpg",
+          "procedure": "Fast till Pradosh Kaal; offer water, bilva leaves, and prayers to Lord Shiva in the evening.",
+          "significance": "Dedicated to Lord Shiva; observed for peace, prosperity, and removal of obstacles."
+        },
+        {
+          "name": "Pausha Purnima",
+          "date": "03-Jan-26",
+          "day": "Saturday",
+          "hinduMonth": "Pausha",
+          "tithi": "Purnima",
+          "img": "images/pausha-purnima.jpg",
+          "procedure": "Take a holy bath, perform daan (charity), and recite Vishnu/Shiva stotras.",
+          "significance": "Full Moon of Pausha month; holy baths, charity, and spiritual purification."
+        },
+        {
+          "name": "Shakambhari Purnima",
+          "date": "04-Jan-26",
+          "day": "Sunday",
+          "hinduMonth": "Pausha",
+          "tithi": "Purnima",
+          "img": "images/shakambhari-purnima.jpg",
+          "procedure": "Worship Goddess Shakambhari with flowers, fruits, and sattvik offerings; read Devi Mahatmya if possible.",
+          "significance": "Worship of Goddess Shakambhari, the nourisher of life and vegetation."
+        },
+        {
+          "name": "Sankashti Chaturthi (Sakat Chauth)",
+          "date": "06-Jan-26",
+          "day": "Tuesday",
+          "hinduMonth": "Pausha",
+          "tithi": "Chaturthi",
+          "img": "images/Sankashti Chaturthi.jpg",
+          "procedure": "Observe a fast till moonrise; offer modak/durva to Lord Ganesha and do aarti after moon दर्शन.",
+          "significance": "Fast for Lord Ganesha to overcome obstacles, fear, and difficulties."
+        },
+        {
+          "name": "Shattila Ekadashi",
+          "date": "09-Jan-26",
+          "day": "Friday",
+          "hinduMonth": "Magha",
+          "tithi": "Ekadashi",
+          "img": "images/shattila-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; use sesame (til) in charity/food; chant Vishnu sahasranama.",
+          "significance": "Ekadashi of Magha month; sesame offerings cleanse past karmas and sins."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "10-Jan-26",
+          "day": "Saturday",
+          "hinduMonth": "Magha",
+          "tithi": "Trayodashi",
+          "img": "images/pradosh-vrat-2.jpg",
+          "procedure": "Evening Shiva puja in Pradosh Kaal with bilva, dhoop, deep; recite Pradosh Vrat katha.",
+          "significance": "Shiva worship during evening twilight for peace and prosperity."
+        },
+        {
+          "name": "Masik Shivaratri",
+          "date": "13-Jan-26",
+          "day": "Tuesday",
+          "hinduMonth": "Magha",
+          "tithi": "Chaturdashi",
+          "img": "images/masik-shivaratri.jpg",
+          "procedure": "Fast (optional); perform Shiva abhishekam (milk/water) and chant 'Om Namah Shivaya'.",
+          "significance": "Monthly Shivaratri; devotion to Lord Shiva for inner transformation."
+        },
+        {
+          "name": "Makar Sankranti",
+          "date": "14-Jan-26",
+          "day": "Wednesday",
+          "hinduMonth": "Magha",
+          "tithi": "Sankranti",
+          "img": "images/makar-sankranti.jpg",
+          "procedure": "Offer prayers to Surya Dev; donate til-gud, blankets; take holy bath; kite flying in many regions.",
+          "significance": "Sun’s transition into Capricorn (Makara); marks spiritual awakening and auspicious beginnings."
+        },
+        {
+          "name": "Uttarayan Parva",
+          "date": "15-Jan-26",
+          "day": "Thursday",
+          "hinduMonth": "Magha",
+          "tithi": "Parva",
+          "img": "images/uttarayan-parva.jpg",
+          "procedure": "Surya worship, charity, and sattvik food; considered auspicious for spiritual practices.",
+          "significance": "Start of the Sun’s northward journey; considered highly auspicious for spiritual growth."
+        },
+        {
+          "name": "Mauni Amavasya / Magha Amavasya",
+          "date": "18-Jan-26",
+          "day": "Sunday",
+          "hinduMonth": "Magha",
+          "tithi": "Amavasya",
+          "img": "images/mauni-amavasya.jpg",
+          "procedure": "Observe silence (maun), holy bath, pitru tarpan, and charity; avoid tamasic food.",
+          "significance": "Silent austerity, ancestor rituals, and purification through fasting and holy baths."
+        },
+        {
+          "name": "Magha Gupta Navratri – Day 1",
+          "date": "19-Jan-26",
+          "day": "Monday",
+          "hinduMonth": "Magha",
+          "tithi": "Pratipada",
+          "img": "images/gupta-navratri.jpg",
+          "procedure": "Begin Devi sadhana; kalash sthapana (if followed), mantra japa, and sattvik diet.",
+          "significance": "Secret Navratri dedicated to Tantric and Shakti sadhana."
+        },
+        {
+          "name": "Gupta Navratri – Day 2",
+          "date": "20-Jan-26",
+          "day": "Tuesday",
+          "hinduMonth": "Magha",
+          "tithi": "Dwitiya",
+          "img": "images/gupta-navratri-day-2.jpg",
+          "procedure": "Continue Devi worship with japa, dhyana, and light fasting as per tradition.",
+          "significance": "Worship of hidden forms of Maa Durga for inner power."
+        },
+        {
+          "name": "Gupta Navratri – Day 3",
+          "date": "21-Jan-26",
+          "day": "Wednesday",
+          "hinduMonth": "Magha",
+          "tithi": "Tritiya",
+          "img": "images/gupta-navratri-day-3.jpg",
+          "procedure": "Devotional practices like Durga Saptashati path or mantra sadhana.",
+          "significance": "Devotional practices for spiritual discipline and protection."
+        },
+        {
+          "name": "Gupta Navratri – Day 4",
+          "date": "22-Jan-26",
+          "day": "Thursday",
+          "hinduMonth": "Magha",
+          "tithi": "Chaturthi",
+          "img": "images/gupta-navratri-day-4.jpg",
+          "procedure": "Offer flowers, deep, and naivedya to Devi; maintain purity and restraint.",
+          "significance": "Sadhana for strength, focus, and divine grace."
+        },
+        {
+          "name": "Vasant Panchami",
+          "date": "23-Jan-26",
+          "day": "Friday",
+          "hinduMonth": "Magha",
+          "tithi": "Panchami",
+          "img": "images/vasant-panchami.jpg",
+          "procedure": "Saraswati puja; wear yellow; begin learning/music/arts; offer books and instruments for blessings.",
+          "significance": "Worship of Goddess Saraswati; learning, arts, and wisdom begin."
+        },
+        {
+          "name": "Gupta Navratri – Day 6",
+          "date": "24-Jan-26",
+          "day": "Saturday",
+          "hinduMonth": "Magha",
+          "tithi": "Shashthi",
+          "img": "images/gupta-navratri-day-6.jpg",
+          "procedure": "Mantra sadhana and spiritual discipline; keep sattvik diet and simple routine.",
+          "significance": "Spiritual purification and mantra sadhana."
+        },
+        {
+          "name": "Ratha Saptami",
+          "date": "25-Jan-26",
+          "day": "Sunday",
+          "hinduMonth": "Magha",
+          "tithi": "Saptami",
+          "img": "images/ratha-saptami.jpg",
+          "procedure": "Surya arghya in the morning; recite Aditya Hridayam; take bath and do charity.",
+          "significance": "Celebration of Surya Dev’s chariot; health, vitality, and life energy."
+        },
+        {
+          "name": "Bhishma Ashtami",
+          "date": "26-Jan-26",
+          "day": "Monday",
+          "hinduMonth": "Magha",
+          "tithi": "Ashtami",
+          "img": "images/bhishma-ashtami.jpg",
+          "procedure": "Offer water and sesame; remembrance of Bhishma; charity for ancestors.",
+          "significance": "Honors Bhishma Pitamaha; prayers for liberation and ancestral peace."
+        },
+        {
+          "name": "Gupta Navratri – Day 9",
+          "date": "27-Jan-26",
+          "day": "Tuesday",
+          "hinduMonth": "Magha",
+          "tithi": "Navami",
+          "img": "images/gupta-navratri-day-9.jpg",
+          "procedure": "Final day puja; kanya pujan (if followed); conclude with Devi aarti and prayers.",
+          "significance": "Completion of Navratri; attainment of hidden spiritual knowledge."
+        },
+        {
+          "name": "Jaya Ekadashi",
+          "date": "29-Jan-26",
+          "day": "Thursday",
+          "hinduMonth": "Magha",
+          "tithi": "Ekadashi",
+          "img": "images/jaya-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja; chant 'Om Namo Narayanaya' and read Ekadashi katha.",
+          "significance": "Vishnu worship; destroys fear, grants success and liberation."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "30-Jan-26",
+          "day": "Friday",
+          "hinduMonth": "Magha",
+          "tithi": "Trayodashi",
+          "img": "images/pradosh-vrat-3.jpg",
+          "procedure": "Evening Shiva puja in Pradosh Kaal; offer bilva leaves and perform aarti.",
+          "significance": "Shiva worship for fulfillment of desires and mental peace."
+        }
+      ]
+    },
+    {
+      "month": "FEBRUARY",
+      "items": [
+        {
+          "name": "Pradosh Vrat",
+          "date": "01-Feb-26",
+          "day": "Sunday",
+          "hinduMonth": "Magha",
+          "tithi": "Trayodashi",
+          "img": "images/pradosh-vrat.jpg",
+          "procedure": "Pradosh Kaal Shiva puja with bilva leaves, deep, and mantra chanting.",
+          "significance": "Worship of Lord Shiva during evening twilight to remove obstacles and gain spiritual strength."
+        },
+        {
+          "name": "Magha Purnima",
+          "date": "02-Feb-26",
+          "day": "Monday",
+          "hinduMonth": "Magha",
+          "tithi": "Purnima",
+          "img": "images/magha-purnima.jpg",
+          "procedure": "Holy bath, charity, and devotion; perform Satyanarayan puja if followed.",
+          "significance": "Full moon of Magha month; sacred baths, charity, and devotion bring spiritual merit."
+        },
+        {
+          "name": "Sankashti Chaturthi",
+          "date": "04-Feb-26",
+          "day": "Wednesday",
+          "hinduMonth": "Magha",
+          "tithi": "Chaturthi",
+          "img": "images/sankashti-chaturthi.jpg",
+          "procedure": "Fast till moonrise; Ganesha puja and aarti after moon दर्शन.",
+          "significance": "Fasting for Lord Ganesha to overcome problems, fears, and delays in life."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "06-Feb-26",
+          "day": "Friday",
+          "hinduMonth": "Magha",
+          "tithi": "Trayodashi",
+          "img": "images/pradosh-vrat-2.jpg",
+          "procedure": "Evening Shiva worship with abhishekam and Pradosh katha.",
+          "significance": "Dedicated to Shiva for peace, prosperity, and forgiveness of sins."
+        },
+        {
+          "name": "Masik Shivaratri",
+          "date": "08-Feb-26",
+          "day": "Sunday",
+          "hinduMonth": "Magha",
+          "tithi": "Chaturdashi",
+          "img": "images/masik-shivaratri.jpg",
+          "procedure": "Shiva abhishekam, japa, and night prayer (as per ability).",
+          "significance": "Monthly observance honoring Lord Shiva for inner purification and spiritual progress."
+        },
+        {
+          "name": "Kalashtami",
+          "date": "08-Feb-26",
+          "day": "Sunday",
+          "hinduMonth": "Magha",
+          "tithi": "Ashtami",
+          "img": "images/kalashtami.jpg",
+          "procedure": "Worship Bhairava; light diya, offer flowers, and chant Bhairava mantras.",
+          "significance": "Worship of Lord Bhairava for protection from negativity and fear."
+        },
+        {
+          "name": "Vijaya Ekadashi",
+          "date": "12-Feb-26",
+          "day": "Thursday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Ekadashi",
+          "img": "images/vijaya-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja and katha; charity next morning.",
+          "significance": "Vishnu worship; observing this Ekadashi brings victory, success, and removal of past karmas."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "13-Feb-26",
+          "day": "Friday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Trayodashi",
+          "img": "images/pradosh-vrat-3.jpg",
+          "procedure": "Pradosh Kaal Shiva puja; chant 'Om Namah Shivaya'.",
+          "significance": "Shiva worship to remove health, financial, and emotional difficulties."
+        },
+        {
+          "name": "Maha Shivaratri",
+          "date": "15-Feb-26",
+          "day": "Sunday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Chaturdashi",
+          "img": "images/maha-shivaratri.jpg",
+          "procedure": "Day fast; night vigil; 4 prahar Shiva abhishekam (as per tradition).",
+          "significance": "Grand night of Lord Shiva; fasting and night vigil lead to spiritual awakening and liberation."
+        },
+        {
+          "name": "Amavasya (Phalguna Amavasya)",
+          "date": "17-Feb-26",
+          "day": "Tuesday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Amavasya",
+          "img": "images/phalguna-amavasya.jpg",
+          "procedure": "Pitru tarpan, charity, and simple sattvik food; prayers for ancestors.",
+          "significance": "New moon day for ancestor rituals, fasting, charity, and spiritual cleansing."
+        },
+        {
+          "name": "Phulera Dooj",
+          "date": "18-Feb-26",
+          "day": "Wednesday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Dwitiya",
+          "img": "images/phulera-dooj.jpg",
+          "procedure": "Radha-Krishna worship; light celebration with flowers; auspicious for functions in many regions.",
+          "significance": "Auspicious day dedicated to Radha–Krishna; considered free from doshas for marriages and celebrations."
+        },
+        {
+          "name": "Chandra Darshan",
+          "date": "19-Feb-26",
+          "day": "Thursday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Dwitiya",
+          "img": "images/chandra-darshan.jpg",
+          "procedure": "Offer arghya to Moon; pray for peace of mind and prosperity.",
+          "significance": "First sighting of the Moon; worship for mental peace and prosperity."
+        },
+        {
+          "name": "Vinayaka Chaturthi",
+          "date": "21-Feb-26",
+          "day": "Saturday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Chaturthi",
+          "img": "images/vinayaka-chaturthi.jpg",
+          "procedure": "Ganesha puja; offer modak and durva; start new work with blessings.",
+          "significance": "Ganesha worship for wisdom, success, and removal of new obstacles."
+        },
+        {
+          "name": "Skanda Shashti",
+          "date": "22-Feb-26",
+          "day": "Sunday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Shashthi",
+          "img": "images/skanda-shashti.jpg",
+          "procedure": "Murugan/Kartikeya worship; recite Skanda shashti katha; simple fasting (optional).",
+          "significance": "Dedicated to Lord Murugan (Kartikeya); victory over evil and inner strength."
+        },
+        {
+          "name": "Ratha Saptami (South Indian observance)",
+          "date": "24-Feb-26",
+          "day": "Tuesday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Saptami",
+          "img": "images/ratha-saptami.jpg",
+          "procedure": "Surya worship and arghya; Aditya Hridayam; charity for health and longevity.",
+          "significance": "Sun worship for health, energy, and longevity (observed in some regions this month)."
+        },
+        {
+          "name": "Bhanu Saptami",
+          "date": "25-Feb-26",
+          "day": "Wednesday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Saptami",
+          "img": "images/bhanu-saptami.jpg",
+          "procedure": "Surya puja; offer water (arghya) in the morning; charity for health and vitality.",
+          "significance": "Special Saptami dedicated to Surya Dev for health and vitality."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "27-Feb-26",
+          "day": "Friday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Trayodashi",
+          "img": "images/pradosh-vrat-4.jpg",
+          "procedure": "Evening Shiva worship in Pradosh Kaal; light diya and do aarti.",
+          "significance": "Evening Shiva worship for peace, prosperity, and divine blessings."
+        }
+      ]
+    },
+
+    {
+      "month": "MARCH",
+      "items": [
+        {
+          "name": "Pradosh Vrat",
+          "date": "01-Mar-26",
+          "day": "Sunday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Trayodashi",
+          "img": "images/pradosh-vrat-4.jpg",
+          "procedure": "Pradosh Kaal Shiva puja with bilva leaves and abhishekam.",
+          "significance": "Dedicated to Lord Shiva; observed to remove sins, obstacles, and bring peace."
+        },
+        {
+          "name": "Magha Purnima (some regions)",
+          "date": "03-Mar-26",
+          "day": "Tuesday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Purnima",
+          "img": "images/purnima.jpg",
+          "procedure": "Holy bath, charity, and puja as per local tradition.",
+          "significance": "Full moon worship with charity and sacred baths for spiritual merit."
+        },
+        {
+          "name": "Sankashti Chaturthi",
+          "date": "04-Mar-26",
+          "day": "Wednesday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Chaturthi",
+          "img": "images/sankashti-chaturthi.jpg",
+          "procedure": "Fast till moonrise; Ganesha puja and aarti after moon दर्शन.",
+          "significance": "Fast for Lord Ganesha to overcome challenges and gain wisdom."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "06-Mar-26",
+          "day": "Friday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Trayodashi",
+          "img": "images/pradosh-vrat-2.jpg",
+          "procedure": "Evening Shiva worship and mantra chanting.",
+          "significance": "Shiva worship for mental clarity, prosperity, and well-being."
+        },
+        {
+          "name": "Masik Shivaratri",
+          "date": "08-Mar-26",
+          "day": "Sunday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Chaturdashi",
+          "img": "images/masik-shivaratri.jpg",
+          "procedure": "Shiva abhishekam and night prayers (as per ability).",
+          "significance": "Monthly Shivaratri; devotion to Shiva for inner transformation."
+        },
+        {
+          "name": "Kalashtami",
+          "date": "09-Mar-26",
+          "day": "Monday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Ashtami",
+          "img": "images/kalashtami.jpg",
+          "procedure": "Bhairava worship; light diya and chant Bhairava mantras.",
+          "significance": "Worship of Lord Bhairava for protection from negativity and fear."
+        },
+        {
+          "name": "Amalaki Ekadashi",
+          "date": "12-Mar-26",
+          "day": "Thursday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Ekadashi",
+          "img": "images/amalaki-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja and Amla tree worship (if available).",
+          "significance": "Dedicated to Lord Vishnu and the sacred Amla tree; health, longevity, and purification."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "13-Mar-26",
+          "day": "Friday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Trayodashi",
+          "img": "images/pradosh-vrat-3.jpg",
+          "procedure": "Pradosh Kaal Shiva puja; offer bilva leaves and do aarti.",
+          "significance": "Evening Shiva worship to overcome difficulties and gain blessings."
+        },
+        {
+          "name": "Holi (Phalguna Purnima)",
+          "date": "14-Mar-26",
+          "day": "Saturday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Purnima",
+          "img": "images/holi.jpg",
+          "procedure": "Celebrate with colors; meet family and friends; share sweets; maintain kindness and harmony.",
+          "significance": "Celebration of victory of good over evil; renewal of joy and togetherness."
+        },
+        {
+          "name": "Chaitra Krishna Pratipada",
+          "date": "15-Mar-26",
+          "day": "Sunday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Pratipada",
+          "img": "images/chaitra-krishna-pratipada.jpg",
+          "procedure": "Simple prayers; start disciplined spiritual routine; avoid excess.",
+          "significance": "Beginning of the waning lunar phase; reflection and spiritual discipline."
+        },
+        {
+          "name": "Amavasya (Phalguna Amavasya)",
+          "date": "17-Mar-26",
+          "day": "Tuesday",
+          "hinduMonth": "Phalguna",
+          "tithi": "Amavasya",
+          "img": "images/amavasya.jpg",
+          "procedure": "Pitru tarpan, charity, and sattvik food; prayers for ancestors.",
+          "significance": "New moon rituals for ancestors, charity, and spiritual cleansing."
+        },
+        {
+          "name": "Chaitra Navratri – Day 1",
+          "date": "18-Mar-26",
+          "day": "Wednesday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Pratipada",
+          "img": "images/chaitra-navratri-day-1.jpg",
+          "procedure": "Kalash sthapana (if followed), Devi puja, mantra japa, sattvik diet.",
+          "significance": "Beginning of Navratri; worship of Maa Durga for strength and purity."
+        },
+        {
+          "name": "Chaitra Navratri – Day 2",
+          "date": "19-Mar-26",
+          "day": "Thursday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Dwitiya",
+          "img": "images/chaitra-navratri-day-2.jpg",
+          "procedure": "Continue Devi worship and fasting as per tradition.",
+          "significance": "Devotion to the second form of Durga for balance and courage."
+        },
+        {
+          "name": "Chaitra Navratri – Day 3",
+          "date": "20-Mar-26",
+          "day": "Friday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Tritiya",
+          "img": "images/chaitra-navratri-day-2.jpg",
+          "procedure": "Puja, japa, and charity; maintain purity and discipline.",
+          "significance": "Worship for mental clarity, devotion, and inner strength."
+        },
+        {
+          "name": "Chaitra Navratri – Day 4",
+          "date": "21-Mar-26",
+          "day": "Saturday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Chaturthi",
+          "img": "images/chaitra-navratri-day-2.jpg",
+          "procedure": "Devi puja and readings; focus on stability and restraint.",
+          "significance": "Observed for stability, wisdom, and spiritual growth."
+        },
+        {
+          "name": "Chaitra Navratri – Day 5",
+          "date": "22-Mar-26",
+          "day": "Sunday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Panchami",
+          "img": "images/chaitra-navratri-day-2.jpg",
+          "procedure": "Continue Devi worship; offer fruits/naivedya; chant Durga mantras.",
+          "significance": "Sadhana for discipline, patience, and divine grace."
+        },
+        {
+          "name": "Chaitra Navratri – Day 6",
+          "date": "23-Mar-26",
+          "day": "Monday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Shashthi",
+          "img": "images/chaitra-navratri-day-2.jpg",
+          "procedure": "Puja and japa; seek courage and fearlessness in sadhana.",
+          "significance": "Worship for courage, focus, and removal of fear."
+        },
+        {
+          "name": "Chaitra Navratri – Day 7",
+          "date": "24-Mar-26",
+          "day": "Tuesday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Saptami",
+          "img": "images/chaitra-navratri-day-2.jpg",
+          "procedure": "Devi worship (Kalratri form in many traditions); maintain sattvik discipline.",
+          "significance": "Devotion to Maa Kalratri for protection and strength."
+        },
+        {
+          "name": "Chaitra Navratri – Day 8 (Ashtami)",
+          "date": "25-Mar-26",
+          "day": "Wednesday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Ashtami",
+          "img": "images/chaitra-navratri-ashtami.jpg",
+          "procedure": "Ashtami puja; kanya pujan (if followed); charity and prayers.",
+          "significance": "Worship of Maa Mahagauri; purity, peace, and blessings."
+        },
+        {
+          "name": "Chaitra Navratri – Day 9 (Navami)",
+          "date": "26-Mar-26",
+          "day": "Thursday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Navami",
+          "img": "images/chaitra-navratri-navami.jpg",
+          "procedure": "Navami puja; conclude Navratri with aarti and devotion.",
+          "significance": "Completion of Navratri; attainment of divine blessings and fulfillment."
+        },
+        {
+          "name": "Rama Navami",
+          "date": "26-Mar-26",
+          "day": "Thursday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Navami",
+          "img": "images/rama-navami.jpg",
+          "procedure": "Read Ramayana, do Rama puja, chant 'Jai Shri Ram', distribute prasad.",
+          "significance": "Birth of Lord Rama; symbolizes dharma, truth, and ideal living."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "28-Mar-26",
+          "day": "Saturday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Trayodashi",
+          "img": "images/pradosh-vrat-4.jpg",
+          "procedure": "Evening Shiva puja during Pradosh Kaal; bilva offering and aarti.",
+          "significance": "Shiva worship for harmony, health, and success."
+        },
+        {
+          "name": "Papmochani Ekadashi",
+          "date": "29-Mar-26",
+          "day": "Sunday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Ekadashi",
+          "img": "images/papmochani-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja; charity and prayer for forgiveness.",
+          "significance": "Vishnu worship; removes sins and past karmic burdens."
+        },
+        {
+          "name": "Chaitra Purnima",
+          "date": "31-Mar-26",
+          "day": "Tuesday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Purnima",
+          "img": "images/chaitra-purnima.jpg",
+          "procedure": "Holy bath, charity, and puja; many observe Satyanarayan katha.",
+          "significance": "Full moon of Chaitra month; spiritual upliftment and charity."
+        }
+      ]
+    },
+
+    {
+      "month": "APRIL",
+      "items": [
+        {
+          "name": "Pradosh Vrat",
+          "date": "01-Apr-26",
+          "day": "Wednesday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Trayodashi",
+          "img": "images/pradosh-vrat.jpg",
+          "procedure": "Observe vrat till Pradosh Kaal; Shiva puja in evening with bilva leaves, diya, and mantra chanting.",
+          "significance": "Worship of Lord Shiva in the evening to remove obstacles and gain peace and prosperity."
+        },
+        {
+          "name": "Chaitra Purnima",
+          "date": "02-Apr-26",
+          "day": "Thursday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Purnima",
+          "img": "images/chaitra-purnima.jpg",
+          "procedure": "Holy bath, daan (charity), and puja; many do Satyanarayan katha as per tradition.",
+          "significance": "Full moon of Chaitra month; charity, devotion, and spiritual upliftment."
+        },
+        {
+          "name": "Hanuman Jayanti",
+          "date": "04-Apr-26",
+          "day": "Saturday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Purnima",
+          "img": "images/hanuman-jayanti.jpg",
+          "procedure": "Hanuman puja, read Hanuman Chalisa/Sundarkand; offer sindoor, flowers, and prasad.",
+          "significance": "Birth of Lord Hanuman; observed for strength, devotion, courage, and protection."
+        },
+        {
+          "name": "Sankashti Chaturthi",
+          "date": "05-Apr-26",
+          "day": "Sunday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Chaturthi",
+          "img": "images/sankashti-chaturthi.jpg",
+          "procedure": "Fast till moonrise; Ganesha puja and aarti after moon दर्शन; offer modak/durva.",
+          "significance": "Ganesha fasting to remove problems and bring wisdom and success."
+        },
+        {
+          "name": "Masik Shivaratri",
+          "date": "07-Apr-26",
+          "day": "Tuesday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Chaturdashi",
+          "img": "images/masik-shivaratri.jpg",
+          "procedure": "Shiva abhishekam (water/milk), japa of 'Om Namah Shivaya', and night prayers (optional).",
+          "significance": "Monthly Shivaratri for inner purification and devotion to Shiva."
+        },
+        {
+          "name": "Kalashtami",
+          "date": "08-Apr-26",
+          "day": "Wednesday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Ashtami",
+          "img": "images/kalashtami.jpg",
+          "procedure": "Worship Bhairava; light diya, offer flowers, and chant Bhairava mantras for protection.",
+          "significance": "Worship of Lord Bhairava for protection from fear and negative forces."
+        },
+        {
+          "name": "Kamada Ekadashi",
+          "date": "11-Apr-26",
+          "day": "Saturday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Ekadashi",
+          "img": "images/kamada-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja, katha, and charity; eat sattvik food next day after parana.",
+          "significance": "Vishnu worship; fulfillment of desires and removal of sins."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "12-Apr-26",
+          "day": "Sunday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Trayodashi",
+          "img": "images/pradosh-vrat-2.jpg",
+          "procedure": "Evening Shiva puja in Pradosh Kaal; bilva offering, abhishekam, and aarti.",
+          "significance": "Shiva worship for harmony, health, and mental peace."
+        },
+        {
+          "name": "Amavasya (Chaitra Amavasya)",
+          "date": "13-Apr-26",
+          "day": "Monday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Amavasya",
+          "img": "images/chaitra-amavasya.jpg",
+          "procedure": "Pitru tarpan, charity, and prayer for ancestors; keep simple sattvik diet.",
+          "significance": "New moon rituals for ancestors, charity, and spiritual cleansing."
+        },
+        {
+          "name": "Mesha Sankranti",
+          "date": "14-Apr-26",
+          "day": "Tuesday",
+          "hinduMonth": "Chaitra",
+          "tithi": "Sankranti",
+          "img": "images/mesha-sankranti.jpg",
+          "procedure": "Surya puja; holy bath; donate seasonal items; begin auspicious routines.",
+          "significance": "Sun’s entry into Aries; marks the solar new year and spiritual renewal."
+        },
+        {
+          "name": "Chandra Darshan",
+          "date": "15-Apr-26",
+          "day": "Wednesday",
+          "hinduMonth": "Vaishakha",
+          "tithi": "Pratipada/Dwitiya",
+          "img": "images/chandra-darshan.jpg",
+          "procedure": "Offer arghya to Moon; prayers for calm mind and prosperity.",
+          "significance": "First sighting of the Moon; worship for mental peace and prosperity."
+        },
+        {
+          "name": "Vinayaka Chaturthi",
+          "date": "18-Apr-26",
+          "day": "Saturday",
+          "hinduMonth": "Vaishakha",
+          "tithi": "Chaturthi",
+          "img": "images/vinayaka-chaturthi.jpg",
+          "procedure": "Ganesha puja; offer durva and modak; start new work with blessings.",
+          "significance": "Worship of Lord Ganesha for success in new beginnings."
+        },
+        {
+          "name": "Skanda Shashti",
+          "date": "20-Apr-26",
+          "day": "Monday",
+          "hinduMonth": "Vaishakha",
+          "tithi": "Shashthi",
+          "img": "images/skanda-shashti.jpg",
+          "procedure": "Murugan/Kartikeya worship; recite Skanda prayers; optional fasting.",
+          "significance": "Dedicated to Lord Murugan/Kartikeya; victory over negativity and inner strength."
+        },
+        {
+          "name": "Ramanuja Jayanti",
+          "date": "21-Apr-26",
+          "day": "Tuesday",
+          "hinduMonth": "Vaishakha",
+          "tithi": "Panchami/Shashthi",
+          "img": "images/ramanuja-jayanti.jpg",
+          "procedure": "Remember Sri Ramanujacharya; read teachings; do Vishnu puja and charity.",
+          "significance": "Birth of Sri Ramanujacharya; celebrates devotion, equality, and Vishishtadvaita philosophy."
+        },
+        {
+          "name": "Varuthini Ekadashi",
+          "date": "24-Apr-26",
+          "day": "Friday",
+          "hinduMonth": "Vaishakha",
+          "tithi": "Ekadashi",
+          "img": "images/varuthini-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja and katha; charity and prayers for protection.",
+          "significance": "Vishnu worship; protection from misfortune and negative karma."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "25-Apr-26",
+          "day": "Saturday",
+          "hinduMonth": "Vaishakha",
+          "tithi": "Trayodashi",
+          "img": "images/pradosh-vrat-3.jpg",
+          "procedure": "Evening Shiva worship with bilva leaves; aarti during Pradosh Kaal.",
+          "significance": "Shiva worship for spiritual growth and fulfillment of desires."
+        },
+        {
+          "name": "Akshaya Tritiya",
+          "date": "29-Apr-26",
+          "day": "Wednesday",
+          "hinduMonth": "Vaishakha",
+          "tithi": "Tritiya",
+          "img": "images/akshaya-tritiya.jpg",
+          "procedure": "Do charity, start new ventures, worship Lakshmi-Narayana; buy gold (optional, regional).",
+          "significance": "Highly auspicious day; any good deed brings lasting (Akshaya) merit and prosperity."
+        },
+        {
+          "name": "Parashurama Jayanti",
+          "date": "30-Apr-26",
+          "day": "Thursday",
+          "hinduMonth": "Vaishakha",
+          "tithi": "Tritiya",
+          "img": "images/parashurama-jayanti.jpg",
+          "procedure": "Vishnu/Parashurama puja; read avatar katha; charity and prayers for dharma.",
+          "significance": "Birth of Lord Parashurama, sixth avatar of Vishnu; restoration of dharma."
+        }
+      ]
+    },
+    {
+      "month": "MAY",
+      "items": [
+        {
+          "name": "Pradosh Vrat",
+          "date": "01-May-26",
+          "day": "Friday",
+          "hinduMonth": "Vaishakha",
+          "tithi": "Trayodashi",
+          "img": "images/pradosh-vrat.jpg",
+          "procedure": "Evening Shiva worship in Pradosh Kaal with bilva leaves and mantra chanting.",
+          "significance": "Evening worship of Lord Shiva to remove sins, obstacles, and gain peace."
+        },
+        {
+          "name": "Vaishakha Purnima",
+          "date": "03-May-26",
+          "day": "Sunday",
+          "hinduMonth": "Vaishakha",
+          "tithi": "Purnima",
+          "img": "images/vaishakha-purnima.jpg",
+          "procedure": "Holy bath, charity, and puja; prayers for spiritual merit and peace.",
+          "significance": "Sacred full moon; associated with spiritual merit, charity, and devotion."
+        },
+        {
+          "name": "Narasimha Jayanti",
+          "date": "05-May-26",
+          "day": "Tuesday",
+          "hinduMonth": "Vaishakha",
+          "tithi": "Chaturdashi",
+          "img": "images/narasimha-jayanti.jpg",
+          "procedure": "Narasimha puja; chant Narasimha mantras; read Prahlad katha; offer sattvik naivedya.",
+          "significance": "Birth of Lord Narasimha; protection from evil and fear."
+        },
+        {
+          "name": "Sankashti Chaturthi",
+          "date": "06-May-26",
+          "day": "Wednesday",
+          "hinduMonth": "Vaishakha",
+          "tithi": "Chaturthi",
+          "img": "images/sankashti-chaturthi.jpg",
+          "procedure": "Fast till moonrise; Ganesha puja and aarti after moon दर्शन.",
+          "significance": "Fast for Lord Ganesha to overcome difficulties and obstacles."
+        },
+        {
+          "name": "Masik Shivaratri",
+          "date": "08-May-26",
+          "day": "Friday",
+          "hinduMonth": "Vaishakha",
+          "tithi": "Chaturdashi",
+          "img": "images/masik-shivaratri.jpg",
+          "procedure": "Shiva abhishekam and japa; keep sattvik food and calm routine.",
+          "significance": "Monthly Shivaratri for inner purification and devotion to Shiva."
+        },
+        {
+          "name": "Kalashtami",
+          "date": "09-May-26",
+          "day": "Saturday",
+          "hinduMonth": "Vaishakha",
+          "tithi": "Ashtami",
+          "img": "images/kalashtami.jpg",
+          "procedure": "Bhairava worship with diya and prayers for protection and courage.",
+          "significance": "Worship of Lord Bhairava for protection from negativity and fear."
+        },
+        {
+          "name": "Mohini Ekadashi",
+          "date": "11-May-26",
+          "day": "Monday",
+          "hinduMonth": "Vaishakha",
+          "tithi": "Ekadashi",
+          "img": "images/mohini-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja and katha; charity and prayer for clarity.",
+          "significance": "Dedicated to Lord Vishnu; removes sins, brings peace and spiritual clarity."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "12-May-26",
+          "day": "Tuesday",
+          "hinduMonth": "Vaishakha",
+          "tithi": "Trayodashi",
+          "img": "images/pradosh-vrat-2.jpg",
+          "procedure": "Evening Shiva worship with bilva leaves; aarti in Pradosh Kaal.",
+          "significance": "Shiva worship for harmony, health, and prosperity."
+        },
+        {
+          "name": "Amavasya (Vaishakha Amavasya)",
+          "date": "14-May-26",
+          "day": "Thursday",
+          "hinduMonth": "Vaishakha",
+          "tithi": "Amavasya",
+          "img": "images/vaishakha-amavasya.jpg",
+          "procedure": "Pitru tarpan, charity, and prayers for ancestors; keep sattvik routine.",
+          "significance": "New moon rituals for ancestors, fasting, charity, and cleansing."
+        },
+        {
+          "name": "Chandra Darshan",
+          "date": "15-May-26",
+          "day": "Friday",
+          "hinduMonth": "Jyeshtha",
+          "tithi": "Pratipada/Dwitiya",
+          "img": "images/chandra-darshan.jpg",
+          "procedure": "Moon worship; offer arghya; pray for mental peace and prosperity.",
+          "significance": "First sighting of the Moon; worship for mental peace and prosperity."
+        },
+        {
+          "name": "Vinayaka Chaturthi",
+          "date": "18-May-26",
+          "day": "Monday",
+          "hinduMonth": "Jyeshtha",
+          "tithi": "Chaturthi",
+          "img": "images/vinayaka-chaturthi.jpg",
+          "procedure": "Ganesha puja; offer modak/durva; begin new tasks with blessings.",
+          "significance": "Ganesha worship for success in new beginnings and wisdom."
+        },
+        {
+          "name": "Skanda Shashti",
+          "date": "20-May-26",
+          "day": "Wednesday",
+          "hinduMonth": "Jyeshtha",
+          "tithi": "Shashthi",
+          "img": "images/skanda-shashti.jpg",
+          "procedure": "Murugan/Kartikeya worship; recite Skanda prayers; optional fasting.",
+          "significance": "Dedicated to Lord Murugan/Kartikeya for victory and inner strength."
+        },
+        {
+          "name": "Apara Ekadashi",
+          "date": "22-May-26",
+          "day": "Friday",
+          "hinduMonth": "Jyeshtha",
+          "tithi": "Ekadashi",
+          "img": "images/apara-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja and katha; charity and prayers for merit.",
+          "significance": "Vishnu worship to destroy sins, negative karma, and attain merit."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "23-May-26",
+          "day": "Saturday",
+          "hinduMonth": "Jyeshtha",
+          "tithi": "Trayodashi",
+          "img": "images/pradosh-vrat-3.jpg",
+          "procedure": "Evening Shiva puja in Pradosh Kaal; offer bilva leaves and do aarti.",
+          "significance": "Shiva worship for spiritual growth and stability."
+        },
+        {
+          "name": "Ganga Saptami",
+          "date": "25-May-26",
+          "day": "Monday",
+          "hinduMonth": "Jyeshtha",
+          "tithi": "Saptami",
+          "img": "images/ganga-saptami.jpg",
+          "procedure": "Prayers to Maa Ganga; charity; remembrance of purity and liberation.",
+          "significance": "Celebrates the descent of River Ganga on earth; purity and liberation."
+        },
+        {
+          "name": "Bhanu Saptami",
+          "date": "26-May-26",
+          "day": "Tuesday",
+          "hinduMonth": "Jyeshtha",
+          "tithi": "Saptami",
+          "img": "images/bhanu-saptami.jpg",
+          "procedure": "Surya puja; arghya in the morning; charity for health and vitality.",
+          "significance": "Special Saptami dedicated to Surya Dev for health and vitality."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "29-May-26",
+          "day": "Friday",
+          "hinduMonth": "Jyeshtha",
+          "tithi": "Trayodashi",
+          "img": "images/pradosh-vrat-4.jpg",
+          "procedure": "Evening Shiva worship with bilva leaves; chant 'Om Namah Shivaya'.",
+          "significance": "Evening Shiva worship for fulfillment of desires and peace."
+        },
+        {
+          "name": "Shani Jayanti",
+          "date": "30-May-26",
+          "day": "Saturday",
+          "hinduMonth": "Jyeshtha",
+          "tithi": "Amavasya/related",
+          "img": "images/shani-jayanti.jpg",
+          "procedure": "Shani puja; offer sesame oil and black til; donate black items; pray for relief from hardships.",
+          "significance": "Birth of Lord Shani; prayers to reduce Saturn-related hardships and karma."
+        }
+      ]
+    },
+    {
+      "month": "JUNE",
+      "items": [
+        {
+          "name": "Pradosh Vrat",
+          "date": "01-Jun-26",
+          "day": "Monday",
+          "hinduMonth": "Jyeshtha",
+          "tithi": "Trayodashi",
+          "img": "images/pradosh-vrat.jpg",
+          "procedure": "Evening Shiva puja in Pradosh Kaal; bilva leaves, diya, and mantra chanting.",
+          "significance": "Evening worship of Lord Shiva for peace, prosperity, and removal of obstacles."
+        },
+        {
+          "name": "Jyeshtha Purnima",
+          "date": "02-Jun-26",
+          "day": "Tuesday",
+          "hinduMonth": "Jyeshtha",
+          "tithi": "Purnima",
+          "img": "images/jyeshtha-purnima.jpg",
+          "procedure": "Holy bath, charity, and prayers; observe fasting if followed.",
+          "significance": "Full moon of Jyeshtha month; charity, fasting, and spiritual merit."
+        },
+        {
+          "name": "Vat Savitri Vrat",
+          "date": "04-Jun-26",
+          "day": "Thursday",
+          "hinduMonth": "Jyeshtha",
+          "tithi": "Amavasya/related",
+          "img": "images/vat-savitri-vrat.jpg",
+          "procedure": "Married women worship banyan tree; pray for husband's long life; listen to Savitri katha.",
+          "significance": "Married women pray for their husband’s long life, inspired by Savitri’s devotion."
+        },
+        {
+          "name": "Sankashti Chaturthi",
+          "date": "05-Jun-26",
+          "day": "Friday",
+          "hinduMonth": "Jyeshtha",
+          "tithi": "Chaturthi",
+          "img": "images/sankashti-chaturthi.jpg",
+          "procedure": "Fast till moonrise; Ganesha puja; offer modak/durva; aarti after moon दर्शन.",
+          "significance": "Fast for Lord Ganesha to remove difficulties and grant wisdom."
+        },
+        {
+          "name": "Masik Shivaratri",
+          "date": "07-Jun-26",
+          "day": "Sunday",
+          "hinduMonth": "Jyeshtha",
+          "tithi": "Chaturdashi",
+          "img": "images/masik-shivaratri.jpg",
+          "procedure": "Shiva abhishekam, japa, and prayers for inner purification.",
+          "significance": "Monthly devotion to Lord Shiva for inner purification."
+        },
+        {
+          "name": "Kalashtami",
+          "date": "08-Jun-26",
+          "day": "Monday",
+          "hinduMonth": "Jyeshtha",
+          "tithi": "Ashtami",
+          "img": "images/kalashtami.jpg",
+          "procedure": "Bhairava worship; diya and mantra chanting for protection.",
+          "significance": "Worship of Lord Bhairava for protection from fear and negative energies."
+        },
+        {
+          "name": "Nirjala Ekadashi",
+          "date": "10-Jun-26",
+          "day": "Wednesday",
+          "hinduMonth": "Jyeshtha",
+          "tithi": "Ekadashi",
+          "img": "images/festivals/2026/june/nirjala-ekadashi.jpg",
+          "procedure": "Ekadashi fast without water (as per ability); Vishnu puja and charity next day.",
+          "significance": "Most powerful Ekadashi; fasting without water for Vishnu’s blessings and moksha."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "11-Jun-26",
+          "day": "Thursday",
+          "hinduMonth": "Jyeshtha",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/june/pradosh-vrat-2.jpg",
+          "procedure": "Evening Shiva worship in Pradosh Kaal; abhishekam and aarti.",
+          "significance": "Shiva worship for health, stability, and spiritual growth."
+        },
+        {
+          "name": "Amavasya (Jyeshtha Amavasya)",
+          "date": "13-Jun-26",
+          "day": "Saturday",
+          "hinduMonth": "Jyeshtha",
+          "tithi": "Amavasya",
+          "img": "images/festivals/2026/june/jyeshtha-amavasya.jpg",
+          "procedure": "Pitru tarpan, charity, and sattvik prayers for ancestors.",
+          "significance": "Ancestor rituals, fasting, charity, and spiritual cleansing."
+        },
+        {
+          "name": "Chandra Darshan",
+          "date": "14-Jun-26",
+          "day": "Sunday",
+          "hinduMonth": "Ashadha",
+          "tithi": "Pratipada/Dwitiya",
+          "img": "images/festivals/2026/june/chandra-darshan.jpg",
+          "procedure": "Offer arghya to Moon; pray for peace and prosperity.",
+          "significance": "First sighting of the Moon; prayers for mental peace and prosperity."
+        },
+        {
+          "name": "Vinayaka Chaturthi",
+          "date": "16-Jun-26",
+          "day": "Tuesday",
+          "hinduMonth": "Ashadha",
+          "tithi": "Chaturthi",
+          "img": "images/festivals/2026/june/vinayaka-chaturthi.jpg",
+          "procedure": "Ganesha puja; offer modak/durva; seek success and new beginnings.",
+          "significance": "Worship of Lord Ganesha for success and new beginnings."
+        },
+        {
+          "name": "Skanda Shashti",
+          "date": "18-Jun-26",
+          "day": "Thursday",
+          "hinduMonth": "Ashadha",
+          "tithi": "Shashthi",
+          "img": "images/festivals/2026/june/skanda-shashti.jpg",
+          "procedure": "Murugan/Kartikeya worship; recite Skanda prayers; optional fasting.",
+          "significance": "Dedicated to Lord Murugan/Kartikeya for victory over negativity."
+        },
+        {
+          "name": "Yogini Ekadashi",
+          "date": "20-Jun-26",
+          "day": "Saturday",
+          "hinduMonth": "Ashadha",
+          "tithi": "Ekadashi",
+          "img": "images/festivals/2026/june/yogini-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja and charity; prayers for purification.",
+          "significance": "Vishnu worship to cleanse sins and attain spiritual purity."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "22-Jun-26",
+          "day": "Monday",
+          "hinduMonth": "Ashadha",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/june/pradosh-vrat-3.jpg",
+          "procedure": "Pradosh Kaal Shiva worship; bilva leaves and aarti.",
+          "significance": "Shiva worship for harmony and fulfillment of desires."
+        },
+        {
+          "name": "Gauri Vrat Begins",
+          "date": "23-Jun-26",
+          "day": "Tuesday",
+          "hinduMonth": "Ashadha",
+          "tithi": "Pratipada/related",
+          "img": "images/festivals/2026/june/gauri-vrat-begins.jpg",
+          "procedure": "Young girls observe vrat and pray to Goddess Gauri for virtues and good future.",
+          "significance": "Young girls pray for good character, devotion, and future marital harmony."
+        },
+        {
+          "name": "Ashadha Navratri – Day 1 (Gupta Navratri)",
+          "date": "25-Jun-26",
+          "day": "Thursday",
+          "hinduMonth": "Ashadha",
+          "tithi": "Pratipada",
+          "img": "images/festivals/2026/june/gupta-navratri-day-1.jpg",
+          "procedure": "Begin Devi sadhana; mantra japa; sattvik diet and discipline.",
+          "significance": "Secret Navratri focused on intense Shakti sadhana and spiritual discipline."
+        },
+        {
+          "name": "Gupta Navratri – Day 2",
+          "date": "26-Jun-26",
+          "day": "Friday",
+          "hinduMonth": "Ashadha",
+          "tithi": "Dwitiya",
+          "img": "images/festivals/2026/june/gupta-navratri-day-2.jpg",
+          "procedure": "Continue Devi worship and spiritual practices as per tradition.",
+          "significance": "Worship of hidden forms of Maa Durga for inner power."
+        },
+        {
+          "name": "Gupta Navratri – Day 3",
+          "date": "27-Jun-26",
+          "day": "Saturday",
+          "hinduMonth": "Ashadha",
+          "tithi": "Tritiya",
+          "img": "images/festivals/2026/june/gupta-navratri-day-3.jpg",
+          "procedure": "Mantra sadhana and prayers; maintain purity and restraint.",
+          "significance": "Spiritual purification and mantra sadhana."
+        },
+        {
+          "name": "Gupta Navratri – Day 4",
+          "date": "28-Jun-26",
+          "day": "Sunday",
+          "hinduMonth": "Ashadha",
+          "tithi": "Chaturthi",
+          "img": "images/festivals/2026/june/gupta-navratri-day-4.jpg",
+          "procedure": "Devi puja and japa; seek courage, clarity, and protection.",
+          "significance": "Sadhana for courage, clarity, and divine protection."
+        },
+        {
+          "name": "Gupta Navratri – Day 5",
+          "date": "29-Jun-26",
+          "day": "Monday",
+          "hinduMonth": "Ashadha",
+          "tithi": "Panchami",
+          "img": "images/festivals/2026/june/gupta-navratri-day-5.jpg",
+          "procedure": "Continue Devi worship with discipline and sattvik routine.",
+          "significance": "Worship for discipline and inner balance."
+        },
+        {
+          "name": "Gupta Navratri – Day 6",
+          "date": "30-Jun-26",
+          "day": "Tuesday",
+          "hinduMonth": "Ashadha",
+          "tithi": "Shashthi",
+          "img": "images/festivals/2026/june/gupta-navratri-day-6.jpg",
+          "procedure": "Devi puja and mantra japa; conclude the day with aarti.",
+          "significance": "Continued Shakti worship for spiritual strength and growth."
+        }
+      ]
+    },
+    {
+      "month": "JULY",
+      "items": [
+        {
+          "name": "Pradosh Vrat",
+          "date": "01-Jul-26",
+          "day": "Wednesday",
+          "hinduMonth": "Ashadha",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/july/pradosh-vrat.jpg",
+          "procedure": "Evening Shiva puja in Pradosh Kaal; bilva leaves, diya, and aarti.",
+          "significance": "Evening worship of Lord Shiva for peace, prosperity, and removal of obstacles."
+        },
+        {
+          "name": "Ashadha Purnima / Guru Purnima",
+          "date": "02-Jul-26",
+          "day": "Thursday",
+          "hinduMonth": "Ashadha",
+          "tithi": "Purnima",
+          "img": "images/festivals/2026/july/guru-purnima.jpg",
+          "procedure": "Honor teachers/gurus; perform puja, offer gratitude, and donate as per tradition.",
+          "significance": "Honors Guru; seeking wisdom, guidance, and blessings."
+        },
+        {
+          "name": "Sankashti Chaturthi",
+          "date": "04-Jul-26",
+          "day": "Saturday",
+          "hinduMonth": "Ashadha",
+          "tithi": "Chaturthi",
+          "img": "images/festivals/2026/july/sankashti-chaturthi.jpg",
+          "procedure": "Fast till moonrise; Ganesha puja and aarti after moon दर्शन.",
+          "significance": "Fast for Lord Ganesha to overcome challenges and delays."
+        },
+        {
+          "name": "Masik Shivaratri",
+          "date": "05-Jul-26",
+          "day": "Sunday",
+          "hinduMonth": "Ashadha",
+          "tithi": "Chaturdashi",
+          "img": "images/festivals/2026/july/masik-shivaratri.jpg",
+          "procedure": "Shiva abhishekam and japa; maintain sattvik diet.",
+          "significance": "Monthly devotion to Lord Shiva for inner purification."
+        },
+        {
+          "name": "Kalashtami",
+          "date": "06-Jul-26",
+          "day": "Monday",
+          "hinduMonth": "Ashadha",
+          "tithi": "Ashtami",
+          "img": "images/festivals/2026/july/kalashtami.jpg",
+          "procedure": "Bhairava worship; diya, flowers, and mantras for protection.",
+          "significance": "Worship of Lord Bhairava for protection from fear and negativity."
+        },
+        {
+          "name": "Deva Shayani Ekadashi (Ashadhi Ekadashi)",
+          "date": "08-Jul-26",
+          "day": "Wednesday",
+          "hinduMonth": "Ashadha",
+          "tithi": "Ekadashi",
+          "img": "images/festivals/2026/july/ashadhi-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja; begin Chaturmas discipline (as per tradition).",
+          "significance": "Vishnu enters cosmic sleep; beginning of Chaturmas, period of restraint and devotion."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "09-Jul-26",
+          "day": "Thursday",
+          "hinduMonth": "Ashadha",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/july/pradosh-vrat-2.jpg",
+          "procedure": "Evening Shiva worship; abhishekam and aarti in Pradosh Kaal.",
+          "significance": "Shiva worship for harmony and spiritual strength."
+        },
+        {
+          "name": "Amavasya (Ashadha Amavasya)",
+          "date": "11-Jul-26",
+          "day": "Saturday",
+          "hinduMonth": "Ashadha",
+          "tithi": "Amavasya",
+          "img": "images/festivals/2026/july/ashadha-amavasya.jpg",
+          "procedure": "Pitru tarpan, charity, and prayers for ancestors; keep sattvik routine.",
+          "significance": "Ancestor rituals, fasting, and spiritual cleansing."
+        },
+        {
+          "name": "Chandra Darshan",
+          "date": "12-Jul-26",
+          "day": "Sunday",
+          "hinduMonth": "Shravana",
+          "tithi": "Pratipada/Dwitiya",
+          "img": "images/festivals/2026/july/chandra-darshan.jpg",
+          "procedure": "Offer arghya to Moon; pray for mental peace and prosperity.",
+          "significance": "First Moon sighting; prayers for mental peace and prosperity."
+        },
+        {
+          "name": "Vinayaka Chaturthi",
+          "date": "14-Jul-26",
+          "day": "Tuesday",
+          "hinduMonth": "Shravana",
+          "tithi": "Chaturthi",
+          "img": "images/festivals/2026/july/vinayaka-chaturthi.jpg",
+          "procedure": "Ganesha puja; offer durva and modak; seek success in new beginnings.",
+          "significance": "Worship of Lord Ganesha for success in new beginnings."
+        },
+        {
+          "name": "Skanda Shashti",
+          "date": "16-Jul-26",
+          "day": "Thursday",
+          "hinduMonth": "Shravana",
+          "tithi": "Shashthi",
+          "img": "images/festivals/2026/july/skanda-shashti.jpg",
+          "procedure": "Murugan/Kartikeya worship; recite Skanda prayers; optional fasting.",
+          "significance": "Dedicated to Lord Murugan/Kartikeya for victory over negativity."
+        },
+        {
+          "name": "Gauri Vrat Ends",
+          "date": "17-Jul-26",
+          "day": "Friday",
+          "hinduMonth": "Shravana",
+          "tithi": "Related",
+          "img": "images/festivals/2026/july/gauri-vrat-ends.jpg",
+          "procedure": "Conclude vrat with Gauri puja and prayers; donate as per tradition.",
+          "significance": "Completion of girls’ fasting for good character and marital harmony."
+        },
+        {
+          "name": "Kamika Ekadashi",
+          "date": "18-Jul-26",
+          "day": "Saturday",
+          "hinduMonth": "Shravana",
+          "tithi": "Ekadashi",
+          "img": "images/festivals/2026/july/kamika-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja and katha; charity for spiritual merit.",
+          "significance": "Vishnu worship to remove sins and grant spiritual merit."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "20-Jul-26",
+          "day": "Monday",
+          "hinduMonth": "Shravana",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/july/pradosh-vrat-3.jpg",
+          "procedure": "Evening Shiva worship in Pradosh Kaal; aarti and prayers.",
+          "significance": "Shiva worship for health, peace, and prosperity."
+        },
+        {
+          "name": "Nag Panchami",
+          "date": "23-Jul-26",
+          "day": "Thursday",
+          "hinduMonth": "Shravana",
+          "tithi": "Panchami",
+          "img": "images/festivals/2026/july/nag-panchami.jpg",
+          "procedure": "Worship Nag devtas; offer दूध/flowers; pray for protection and harmony.",
+          "significance": "Worship of Serpent deities for protection, fertility, and removal of doshas."
+        },
+        {
+          "name": "Shitala Saptami",
+          "date": "24-Jul-26",
+          "day": "Friday",
+          "hinduMonth": "Shravana",
+          "tithi": "Saptami",
+          "img": "images/festivals/2026/july/shitala-saptami.jpg",
+          "procedure": "Worship Goddess Shitala; offer cool/sattvik food; pray for health.",
+          "significance": "Worship of Goddess Shitala for protection from diseases and health issues."
+        },
+        {
+          "name": "Masik Durgashtami",
+          "date": "25-Jul-26",
+          "day": "Saturday",
+          "hinduMonth": "Shravana",
+          "tithi": "Ashtami",
+          "img": "images/festivals/2026/july/masik-durgashtami.jpg",
+          "procedure": "Durga puja; recite Devi stotras; light diya and offer flowers.",
+          "significance": "Worship of Maa Durga for strength and protection."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "28-Jul-26",
+          "day": "Tuesday",
+          "hinduMonth": "Shravana",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/july/pradosh-vrat-4.jpg",
+          "procedure": "Evening Shiva puja; bilva leaves and aarti during Pradosh Kaal.",
+          "significance": "Evening Shiva worship for fulfillment of desires and spiritual stability."
+        },
+        {
+          "name": "Shravana Purnima",
+          "date": "29-Jul-26",
+          "day": "Wednesday",
+          "hinduMonth": "Shravana",
+          "tithi": "Purnima",
+          "img": "images/festivals/2026/july/shravana-purnima.jpg",
+          "procedure": "Holy bath, vows (vrat) and charity; puja as per local tradition.",
+          "significance": "Full moon of Shravana month; associated with devotion and sacred vows."
+        }
+      ]
+    },
+    {
+      "month": "AUGUST",
+      "items": [
+        {
+          "name": "Pradosh Vrat",
+          "date": "01-Aug-26",
+          "day": "Saturday",
+          "hinduMonth": "Shravana",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/august/pradosh-vrat.jpg",
+          "procedure": "Pradosh Kaal Shiva worship; bilva leaves, diya, and aarti.",
+          "significance": "Evening worship of Lord Shiva for peace, prosperity, and removal of obstacles."
+        },
+        {
+          "name": "Shravana Purnima",
+          "date": "02-Aug-26",
+          "day": "Sunday",
+          "hinduMonth": "Shravana",
+          "tithi": "Purnima",
+          "img": "images/festivals/2026/august/shravana-purnima.jpg",
+          "procedure": "Holy bath, charity, and vows; puja as per tradition.",
+          "significance": "Full moon of Shravana month; sacred vows, charity, and devotion are observed."
+        },
+        {
+          "name": "Raksha Bandhan",
+          "date": "02-Aug-26",
+          "day": "Sunday",
+          "hinduMonth": "Shravana",
+          "tithi": "Purnima",
+          "img": "images/festivals/2026/august/raksha-bandhan.jpg",
+          "procedure": "Sisters tie rakhi; brothers give gifts; prayers for protection and well-being.",
+          "significance": "Celebration of the bond between siblings; prayers for protection and well-being."
+        },
+        {
+          "name": "Sankashti Chaturthi",
+          "date": "03-Aug-26",
+          "day": "Monday",
+          "hinduMonth": "Shravana",
+          "tithi": "Chaturthi",
+          "img": "images/festivals/2026/august/sankashti-chaturthi.jpg",
+          "procedure": "Fast till moonrise; Ganesha puja and aarti after moon दर्शन.",
+          "significance": "Fast for Lord Ganesha to remove difficulties and obstacles."
+        },
+        {
+          "name": "Gayatri Jayanti",
+          "date": "04-Aug-26",
+          "day": "Tuesday",
+          "hinduMonth": "Shravana",
+          "tithi": "Purnima/related",
+          "img": "images/festivals/2026/august/gayatri-jayanti.jpg",
+          "procedure": "Gayatri mantra japa; havan (optional); prayers for wisdom and purity.",
+          "significance": "Birth of Goddess Gayatri; worship for wisdom, purity, and spiritual enlightenment."
+        },
+        {
+          "name": "Masik Shivaratri",
+          "date": "05-Aug-26",
+          "day": "Wednesday",
+          "hinduMonth": "Shravana",
+          "tithi": "Chaturdashi",
+          "img": "images/festivals/2026/august/masik-shivaratri.jpg",
+          "procedure": "Shiva abhishekam and japa; night prayers as per ability.",
+          "significance": "Monthly Shivaratri observed for devotion and inner purification."
+        },
+        {
+          "name": "Kalashtami",
+          "date": "06-Aug-26",
+          "day": "Thursday",
+          "hinduMonth": "Shravana",
+          "tithi": "Ashtami",
+          "img": "images/festivals/2026/august/kalashtami.jpg",
+          "procedure": "Bhairava worship; diya and mantra chanting for protection.",
+          "significance": "Worship of Lord Bhairava for protection from fear and negativity."
+        },
+        {
+          "name": "Shravana Putrada Ekadashi",
+          "date": "07-Aug-26",
+          "day": "Friday",
+          "hinduMonth": "Shravana",
+          "tithi": "Ekadashi",
+          "img": "images/festivals/2026/august/putrada-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja; prayers for family well-being and progeny (as per belief).",
+          "significance": "Ekadashi for progeny, family well-being, and Vishnu’s blessings."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "08-Aug-26",
+          "day": "Saturday",
+          "hinduMonth": "Shravana",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/august/pradosh-vrat-2.jpg",
+          "procedure": "Evening Shiva worship; bilva leaves and aarti in Pradosh Kaal.",
+          "significance": "Shiva worship for harmony and spiritual strength."
+        },
+        {
+          "name": "Amavasya (Shravana Amavasya)",
+          "date": "10-Aug-26",
+          "day": "Monday",
+          "hinduMonth": "Shravana",
+          "tithi": "Amavasya",
+          "img": "images/festivals/2026/august/shravana-amavasya.jpg",
+          "procedure": "Pitru tarpan, charity, and prayers; maintain sattvik routine.",
+          "significance": "Ancestor rituals, fasting, and spiritual cleansing."
+        },
+        {
+          "name": "Chandra Darshan",
+          "date": "11-Aug-26",
+          "day": "Tuesday",
+          "hinduMonth": "Bhadrapada",
+          "tithi": "Pratipada/Dwitiya",
+          "img": "images/festivals/2026/august/chandra-darshan.jpg",
+          "procedure": "Offer arghya to Moon; pray for peace and prosperity.",
+          "significance": "First sighting of the Moon; prayers for mental peace and prosperity."
+        },
+        {
+          "name": "Vinayaka Chaturthi",
+          "date": "13-Aug-26",
+          "day": "Thursday",
+          "hinduMonth": "Bhadrapada",
+          "tithi": "Chaturthi",
+          "img": "images/festivals/2026/august/vinayaka-chaturthi.jpg",
+          "procedure": "Ganesha puja; modak/durva offering; seek auspicious beginnings.",
+          "significance": "Worship of Lord Ganesha for success and auspicious beginnings."
+        },
+        {
+          "name": "Skanda Shashti",
+          "date": "15-Aug-26",
+          "day": "Saturday",
+          "hinduMonth": "Bhadrapada",
+          "tithi": "Shashthi",
+          "img": "images/festivals/2026/august/skanda-shashti.jpg",
+          "procedure": "Murugan/Kartikeya worship; recite Skanda prayers; optional fasting.",
+          "significance": "Dedicated to Lord Murugan/Kartikeya for courage and victory."
+        },
+        {
+          "name": "Aadi Perukku",
+          "date": "16-Aug-26",
+          "day": "Sunday",
+          "hinduMonth": "Aadi (Tamil month)/Shravana-Bhadrapada",
+          "tithi": "Regional",
+          "img": "images/festivals/2026/august/aadi-perukku.jpg",
+          "procedure": "Offer gratitude to rivers/water; simple puja and community celebrations (regional).",
+          "significance": "Celebration of water’s life-giving force; gratitude to rivers and rain."
+        },
+        {
+          "name": "Kajari Teej",
+          "date": "18-Aug-26",
+          "day": "Tuesday",
+          "hinduMonth": "Bhadrapada",
+          "tithi": "Tritiya",
+          "img": "images/festivals/2026/august/kajari-teej.jpg",
+          "procedure": "Women observe vrat and pray to Shiva-Parvati for marital happiness (regional).",
+          "significance": "Observed by women for marital happiness and family prosperity."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "19-Aug-26",
+          "day": "Wednesday",
+          "hinduMonth": "Bhadrapada",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/august/pradosh-vrat-3.jpg",
+          "procedure": "Evening Shiva worship; bilva leaves and aarti during Pradosh Kaal.",
+          "significance": "Evening Shiva worship for fulfillment of desires and peace."
+        },
+        {
+          "name": "Nag Panchami",
+          "date": "22-Aug-26",
+          "day": "Saturday",
+          "hinduMonth": "Bhadrapada",
+          "tithi": "Panchami",
+          "img": "images/festivals/2026/august/nag-panchami.jpg",
+          "procedure": "Worship serpent deities; offer दूध/flowers; pray for protection and harmony.",
+          "significance": "Worship of serpent deities for protection, fertility, and harmony."
+        },
+        {
+          "name": "Shravana Shukla Ashtami",
+          "date": "23-Aug-26",
+          "day": "Sunday",
+          "hinduMonth": "Bhadrapada",
+          "tithi": "Ashtami",
+          "img": "images/festivals/2026/august/shukla-ashtami.jpg",
+          "procedure": "Durga worship; recite Devi stotras; light diya for protection.",
+          "significance": "Durga worship for strength and protection."
+        },
+        {
+          "name": "Krishna Janmashtami",
+          "date": "26-Aug-26",
+          "day": "Wednesday",
+          "hinduMonth": "Bhadrapada",
+          "tithi": "Ashtami",
+          "img": "images/festivals/2026/august/krishna-janmashtami.jpg",
+          "procedure": "Fast till midnight; Krishna puja, bhajans, and celebration of जन्मोत्सव.",
+          "significance": "Birth of Lord Krishna; devotion, fasting, and celebration of dharma."
+        },
+        {
+          "name": "Dahi Handi",
+          "date": "27-Aug-26",
+          "day": "Thursday",
+          "hinduMonth": "Bhadrapada",
+          "tithi": "Navami/related",
+          "img": "images/festivals/2026/august/dahi-handi.jpg",
+          "procedure": "Community celebrations with handi; songs and devotion (regional).",
+          "significance": "Celebration of Krishna’s childhood leelas; joy, unity, and devotion."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "28-Aug-26",
+          "day": "Friday",
+          "hinduMonth": "Bhadrapada",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/august/pradosh-vrat-4.jpg",
+          "procedure": "Evening Shiva worship in Pradosh Kaal; abhishekam and aarti.",
+          "significance": "Shiva worship for health, peace, and prosperity."
+        },
+        {
+          "name": "Aja Ekadashi",
+          "date": "30-Aug-26",
+          "day": "Sunday",
+          "hinduMonth": "Bhadrapada",
+          "tithi": "Ekadashi",
+          "img": "images/festivals/2026/august/aja-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja and charity; prayers for merit and purification.",
+          "significance": "Vishnu worship; removal of sins and attainment of spiritual merit."
+        }
+      ]
+    },
+    {
+      "month": "SEPTEMBER",
+      "items": [
+        {
+          "name": "Pradosh Vrat",
+          "date": "01-Sep-26",
+          "day": "Tuesday",
+          "hinduMonth": "Bhadrapada",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/september/pradosh-vrat.jpg",
+          "procedure": "Evening Shiva worship; bilva leaves and aarti during Pradosh Kaal.",
+          "significance": "Evening worship of Lord Shiva to remove obstacles and gain peace and prosperity."
+        },
+        {
+          "name": "Bhadrapada Purnima",
+          "date": "02-Sep-26",
+          "day": "Wednesday",
+          "hinduMonth": "Bhadrapada",
+          "tithi": "Purnima",
+          "img": "images/festivals/2026/september/bhadrapada-purnima.jpg",
+          "procedure": "Holy bath, charity, and puja; prayers for spiritual merit.",
+          "significance": "Full moon of Bhadrapada month; charity, devotion, and spiritual merit."
+        },
+        {
+          "name": "Sankashti Chaturthi",
+          "date": "03-Sep-26",
+          "day": "Thursday",
+          "hinduMonth": "Bhadrapada",
+          "tithi": "Chaturthi",
+          "img": "images/festivals/2026/september/sankashti-chaturthi.jpg",
+          "procedure": "Fast till moonrise; Ganesha puja and aarti after moon दर्शन.",
+          "significance": "Fast for Lord Ganesha to overcome difficulties and delays."
+        },
+        {
+          "name": "Masik Shivaratri",
+          "date": "04-Sep-26",
+          "day": "Friday",
+          "hinduMonth": "Bhadrapada",
+          "tithi": "Chaturdashi",
+          "img": "images/festivals/2026/september/masik-shivaratri.jpg",
+          "procedure": "Shiva abhishekam and japa; night prayers as per ability.",
+          "significance": "Monthly Shivaratri for inner purification and devotion to Shiva."
+        },
+        {
+          "name": "Kalashtami",
+          "date": "05-Sep-26",
+          "day": "Saturday",
+          "hinduMonth": "Bhadrapada",
+          "tithi": "Ashtami",
+          "img": "images/festivals/2026/september/kalashtami.jpg",
+          "procedure": "Bhairava worship; diya and mantra chanting for protection.",
+          "significance": "Worship of Lord Bhairava for protection from fear and negativity."
+        },
+        {
+          "name": "Parsva Ekadashi",
+          "date": "06-Sep-26",
+          "day": "Sunday",
+          "hinduMonth": "Bhadrapada",
+          "tithi": "Ekadashi",
+          "img": "images/festivals/2026/september/parsva-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja during Chaturmas; charity and prayers for discipline.",
+          "significance": "Vishnu worship during Chaturmas; helps attain spiritual discipline and merit."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "07-Sep-26",
+          "day": "Monday",
+          "hinduMonth": "Bhadrapada",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/september/pradosh-vrat-2.jpg",
+          "procedure": "Evening Shiva worship; abhishekam and aarti.",
+          "significance": "Shiva worship for harmony, health, and stability."
+        },
+        {
+          "name": "Amavasya (Bhadrapada Amavasya)",
+          "date": "09-Sep-26",
+          "day": "Wednesday",
+          "hinduMonth": "Bhadrapada",
+          "tithi": "Amavasya",
+          "img": "images/festivals/2026/september/bhadrapada-amavasya.jpg",
+          "procedure": "Pitru tarpan, charity, and prayers for ancestors; simple sattvik routine.",
+          "significance": "Ancestor rituals, fasting, and spiritual cleansing."
+        },
+        {
+          "name": "Chandra Darshan",
+          "date": "10-Sep-26",
+          "day": "Thursday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Pratipada/Dwitiya",
+          "img": "images/festivals/2026/september/chandra-darshan.jpg",
+          "procedure": "Offer arghya to Moon; prayers for peace and prosperity.",
+          "significance": "First sighting of the Moon; prayers for mental peace and prosperity."
+        },
+        {
+          "name": "Vinayaka Chaturthi",
+          "date": "12-Sep-26",
+          "day": "Saturday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Chaturthi",
+          "img": "images/festivals/2026/september/vinayaka-chaturthi.jpg",
+          "procedure": "Ganesha puja; offer modak/durva; seek wisdom and success.",
+          "significance": "Worship of Lord Ganesha for wisdom, success, and auspicious beginnings."
+        },
+        {
+          "name": "Skanda Shashti",
+          "date": "13-Sep-26",
+          "day": "Sunday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Shashthi",
+          "img": "images/festivals/2026/september/skanda-shashti.jpg",
+          "procedure": "Murugan/Kartikeya worship; prayers for courage and victory.",
+          "significance": "Dedicated to Lord Murugan/Kartikeya for courage and victory over negativity."
+        },
+        {
+          "name": "Samvatsari Parva (for some Hindu sects)",
+          "date": "15-Sep-26",
+          "day": "Tuesday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Regional",
+          "img": "images/festivals/2026/september/samvatsari-parva.jpg",
+          "procedure": "Self-reflection, forgiveness, and repentance practices as per sect/tradition.",
+          "significance": "Day of repentance, forgiveness, and self-purification (observed in certain traditions)."
+        },
+        {
+          "name": "Indira Ekadashi",
+          "date": "17-Sep-26",
+          "day": "Thursday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Ekadashi",
+          "img": "images/festivals/2026/september/indira-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja and charity; prayers for ancestors’ peace.",
+          "significance": "Vishnu worship to help ancestors attain peace and liberation."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "18-Sep-26",
+          "day": "Friday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/september/pradosh-vrat-3.jpg",
+          "procedure": "Evening Shiva worship in Pradosh Kaal; bilva leaves and aarti.",
+          "significance": "Evening Shiva worship for peace and fulfillment of desires."
+        },
+        {
+          "name": "Anant Chaturdashi",
+          "date": "20-Sep-26",
+          "day": "Sunday",
+          "hinduMonth": "Bhadrapada/Ashwin",
+          "tithi": "Chaturdashi",
+          "img": "images/festivals/2026/september/anant-chaturdashi.jpg",
+          "procedure": "Worship Lord Vishnu (Anant); tie Anant sutra (if followed); prayers for protection.",
+          "significance": "Worship of Lord Vishnu (Anant) for protection, continuity, and well-being."
+        },
+        {
+          "name": "Ganesh Visarjan",
+          "date": "21-Sep-26",
+          "day": "Monday",
+          "hinduMonth": "Bhadrapada",
+          "tithi": "Chaturdashi/Anant",
+          "img": "images/festivals/2026/september/ganesh-visarjan.jpg",
+          "procedure": "Bid farewell to Ganesha idol with prayers; visarjan in water body as per rules/tradition.",
+          "significance": "Ritual farewell to Lord Ganesha, symbolizing impermanence and gratitude."
+        },
+        {
+          "name": "Pitru Paksha Begins",
+          "date": "22-Sep-26",
+          "day": "Tuesday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Pratipada",
+          "img": "images/festivals/2026/september/pitru-paksha-begins.jpg",
+          "procedure": "Begin shraddha/tarpan as per family tradition; charity and prayers for ancestors.",
+          "significance": "Fortnight dedicated to ancestor worship, Shraddha, and gratitude."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "27-Sep-26",
+          "day": "Sunday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/september/pradosh-vrat-4.jpg",
+          "procedure": "Evening Shiva worship; bilva leaves and aarti in Pradosh Kaal.",
+          "significance": "Shiva worship for spiritual strength and clarity."
+        },
+        {
+          "name": "Pitru Paksha Ends (Sarva Pitru Amavasya)",
+          "date": "30-Sep-26",
+          "day": "Wednesday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Amavasya",
+          "img": "images/festivals/2026/september/sarva-pitru-amavasya.jpg",
+          "procedure": "Final day shraddha/tarpan; charity; prayers for peace of all ancestors.",
+          "significance": "Final day of ancestor rites; prayers for peace and liberation of ancestors."
+        }
+      ]
+    },
+    {
+      "month": "OCTOBER",
+      "items": [
+        {
+          "name": "Pradosh Vrat",
+          "date": "01-Oct-26",
+          "day": "Thursday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/october/pradosh-vrat.jpg",
+          "procedure": "Evening Shiva worship; bilva leaves and aarti in Pradosh Kaal.",
+          "significance": "Evening worship of Lord Shiva to remove obstacles and gain peace and prosperity."
+        },
+        {
+          "name": "Ashwin Amavasya / Sarva Pitru Amavasya",
+          "date": "02-Oct-26",
+          "day": "Friday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Amavasya",
+          "img": "images/festivals/2026/october/ashwin-amavasya.jpg",
+          "procedure": "Perform shraddha/tarpan; donate food/clothes; prayers for ancestors’ peace.",
+          "significance": "Most important day of Pitru Paksha; prayers, charity, and Shraddha for all ancestors."
+        },
+        {
+          "name": "Chandra Darshan",
+          "date": "03-Oct-26",
+          "day": "Saturday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Pratipada/Dwitiya",
+          "img": "images/festivals/2026/october/chandra-darshan.jpg",
+          "procedure": "Offer arghya to Moon; pray for peace and prosperity.",
+          "significance": "First sighting of the Moon; worship for mental peace and prosperity."
+        },
+        {
+          "name": "Vinayaka Chaturthi",
+          "date": "05-Oct-26",
+          "day": "Monday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Chaturthi",
+          "img": "images/festivals/2026/october/vinayaka-chaturthi.jpg",
+          "procedure": "Ganesha puja; offer modak/durva; seek wisdom and success.",
+          "significance": "Worship of Lord Ganesha for wisdom, success, and auspicious beginnings."
+        },
+        {
+          "name": "Skanda Shashti",
+          "date": "07-Oct-26",
+          "day": "Wednesday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Shashthi",
+          "img": "images/festivals/2026/october/skanda-shashti.jpg",
+          "procedure": "Murugan/Kartikeya worship; prayers for courage and protection.",
+          "significance": "Dedicated to Lord Murugan/Kartikeya for courage, victory, and protection."
+        },
+        {
+          "name": "Upang Lalita Vrat Begins",
+          "date": "08-Oct-26",
+          "day": "Thursday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Related",
+          "img": "images/festivals/2026/october/upang-lalita-vrat.jpg",
+          "procedure": "Begin preparatory vrat/puja as per tradition; focus on Devi worship and discipline.",
+          "significance": "Preparatory vrat leading to Sharad Navratri; devotion to Goddess Durga."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "09-Oct-26",
+          "day": "Friday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/october/pradosh-vrat-2.jpg",
+          "procedure": "Evening Shiva puja; bilva offering and aarti in Pradosh Kaal.",
+          "significance": "Shiva worship for harmony, health, and spiritual strength."
+        },
+        {
+          "name": "Sharad Navratri – Day 1",
+          "date": "10-Oct-26",
+          "day": "Saturday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Pratipada",
+          "img": "images/festivals/2026/october/sharad-navratri-day-1.jpg",
+          "procedure": "Kalash sthapana (if followed), Devi puja, mantra japa, and sattvik diet.",
+          "significance": "Beginning of Navratri; worship of Maa Durga for power, purity, and protection."
+        },
+        {
+          "name": "Sharad Navratri – Day 2",
+          "date": "11-Oct-26",
+          "day": "Sunday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Dwitiya",
+          "img": "images/festivals/2026/october/sharad-navratri-day-2.jpg",
+          "procedure": "Continue Devi worship with prayers and discipline.",
+          "significance": "Devotion to Durga for balance, courage, and inner strength."
+        },
+        {
+          "name": "Sharad Navratri – Day 3",
+          "date": "12-Oct-26",
+          "day": "Monday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Tritiya",
+          "img": "images/festivals/2026/october/sharad-navratri-day-3.jpg",
+          "procedure": "Devi puja, japa, and charity; maintain sattvik routine.",
+          "significance": "Worship for clarity, discipline, and devotion."
+        },
+        {
+          "name": "Sharad Navratri – Day 4",
+          "date": "13-Oct-26",
+          "day": "Tuesday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Chaturthi",
+          "img": "images/festivals/2026/october/sharad-navratri-day-4.jpg",
+          "procedure": "Continue Devi sadhana; focus on stability and inner strength.",
+          "significance": "Observed for stability, wisdom, and spiritual growth."
+        },
+        {
+          "name": "Sharad Navratri – Day 5",
+          "date": "14-Oct-26",
+          "day": "Wednesday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Panchami",
+          "img": "images/festivals/2026/october/sharad-navratri-day-5.jpg",
+          "procedure": "Devi worship and prayers; keep sattvik diet and discipline.",
+          "significance": "Sadhana for patience, discipline, and divine grace."
+        },
+        {
+          "name": "Sharad Navratri – Day 6",
+          "date": "15-Oct-26",
+          "day": "Thursday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Shashthi",
+          "img": "images/festivals/2026/october/sharad-navratri-day-6.jpg",
+          "procedure": "Devi puja; prayers for courage and focus.",
+          "significance": "Worship for courage, focus, and removal of fear."
+        },
+        {
+          "name": "Sharad Navratri – Day 7",
+          "date": "16-Oct-26",
+          "day": "Friday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Saptami",
+          "img": "images/festivals/2026/october/sharad-navratri-day-7.jpg",
+          "procedure": "Devi worship; pray for protection from negativity (Kalratri devotion in many traditions).",
+          "significance": "Devotion to Maa Kalratri for protection from negativity."
+        },
+        {
+          "name": "Sharad Navratri – Day 8 (Durga Ashtami)",
+          "date": "17-Oct-26",
+          "day": "Saturday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Ashtami",
+          "img": "images/festivals/2026/october/durga-ashtami.jpg",
+          "procedure": "Ashtami puja; kanya pujan (if followed); charity and aarti.",
+          "significance": "Worship of Maa Mahagauri; purity, peace, and blessings."
+        },
+        {
+          "name": "Sharad Navratri – Day 9 (Maha Navami)",
+          "date": "18-Oct-26",
+          "day": "Sunday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Navami",
+          "img": "images/festivals/2026/october/maha-navami.jpg",
+          "procedure": "Navami puja; conclude Navratri sadhana; prayers for fulfillment.",
+          "significance": "Completion of Navratri; attainment of divine blessings and fulfillment."
+        },
+        {
+          "name": "Vijaya Dashami (Dussehra)",
+          "date": "19-Oct-26",
+          "day": "Monday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Dashami",
+          "img": "images/festivals/2026/october/dussehra.jpg",
+          "procedure": "Celebrate victory of good over evil; worship weapons/books (Ayudha puja in some regions).",
+          "significance": "Celebrates victory of good over evil; triumph of dharma."
+        },
+        {
+          "name": "Papankusha Ekadashi",
+          "date": "20-Oct-26",
+          "day": "Tuesday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Ekadashi",
+          "img": "images/festivals/2026/october/papankusha-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja and charity; prayers for merit.",
+          "significance": "Vishnu worship to remove sins and gain spiritual merit."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "22-Oct-26",
+          "day": "Thursday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/october/pradosh-vrat-3.jpg",
+          "procedure": "Evening Shiva worship; bilva leaves and aarti in Pradosh Kaal.",
+          "significance": "Shiva worship for peace, prosperity, and mental clarity."
+        },
+        {
+          "name": "Kojagiri Purnima / Sharad Purnima",
+          "date": "24-Oct-26",
+          "day": "Saturday",
+          "hinduMonth": "Ashwin",
+          "tithi": "Purnima",
+          "img": "images/festivals/2026/october/sharad-purnima.jpg",
+          "procedure": "Lakshmi puja; keep night vigil in some traditions; offer kheer (regional).",
+          "significance": "Worship of Goddess Lakshmi; prosperity, abundance, and divine grace."
+        },
+        {
+          "name": "Sankashti Chaturthi",
+          "date": "26-Oct-26",
+          "day": "Monday",
+          "hinduMonth": "Ashwin/Kartik",
+          "tithi": "Chaturthi",
+          "img": "images/festivals/2026/october/sankashti-chaturthi.jpg",
+          "procedure": "Fast till moonrise; Ganesha puja and aarti after moon दर्शन.",
+          "significance": "Ganesha fasting to overcome obstacles and hardships."
+        },
+        {
+          "name": "Masik Shivaratri",
+          "date": "28-Oct-26",
+          "day": "Wednesday",
+          "hinduMonth": "Kartik",
+          "tithi": "Chaturdashi",
+          "img": "images/festivals/2026/october/masik-shivaratri.jpg",
+          "procedure": "Shiva abhishekam and japa; night prayers for purification.",
+          "significance": "Monthly Shivaratri for inner purification and devotion to Shiva."
+        },
+        {
+          "name": "Kalashtami",
+          "date": "29-Oct-26",
+          "day": "Thursday",
+          "hinduMonth": "Kartik",
+          "tithi": "Ashtami",
+          "img": "images/festivals/2026/october/kalashtami.jpg",
+          "procedure": "Bhairava worship; diya and mantra chanting for protection.",
+          "significance": "Worship of Lord Bhairava for protection from fear and negativity."
+        },
+        {
+          "name": "Rama Ekadashi",
+          "date": "31-Oct-26",
+          "day": "Saturday",
+          "hinduMonth": "Kartik",
+          "tithi": "Ekadashi",
+          "img": "images/festivals/2026/october/rama-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja and charity; prayers for liberation.",
+          "significance": "Vishnu worship to cleanse sins and progress toward liberation."
+        }
+      ]
+    },
+    {
+      "month": "NOVEMBER",
+      "items": [
+        {
+          "name": "Pradosh Vrat",
+          "date": "01-Nov-26",
+          "day": "Sunday",
+          "hinduMonth": "Kartik",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/november/pradosh-vrat.jpg",
+          "procedure": "Evening Shiva worship; bilva leaves and aarti in Pradosh Kaal.",
+          "significance": "Evening worship of Lord Shiva for peace, prosperity, and removal of obstacles."
+        },
+        {
+          "name": "Karwa Chauth",
+          "date": "03-Nov-26",
+          "day": "Tuesday",
+          "hinduMonth": "Kartik",
+          "tithi": "Chaturthi",
+          "img": "images/festivals/2026/november/karwa-chauth.jpg",
+          "procedure": "Women fast till moonrise; puja with karwa; break fast after viewing moon.",
+          "significance": "Married women fast for the long life, health, and well-being of their husbands."
+        },
+        {
+          "name": "Ahoi Ashtami",
+          "date": "04-Nov-26",
+          "day": "Wednesday",
+          "hinduMonth": "Kartik",
+          "tithi": "Ashtami",
+          "img": "images/festivals/2026/november/ahoi-ashtami.jpg",
+          "procedure": "Mothers observe vrat; worship Ahoi Mata; pray for children’s well-being.",
+          "significance": "Mothers pray for the protection, longevity, and prosperity of their children."
+        },
+        {
+          "name": "Rama Ekadashi",
+          "date": "05-Nov-26",
+          "day": "Thursday",
+          "hinduMonth": "Kartik",
+          "tithi": "Ekadashi",
+          "img": "images/festivals/2026/november/rama-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja and charity; prayers for liberation.",
+          "significance": "Vishnu worship to cleanse sins and progress toward spiritual liberation."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "06-Nov-26",
+          "day": "Friday",
+          "hinduMonth": "Kartik",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/november/pradosh-vrat-2.jpg",
+          "procedure": "Evening Shiva worship; abhishekam and aarti in Pradosh Kaal.",
+          "significance": "Shiva worship for harmony, health, and inner stability."
+        },
+        {
+          "name": "Dhanteras",
+          "date": "07-Nov-26",
+          "day": "Saturday",
+          "hinduMonth": "Kartik",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/november/dhanteras.jpg",
+          "procedure": "Lakshmi and Dhanvantari puja; clean home; buy utensils/gold (optional).",
+          "significance": "Worship of Lakshmi and Dhanvantari for wealth, health, and prosperity."
+        },
+        {
+          "name": "Naraka Chaturdashi (Choti Diwali)",
+          "date": "08-Nov-26",
+          "day": "Sunday",
+          "hinduMonth": "Kartik",
+          "tithi": "Chaturdashi",
+          "img": "images/festivals/2026/november/choti-diwali.jpg",
+          "procedure": "Early morning bath; light diyas; prayers to remove negativity; celebrate with family.",
+          "significance": "Symbolizes the destruction of evil and removal of negativity."
+        },
+        {
+          "name": "Kali Chaudas",
+          "date": "08-Nov-26",
+          "day": "Sunday",
+          "hinduMonth": "Kartik",
+          "tithi": "Chaturdashi",
+          "img": "images/festivals/2026/november/kali-chaudas.jpg",
+          "procedure": "Kali/Bhairava worship (regional); light lamps and pray for protection.",
+          "significance": "Worship of Goddess Kali for protection from fear and negative energies."
+        },
+        {
+          "name": "Diwali / Lakshmi Puja",
+          "date": "09-Nov-26",
+          "day": "Monday",
+          "hinduMonth": "Kartik",
+          "tithi": "Amavasya",
+          "img": "images/festivals/2026/november/diwali-lakshmi-puja.jpg",
+          "procedure": "Lakshmi-Ganesha puja; light diyas; keep home clean; share sweets and gifts.",
+          "significance": "Worship of Goddess Lakshmi for prosperity, abundance, and divine blessings."
+        },
+        {
+          "name": "Govardhan Puja / Annakut",
+          "date": "10-Nov-26",
+          "day": "Tuesday",
+          "hinduMonth": "Kartik",
+          "tithi": "Pratipada",
+          "img": "images/festivals/2026/november/govardhan-puja.jpg",
+          "procedure": "Krishna worship; offer Annakut (variety of foods); gratitude to nature.",
+          "significance": "Celebrates Krishna’s protection of devotees and gratitude to nature."
+        },
+        {
+          "name": "Bhai Dooj",
+          "date": "11-Nov-26",
+          "day": "Wednesday",
+          "hinduMonth": "Kartik",
+          "tithi": "Dwitiya",
+          "img": "images/festivals/2026/november/bhai-dooj.jpg",
+          "procedure": "Sister applies tilak; prayers for brother’s long life; exchange gifts.",
+          "significance": "Celebrates the sacred bond between brothers and sisters with prayers for protection."
+        },
+        {
+          "name": "Chandra Darshan",
+          "date": "12-Nov-26",
+          "day": "Thursday",
+          "hinduMonth": "Kartik",
+          "tithi": "Dwitiya",
+          "img": "images/festivals/2026/november/chandra-darshan.jpg",
+          "procedure": "Offer arghya to Moon; prayers for peace and prosperity.",
+          "significance": "First sighting of the Moon after Amavasya; prayers for peace and prosperity."
+        },
+        {
+          "name": "Yama Dwitiya (alternate observance)",
+          "date": "13-Nov-26",
+          "day": "Friday",
+          "hinduMonth": "Kartik",
+          "tithi": "Dwitiya",
+          "img": "images/festivals/2026/november/yama-dwitiya.jpg",
+          "procedure": "Regional observance; prayers to Yama for longevity and protection.",
+          "significance": "Worship of Yama for longevity and protection (regional observance)."
+        },
+        {
+          "name": "Vinayaka Chaturthi",
+          "date": "15-Nov-26",
+          "day": "Sunday",
+          "hinduMonth": "Kartik",
+          "tithi": "Chaturthi",
+          "img": "images/festivals/2026/november/vinayaka-chaturthi.jpg",
+          "procedure": "Ganesha puja; offer durva and modak; seek wisdom and success.",
+          "significance": "Worship of Lord Ganesha for success, wisdom, and new beginnings."
+        },
+        {
+          "name": "Skanda Shashti",
+          "date": "17-Nov-26",
+          "day": "Tuesday",
+          "hinduMonth": "Kartik",
+          "tithi": "Shashthi",
+          "img": "images/festivals/2026/november/skanda-shashti.jpg",
+          "procedure": "Murugan/Kartikeya worship; prayers for courage and victory.",
+          "significance": "Dedicated to Lord Murugan/Kartikeya for courage and victory over negativity."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "18-Nov-26",
+          "day": "Wednesday",
+          "hinduMonth": "Kartik",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/november/pradosh-vrat-3.jpg",
+          "procedure": "Evening Shiva worship; bilva leaves and aarti in Pradosh Kaal.",
+          "significance": "Shiva worship for peace, stability, and spiritual strength."
+        },
+        {
+          "name": "Devutthana Ekadashi (Tulsi Vivah)",
+          "date": "20-Nov-26",
+          "day": "Friday",
+          "hinduMonth": "Kartik",
+          "tithi": "Ekadashi",
+          "img": "images/festivals/2026/november/devutthana-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja; mark end of Chaturmas; begin auspicious ceremonies.",
+          "significance": "Awakening of Vishnu; end of Chaturmas and start of auspicious ceremonies."
+        },
+        {
+          "name": "Tulsi Vivah",
+          "date": "21-Nov-26",
+          "day": "Saturday",
+          "hinduMonth": "Kartik",
+          "tithi": "Dwadasi/related",
+          "img": "images/festivals/2026/november/tulsi-vivah.jpg",
+          "procedure": "Symbolic marriage of Tulsi with Vishnu/Shaligram; puja and bhajans; charity.",
+          "significance": "Sacred marriage of Tulsi and Vishnu; symbolizes purity and devotion."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "22-Nov-26",
+          "day": "Sunday",
+          "hinduMonth": "Kartik",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/november/pradosh-vrat-4.jpg",
+          "procedure": "Evening Shiva worship; abhishekam and aarti in Pradosh Kaal.",
+          "significance": "Evening Shiva worship for prosperity and fulfillment of desires."
+        },
+        {
+          "name": "Kartik Purnima",
+          "date": "23-Nov-26",
+          "day": "Monday",
+          "hinduMonth": "Kartik",
+          "tithi": "Purnima",
+          "img": "images/festivals/2026/november/kartik-purnima.jpg",
+          "procedure": "Holy bath, charity, lighting lamps; Vishnu/Shiva puja as per tradition.",
+          "significance": "Sacred full moon; charity, holy baths, and devotion grant spiritual merit."
+        },
+        {
+          "name": "Masik Shivaratri",
+          "date": "25-Nov-26",
+          "day": "Wednesday",
+          "hinduMonth": "Kartik",
+          "tithi": "Chaturdashi",
+          "img": "images/festivals/2026/november/masik-shivaratri.jpg",
+          "procedure": "Shiva abhishekam, japa, and prayers for purification.",
+          "significance": "Monthly devotion to Lord Shiva for inner purification."
+        },
+        {
+          "name": "Kalashtami",
+          "date": "26-Nov-26",
+          "day": "Thursday",
+          "hinduMonth": "Kartik",
+          "tithi": "Ashtami",
+          "img": "images/festivals/2026/november/kalashtami.jpg",
+          "procedure": "Bhairava worship; light diya and chant mantras for protection.",
+          "significance": "Worship of Lord Bhairava for protection from fear and negativity."
+        },
+        {
+          "name": "Utpanna Ekadashi",
+          "date": "29-Nov-26",
+          "day": "Sunday",
+          "hinduMonth": "Margashirsha",
+          "tithi": "Ekadashi",
+          "img": "images/festivals/2026/november/utpanna-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja; prayers honoring Ekadashi Devi; charity.",
+          "significance": "Celebrates appearance of Ekadashi Devi; Vishnu worship for liberation."
+        }
+      ]
+    },
+    {
+      "month": "DECEMBER",
+      "items": [
+        {
+          "name": "Pradosh Vrat",
+          "date": "01-Dec-26",
+          "day": "Tuesday",
+          "hinduMonth": "Margashirsha",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/december/pradosh-vrat.jpg",
+          "procedure": "Evening Shiva worship in Pradosh Kaal; bilva leaves and aarti.",
+          "significance": "Evening worship of Lord Shiva for peace, prosperity, and removal of obstacles."
+        },
+        {
+          "name": "Margashirsha Purnima",
+          "date": "03-Dec-26",
+          "day": "Thursday",
+          "hinduMonth": "Margashirsha",
+          "tithi": "Purnima",
+          "img": "images/festivals/2026/december/margashirsha-purnima.jpg",
+          "procedure": "Holy bath, charity, and puja; prayers for spiritual merit.",
+          "significance": "Sacred full moon; charity, devotion, and spiritual merit."
+        },
+        {
+          "name": "Sankashti Chaturthi",
+          "date": "04-Dec-26",
+          "day": "Friday",
+          "hinduMonth": "Margashirsha",
+          "tithi": "Chaturthi",
+          "img": "images/festivals/2026/december/sankashti-chaturthi.jpg",
+          "procedure": "Fast till moonrise; Ganesha puja and aarti after moon दर्शन.",
+          "significance": "Fast for Lord Ganesha to overcome challenges and delays."
+        },
+        {
+          "name": "Masik Shivaratri",
+          "date": "05-Dec-26",
+          "day": "Saturday",
+          "hinduMonth": "Margashirsha",
+          "tithi": "Chaturdashi",
+          "img": "images/festivals/2026/december/masik-shivaratri.jpg",
+          "procedure": "Shiva abhishekam and mantra japa; night prayers as per ability.",
+          "significance": "Monthly devotion to Lord Shiva for inner purification."
+        },
+        {
+          "name": "Kalashtami",
+          "date": "06-Dec-26",
+          "day": "Sunday",
+          "hinduMonth": "Margashirsha",
+          "tithi": "Ashtami",
+          "img": "images/festivals/2026/december/kalashtami.jpg",
+          "procedure": "Bhairava worship; diya and mantras for protection from negativity.",
+          "significance": "Worship of Lord Bhairava for protection from fear and negativity."
+        },
+        {
+          "name": "Mokshada Ekadashi",
+          "date": "08-Dec-26",
+          "day": "Tuesday",
+          "hinduMonth": "Margashirsha",
+          "tithi": "Ekadashi",
+          "img": "images/festivals/2026/december/mokshada-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja; read Bhagavad Gita (as per tradition).",
+          "significance": "Vishnu worship; reading the Bhagavad Gita brings liberation and peace."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "09-Dec-26",
+          "day": "Wednesday",
+          "hinduMonth": "Margashirsha",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/december/pradosh-vrat-2.jpg",
+          "procedure": "Evening Shiva worship; abhishekam and aarti in Pradosh Kaal.",
+          "significance": "Shiva worship for harmony, health, and spiritual growth."
+        },
+        {
+          "name": "Amavasya (Margashirsha Amavasya)",
+          "date": "11-Dec-26",
+          "day": "Friday",
+          "hinduMonth": "Margashirsha",
+          "tithi": "Amavasya",
+          "img": "images/festivals/2026/december/margashirsha-amavasya.jpg",
+          "procedure": "Pitru tarpan and charity; prayers for ancestors; sattvik routine.",
+          "significance": "Ancestor rituals, fasting, charity, and spiritual cleansing."
+        },
+        {
+          "name": "Chandra Darshan",
+          "date": "12-Dec-26",
+          "day": "Saturday",
+          "hinduMonth": "Pausha",
+          "tithi": "Pratipada/Dwitiya",
+          "img": "images/festivals/2026/december/chandra-darshan.jpg",
+          "procedure": "Offer arghya to Moon; pray for mental peace and prosperity.",
+          "significance": "First sighting of the Moon; prayers for mental peace and prosperity."
+        },
+        {
+          "name": "Vinayaka Chaturthi",
+          "date": "14-Dec-26",
+          "day": "Monday",
+          "hinduMonth": "Pausha",
+          "tithi": "Chaturthi",
+          "img": "images/festivals/2026/december/vinayaka-chaturthi.jpg",
+          "procedure": "Ganesha puja; offer durva and modak; seek wisdom and success.",
+          "significance": "Worship of Lord Ganesha for wisdom and success in new beginnings."
+        },
+        {
+          "name": "Skanda Shashti",
+          "date": "16-Dec-26",
+          "day": "Wednesday",
+          "hinduMonth": "Pausha",
+          "tithi": "Shashthi",
+          "img": "images/festivals/2026/december/skanda-shashti.jpg",
+          "procedure": "Murugan/Kartikeya worship; prayers for courage and victory.",
+          "significance": "Dedicated to Lord Murugan/Kartikeya for courage and victory."
+        },
+        {
+          "name": "Saphala Ekadashi",
+          "date": "18-Dec-26",
+          "day": "Friday",
+          "hinduMonth": "Pausha",
+          "tithi": "Ekadashi",
+          "img": "images/festivals/2026/december/saphala-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja and charity; prayers for success and stability.",
+          "significance": "Vishnu worship; grants success, stability, and fulfillment of desires."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "19-Dec-26",
+          "day": "Saturday",
+          "hinduMonth": "Pausha",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/december/pradosh-vrat-3.jpg",
+          "procedure": "Evening Shiva worship; bilva leaves, diya, and aarti.",
+          "significance": "Shiva worship for peace, prosperity, and inner balance."
+        },
+        {
+          "name": "Gita Jayanti",
+          "date": "20-Dec-26",
+          "day": "Sunday",
+          "hinduMonth": "Pausha",
+          "tithi": "Ekadashi/related",
+          "img": "images/festivals/2026/december/gita-jayanti.jpg",
+          "procedure": "Read/chant Bhagavad Gita; reflect on dharma; prayers and discourse (satsang).",
+          "significance": "Celebrates the day Krishna revealed the Bhagavad Gita; wisdom and dharma."
+        },
+        {
+          "name": "Dattatreya Jayanti",
+          "date": "22-Dec-26",
+          "day": "Tuesday",
+          "hinduMonth": "Pausha",
+          "tithi": "Purnima/related",
+          "img": "images/festivals/2026/december/dattatreya-jayanti.jpg",
+          "procedure": "Dattatreya puja; chant Dattatreya mantras; charity and prayers for guidance.",
+          "significance": "Birth of Lord Dattatreya, embodiment of the Trimurti; spiritual guidance."
+        },
+        {
+          "name": "Masik Durgashtami",
+          "date": "24-Dec-26",
+          "day": "Thursday",
+          "hinduMonth": "Pausha",
+          "tithi": "Ashtami",
+          "img": "images/festivals/2026/december/masik-durgashtami.jpg",
+          "procedure": "Durga puja; Devi stotra; light diya and offer flowers.",
+          "significance": "Worship of Maa Durga for strength and protection."
+        },
+        {
+          "name": "Pradosh Vrat",
+          "date": "27-Dec-26",
+          "day": "Sunday",
+          "hinduMonth": "Pausha",
+          "tithi": "Trayodashi",
+          "img": "images/festivals/2026/december/pradosh-vrat-4.jpg",
+          "procedure": "Evening Shiva worship in Pradosh Kaal; abhishekam and aarti.",
+          "significance": "Evening Shiva worship for fulfillment of desires and stability."
+        },
+        {
+          "name": "Utpanna Ekadashi (some regions)",
+          "date": "28-Dec-26",
+          "day": "Monday",
+          "hinduMonth": "Pausha",
+          "tithi": "Ekadashi",
+          "img": "images/festivals/2026/december/utpanna-ekadashi.jpg",
+          "procedure": "Ekadashi vrat; Vishnu puja; honor Ekadashi Devi; charity.",
+          "significance": "Honors the manifestation of Ekadashi Devi; Vishnu worship for liberation."
+        },
+        {
+          "name": "Pausha Purnima",
+          "date": "31-Dec-26",
+          "day": "Thursday",
+          "hinduMonth": "Pausha",
+          "tithi": "Purnima",
+          "img": "images/festivals/2026/december/pausha-purnima.jpg",
+          "procedure": "Holy bath, charity, and spiritual practices; puja as per tradition.",
+          "significance": "Full moon of Pausha month; holy baths, charity, and spiritual upliftment."
+        }
+      ]
+    }
+  ]
+}

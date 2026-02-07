@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Pratham Sanskruti | Hindu Festivals 2026</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #efe6d5;
+      --panel: #fff8ea;
+      --brown: #8b3d1f;
+      --brown2: #a14a25;
+      --ink: #2b1a12;
+      --muted: #6f5b52;
+      --stroke: rgba(139,61,31,.18);
+      --shadow: 0 22px 55px rgba(43,26,18,.14);
+    }
+
+    * { box-sizing: border-box; }
+    html, body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      scroll-behavior: smooth;
+      margin: 0; padding: 0;
+    }
+
+    .brand-font { font-family: 'Cinzel', serif; }
+
+    .topbar {
+      position: fixed; top: 0; left: 0; z-index: 50; width: 100%;
+      background: linear-gradient(180deg, var(--brown2), var(--brown));
+      color: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .topbar-inner {
+      max-width: 1200px; margin: 0 auto; padding: 12px 20px;
+      display: flex; align-items: center; justify-content: center;
+      letter-spacing: .15em;
+    }
+
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 40vh;
+      min-height: 350px;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('images/bg.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 60px;
+    }
+
+    .search-pill {
+      margin: 25px auto 0;
+      width: min(600px, 100%);
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 999px;
+      padding: 12px 20px;
+      display: flex; align-items: center; gap: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    }
+
+    .search-pill input {
+      width: 100%; outline: none; background: transparent;
+      border: none; font-weight: 600; color: var(--ink);
+    }
+
+    .shell { max-width: 1200px; margin: 30px auto 60px; padding: 0 20px; }
+
+    .main-card {
+      background: var(--panel); border-radius: 24px;
+      padding: 40px; box-shadow: var(--shadow);
+      border: 1px solid rgba(139,61,31,0.1);
+    }
+
+    .feature-card {
+      background: white;
+      border-radius: 20px;
+      padding: 30px 20px;
+      text-align: center;
+      border: 1px solid var(--stroke);
+      transition: transform 0.3s ease;
+    }
+    .feature-card:hover { transform: translateY(-5px); }
+
+    .section-title {
+      font-weight: 900; font-size: 22px; color: var(--brown);
+      margin-bottom: 20px; border-left: 5px solid var(--brown); padding-left: 15px;
+    }
+
+    .month-btn {
+      border-radius: 10px; background: #fff; border: 1px solid var(--stroke);
+      padding: 10px; font-weight: 700; color: var(--brown);
+      transition: all .2s ease; cursor: pointer; text-align: center;
+    }
+    .month-btn:hover, .month-btn.active {
+      background: var(--brown); color: #fff; transform: translateY(-2px);
+    }
+
+    .fest-card {
+      background: #fff; border: 1px solid var(--stroke);
+      border-radius: 14px; padding: 14px; transition: all 0.3s ease; cursor: pointer;
+    }
+    .fest-card:hover { border-color: var(--brown2); transform: translateY(-3px); }
+
+    .fest-table {
+      width: 100%; border-collapse: separate; border-spacing: 0;
+      background: white; border-radius: 12px; overflow: hidden; border: 1px solid var(--stroke);
+    }
+    .fest-table th { background: #fdf2f0; color: var(--brown); text-align: left; padding: 14px; font-size: 11px; text-transform: uppercase; }
+    .fest-table td { padding: 14px; border-top: 1px solid var(--stroke); font-size: 14px; }
+    .fest-table tr:hover td { background-color: #fffaf5; cursor: pointer; }
+
+    .view-btn {
+      display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px;
+      border-radius: 6px; font-size: 13px; font-weight: 600; transition: all 0.2s;
+    }
+    .view-btn.active { background: var(--brown); color: white; }
+    .view-btn:not(.active) { background: white; color: var(--muted); border: 1px solid var(--stroke); }
+
+    .modal-backdrop {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(8px); display: none; align-items: center; justify-content: center; z-index: 1000;
+    }
+    .modal { background: #fff; width: 95%; max-width: 900px; border-radius: 20px; display: flex; overflow: hidden; max-height: 85vh; }
+    .modal-left { width: 40%; }
+    .modal-left img { width: 100%; height: 100%; object-fit: cover; }
+    .modal-right { width: 60%; padding: 30px; overflow-y: auto; }
+
+    @media(max-width: 768px) {
+      .modal { flex-direction: column; }
+      .modal-left, .modal-right { width: 100%; }
+      .modal-left { height: 200px; }
+      .main-card { padding: 25px 15px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand-font text-xl font-black uppercase">Pratham Sanskruti</div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="text-center px-4">
+      <span class="block text-orange-400 font-bold tracking-[0.3em] uppercase text-xs mb-3">SACRED CELEBRATIONS • 2026</span>
+      <h1 class="brand-font text-white text-3xl md:text-5xl font-bold leading-tight drop-shadow-lg">HINDU FESTIVAL CALENDAR</h1>
+      
+      <div class="search-pill">
+        <i data-feather="search" class="text-orange-600 w-5 h-5"></i>
+        <input id="searchInput" type="text" placeholder="Search festivals (e.g., Diwali, Holi)..." />
+      </div>
+    </div>
+  </section>
+
+  <main class="shell">
+    <div class="main-card">
+
+      <section id="about" class="mb-16 text-center">
+        <h2 class="brand-font text-3xl text-[var(--brown)] font-bold uppercase mb-4">About Pratham Sanskruti</h2>
+        <p class="text-stone-600 max-w-3xl mx-auto text-sm md:text-base leading-relaxed mb-12">
+          Your trusted companion for Hindu festivals, traditions, and cultural celebrations. We preserve and share the timeless wisdom of Sanatan Dharma, making ancient knowledge accessible to everyone.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="feature-card">
+            <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <i data-feather="calendar" class="text-orange-800"></i>
+            </div>
+            <h4 class="font-bold text-stone-900 mb-2">Complete 2026 Calendar</h4>
+            <p class="text-xs text-stone-500 leading-relaxed">Every Hindu festival with precise dates, tithis, and nakshatra information for the entire year.</p>
+          </div>
+          <div class="feature-card">
+            <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <i data-feather="book-open" class="text-orange-800"></i>
+            </div>
+            <h4 class="font-bold text-stone-900 mb-2">Rituals & Procedures</h4>
+            <p class="text-xs text-stone-500 leading-relaxed">Step-by-step guidance on traditional puja vidhi, fasting rules, and celebration customs.</p>
+          </div>
+          <div class="feature-card">
+            <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <i data-feather="zap" class="text-orange-800"></i>
+            </div>
+            <h4 class="font-bold text-stone-900 mb-2">Cultural Significance</h4>
+            <p class="text-xs text-stone-500 leading-relaxed">Understand the deep spiritual meaning, mythological stories, and historical context of each festival.</p>
+          </div>
+          <div class="feature-card">
+            <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <i data-feather="globe" class="text-orange-800"></i>
+            </div>
+            <h4 class="font-bold text-stone-900 mb-2">Regional Traditions</h4>
+            <p class="text-xs text-stone-500 leading-relaxed">Discover how festivals are celebrated differently across various regions and communities of India.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="months" class="mb-16 pt-10 border-t border-[var(--stroke)]">
+        <h2 class="section-title">Jump to Month</h2>
+        <div id="monthsGrid" class="grid grid-cols-3 md:grid-cols-6 gap-3"></div>
+      </section>
+
+      <section class="mt-12 pt-10 border-t border-[var(--stroke)]">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+          <div>
+            <h2 class="section-title m-0 border-0 p-0">Festival Directory</h2>
+            <div id="resultsMeta" class="text-xs font-bold text-stone-500 italic mt-1"></div>
+          </div>
+          <div class="flex bg-stone-100 p-1 rounded-lg">
+            <button id="viewGrid" class="view-btn active"><i data-feather="grid" class="w-4 h-4"></i> </button>
+            <button id="viewTable" class="view-btn ml-1"><i data-feather="list" class="w-4 h-4"></i> </button>
+          </div>
+        </div>
+        
+        <div id="allMonths" class="space-y-12"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="bg-[#2b1a12] text-white py-12 text-center">
+    <p class="brand-font text-orange-400 text-base mb-2 uppercase">Pratham Sanskruti</p>
+    <p class="text-stone-500 text-[11px]">&copy; 2026 • Eternal Wisdom for the Modern World</p>
+  </footer>
+
+  <div id="modalBackdrop" class="modal-backdrop">
+    <div class="modal">
+      <div class="modal-left"><img id="modalImg" src=""></div>
+      <div class="modal-right">
+        <span id="closeModalBtn" class="float-right text-3xl cursor-pointer text-stone-400">&times;</span>
+        <h2 id="modalTitle" class="brand-font text-2xl text-stone-900 mb-2"></h2>
+        <div id="modalMeta" class="text-orange-700 font-bold uppercase text-[10px] border-b pb-4 mb-5"></div>
+        <div class="text-sm text-stone-600 leading-relaxed mb-5">
+          <strong class="block text-stone-900 text-xs uppercase mb-1">Rituals & Procedure:</strong>
+          <p id="modalProcedure"></p>
+        </div>
+        <div class="text-sm text-stone-600 leading-relaxed">
+          <strong class="block text-stone-900 text-xs uppercase mb-1">Spiritual Significance:</strong>
+          <p id="modalSignificance"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    feather.replace();
+    let monthsData = [];
+    let searchQuery = "";
+    let currentView = 'grid';
+
+    async function init() {
+      try {
+        const res = await fetch("./festivals.json");
+        const data = await res.json();
+        monthsData = data.months || [];
+        renderMonthJump();
+        renderMainList();
+      } catch (e) { console.error("Could not load festivals.json"); }
+    }
+
+    function renderMonthJump() {
+      const container = document.getElementById("monthsGrid");
+      container.innerHTML = "";
+      monthsData.forEach((m, idx) => {
+        const btn = document.createElement("button");
+        btn.className = "month-btn text-xs";
+        btn.textContent = m.month;
+        btn.onclick = () => document.getElementById(`month-${idx}`).scrollIntoView({ behavior: "smooth", block: "start" });
+        container.appendChild(btn);
+      });
+    }
+
+    function renderMainList() {
+      const container = document.getElementById("allMonths");
+      container.innerHTML = "";
+      const q = searchQuery.toLowerCase().trim();
+      let totalMatch = 0;
+
+      monthsData.forEach((m, idx) => {
+        const items = (m.items || []).filter(i => i.name.toLowerCase().includes(q));
+        if (items.length === 0) return;
+        totalMatch += items.length;
+
+        const block = document.createElement("div");
+        block.id = `month-${idx}`;
+        block.className = "scroll-mt-24";
+        
+        let html = `<div class="flex items-center gap-4 mb-5"><h3 class="brand-font text-xl text-stone-800">${m.month}</h3><div class="h-px bg-stone-200 flex-grow"></div></div>`;
+        
+        if (currentView === 'grid') {
+          html += `<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">`;
+          items.forEach(f => {
+            html += `<div class="fest-card" onclick='openModal(${JSON.stringify(f)}, "${m.month}")'>
+              <div class="font-bold text-stone-900 text-sm mb-1">${f.name}</div>
+              <div class="text-[10px] text-stone-500 font-bold uppercase">${f.date} • ${f.tithi}</div>
+            </div>`;
+          });
+          html += `</div>`;
+        } else {
+          html += `<div class="overflow-x-auto"><table class="fest-table"><thead><tr><th>Date</th><th>Festival</th><th>Tithi</th></tr></thead><tbody>`;
+          items.forEach(f => {
+            html += `<tr onclick='openModal(${JSON.stringify(f)}, "${m.month}")'>
+              <td class="font-bold text-orange-800 text-xs whitespace-nowrap">${f.date}</td>
+              <td class="font-bold text-stone-800 text-sm">${f.name}</td>
+              <td class="text-stone-400 text-[10px] uppercase">${f.tithi}</td>
+            </tr>`;
+          });
+          html += `</tbody></table></div>`;
+        }
+        block.innerHTML = html;
+        container.appendChild(block);
+      });
+      document.getElementById("resultsMeta").textContent = `Found ${totalMatch} Festivals`;
+    }
+
+    function openModal(f, mName) {
+      document.getElementById("modalTitle").textContent = f.name;
+      document.getElementById("modalMeta").textContent = `${mName} • ${f.date} • ${f.tithi}`;
+      document.getElementById("modalImg").src = f.img || "https://images.unsplash.com/photo-1545063127-704172828669?w=800";
+      document.getElementById("modalProcedure").textContent = f.procedure || "Regional rituals may vary.";
+      document.getElementById("modalSignificance").textContent = f.significance || "Significance details being updated.";
+      document.getElementById("modalBackdrop").style.display = "flex";
+      document.body.style.overflow = "hidden";
+    }
+
+    document.getElementById("searchInput").oninput = (e) => { searchQuery = e.target.value; renderMainList(); };
+    document.getElementById("viewGrid").onclick = () => { currentView = 'grid'; updateToggle(true); renderMainList(); };
+    document.getElementById("viewTable").onclick = () => { currentView = 'table'; updateToggle(false); renderMainList(); };
+    
+    function updateToggle(isGrid) {
+      document.getElementById("viewGrid").classList.toggle('active', isGrid);
+      document.getElementById("viewTable").classList.toggle('active', !isGrid);
+    }
+    
+    document.getElementById("closeModalBtn").onclick = () => { document.getElementById("modalBackdrop").style.display = "none"; document.body.style.overflow = "auto"; };
+    window.onclick = (e) => { if (e.target.id === "modalBackdrop") document.getElementById("closeModalBtn").click(); };
+
+    init();
+  </script>
+</body>
+</html>
