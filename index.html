@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Pratham Sanskruti | Hindu Festivals 2026</title>
+  <title>Pratham Sanskruti | Hindu Rituals & Traditions</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/feather-icons"></script>
@@ -14,340 +14,449 @@
 
   <style>
     :root {
-      --bg: #efe6d5;
-      --panel: #fff8ea;
-      --brown: #8b3d1f;
-      --brown2: #a14a25;
-      --ink: #2b1a12;
-      --muted: #6f5b52;
-      --stroke: rgba(139,61,31,.18);
-      --shadow: 0 22px 55px rgba(43,26,18,.14);
+      --bg: #fffcf2;
+      --panel: #fffef0;
+      --haldi: #ffc300;
+      --kumkum: #b30000;
+      --chandan: #8b3d1f;
+      --stroke: rgba(179, 0, 0, 0.15);
+      --shadow: 0 20px 50px rgba(139, 61, 31, 0.12);
     }
 
     * { box-sizing: border-box; }
-    html, body {
-      font-family: 'Poppins', sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      scroll-behavior: smooth;
-      margin: 0; padding: 0;
-    }
-
+    html, body { font-family: 'Poppins', sans-serif; background: var(--bg); color: #2b1a12; scroll-behavior: smooth; }
     .brand-font { font-family: 'Cinzel', serif; }
 
     .topbar {
-      position: fixed; top: 0; left: 0; z-index: 50; width: 100%;
-      background: linear-gradient(180deg, var(--brown2), var(--brown));
-      color: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    }
-
-    .topbar-inner {
-      max-width: 1200px; margin: 0 auto; padding: 12px 20px;
-      display: flex; align-items: center; justify-content: center;
-      letter-spacing: .15em;
+      position: fixed; top: 0; width: 100%; z-index: 50;
+      background: linear-gradient(90deg, var(--kumkum), #800000);
+      border-bottom: 3px solid var(--haldi);
+      padding: 12px; text-align: center; color: white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
 
     .hero {
-      position: relative;
-      width: 100%;
-      height: 40vh;
-      min-height: 350px;
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('images/bg.jpg');
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      height: 60vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+      url('./images/bgimages.png');
+      background-size: cover; background-position: center;
+      display: flex; align-items: center; justify-content: center;
       padding-top: 60px;
     }
 
-    .search-pill {
-      margin: 25px auto 0;
-      width: min(600px, 100%);
-      background: rgba(255, 255, 255, 0.95);
-      border-radius: 999px;
-      padding: 12px 20px;
-      display: flex; align-items: center; gap: 12px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.4);
-    }
+    .shell { max-width: 1200px; margin: -60px auto 60px; padding: 0 20px; position: relative; z-index: 10; }
+    .main-card { background: var(--panel); border-radius: 24px; padding: 60px 40px; border: 1px solid var(--stroke); box-shadow: var(--shadow); }
 
-    .search-pill input {
-      width: 100%; outline: none; background: transparent;
-      border: none; font-weight: 600; color: var(--ink);
-    }
+    /* Month Buttons */
+    .month-btn { background: white; border: 1.5px solid var(--stroke); border-radius: 10px; padding: 10px; font-weight: 700; color: var(--chandan); cursor: pointer; transition: 0.3s; font-size: 0.75rem; text-transform: uppercase; }
+    .month-btn:hover, .month-btn.active { background: var(--kumkum); color: white; border-color: var(--kumkum); }
 
-    .shell { max-width: 1200px; margin: 30px auto 60px; padding: 0 20px; }
+    /* Festival Items */
+    .fest-item { background: white; border-left: 5px solid var(--haldi); padding: 15px; border-radius: 8px; transition: 0.3s; cursor: pointer; border: 1px solid var(--stroke); border-left-width: 6px; }
+    .fest-item:hover { background: #fff9e6; border-left-color: var(--kumkum); transform: translateX(5px); }
 
-    .main-card {
-      background: var(--panel); border-radius: 24px;
-      padding: 40px; box-shadow: var(--shadow);
-      border: 1px solid rgba(139,61,31,0.1);
-    }
+    .modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.85); backdrop-filter: blur(8px); display: none; align-items: center; justify-content: center; z-index: 1000; }
+    .modal { background: white; width: 95%; max-width: 800px; border-radius: 20px; border: 4px solid var(--haldi); display: flex; overflow: hidden; max-height: 85vh; }
 
-    .feature-card {
-      background: white;
-      border-radius: 20px;
-      padding: 30px 20px;
-      text-align: center;
-      border: 1px solid var(--stroke);
-      transition: transform 0.3s ease;
-    }
-    .feature-card:hover { transform: translateY(-5px); }
+    .haldi-btn { background: var(--haldi); color: #2b1a12; font-weight: 800; padding: 15px 30px; border-radius: 50px; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; }
+    .haldi-btn:hover { background: #eab308; transform: scale(1.05); }
 
-    .section-title {
-      font-weight: 900; font-size: 22px; color: var(--brown);
-      margin-bottom: 20px; border-left: 5px solid var(--brown); padding-left: 15px;
-    }
+    .kumkum-btn { background: var(--kumkum); color: white; font-weight: 800; padding: 15px 30px; border-radius: 50px; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; }
+    .kumkum-btn:hover { background: #8f0000; transform: scale(1.03); }
 
-    .month-btn {
-      border-radius: 10px; background: #fff; border: 1px solid var(--stroke);
-      padding: 10px; font-weight: 700; color: var(--brown);
-      transition: all .2s ease; cursor: pointer; text-align: center;
-    }
-    .month-btn:hover, .month-btn.active {
-      background: var(--brown); color: #fff; transform: translateY(-2px);
-    }
+    .section-divider { height: 2px; background: linear-gradient(to right, transparent, var(--haldi), transparent); margin: 40px 0; }
 
-    .fest-card {
-      background: #fff; border: 1px solid var(--stroke);
-      border-radius: 14px; padding: 14px; transition: all 0.3s ease; cursor: pointer;
-    }
-    .fest-card:hover { border-color: var(--brown2); transform: translateY(-3px); }
-
-    .fest-table {
-      width: 100%; border-collapse: separate; border-spacing: 0;
-      background: white; border-radius: 12px; overflow: hidden; border: 1px solid var(--stroke);
-    }
-    .fest-table th { background: #fdf2f0; color: var(--brown); text-align: left; padding: 14px; font-size: 11px; text-transform: uppercase; }
-    .fest-table td { padding: 14px; border-top: 1px solid var(--stroke); font-size: 14px; }
-    .fest-table tr:hover td { background-color: #fffaf5; cursor: pointer; }
-
-    .view-btn {
-      display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px;
-      border-radius: 6px; font-size: 13px; font-weight: 600; transition: all 0.2s;
-    }
-    .view-btn.active { background: var(--brown); color: white; }
-    .view-btn:not(.active) { background: white; color: var(--muted); border: 1px solid var(--stroke); }
-
-    .modal-backdrop {
-      position: fixed; inset: 0; background: rgba(0,0,0,0.8);
-      backdrop-filter: blur(8px); display: none; align-items: center; justify-content: center; z-index: 1000;
-    }
-    .modal { background: #fff; width: 95%; max-width: 900px; border-radius: 20px; display: flex; overflow: hidden; max-height: 85vh; }
-    .modal-left { width: 40%; }
-    .modal-left img { width: 100%; height: 100%; object-fit: cover; }
-    .modal-right { width: 60%; padding: 30px; overflow-y: auto; }
-
-    @media(max-width: 768px) {
-      .modal { flex-direction: column; }
-      .modal-left, .modal-right { width: 100%; }
-      .modal-left { height: 200px; }
-      .main-card { padding: 25px 15px; }
-    }
+    @media(max-width: 768px) { .modal { flex-direction: column; overflow-y: auto; } .main-card { padding: 30px 15px; } }
   </style>
 </head>
 
 <body>
 
-  <header class="topbar">
-    <div class="topbar-inner">
-      <div class="brand-font text-xl font-black uppercase">Pratham Sanskruti</div>
-    </div>
-  </header>
+<header class="topbar brand-font text-2xl uppercase tracking-widest">Pratham Sanskruti</header>
 
-  <section class="hero">
-    <div class="text-center px-4">
-      <span class="block text-orange-400 font-bold tracking-[0.3em] uppercase text-xs mb-3">SACRED CELEBRATIONS • 2026</span>
-      <h1 class="brand-font text-white text-3xl md:text-5xl font-bold leading-tight drop-shadow-lg">HINDU FESTIVAL CALENDAR</h1>
-      
-      <div class="search-pill">
-        <i data-feather="search" class="text-orange-600 w-5 h-5"></i>
-        <input id="searchInput" type="text" placeholder="Search festivals (e.g., Diwali, Holi)..." />
+<section class="hero">
+  <div class="text-center text-white px-4">
+    <h1 class="brand-font text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">Pratham Sanskruti</h1>
+    <p class="max-w-2xl mx-auto text-lg md:text-xl font-light italic">"Vedic Wisdom for Modern Life"</p>
+  </div>
+</section>
+
+<main class="shell">
+  <div class="main-card">
+
+    <!-- ABOUT -->
+    <section id="about-us" class="mb-16">
+      <div class="text-center mb-10">
+        <h2 class="brand-font text-3xl text-[var(--kumkum)] uppercase">About Us</h2>
+        <div class="h-1 w-20 bg-[var(--haldi)] mx-auto mt-2"></div>
       </div>
+
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div class="space-y-4">
+          <p class="leading-relaxed text-stone-600 font-medium">
+            At <strong>Pratham Sanskruti</strong>, we honor the profound essence of Hindu rituals.
+            Our approach combines ancient wisdom with modern efficiency, ensuring every event is performed
+            with absolute cultural integrity.
+          </p>
+          <p class="leading-relaxed text-stone-600">
+            We preserve and share the timeless wisdom of Sanatan Dharma, making ancient knowledge accessible
+            to everyone through meticulous attention to detail.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border-r-8 border-[var(--kumkum)] shadow-sm italic text-[var(--chandan)]">
+          “Stay effortlessly aligned with every important tithi and festival. We provide timely reminders so you never miss an auspicious day for rituals, vrats, or pujas.”
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <button onclick="startJourney()" class="haldi-btn shadow-lg">START THE JOURNEY TO YOUR ROOTS</button>
+      </div>
+
+      <!-- IN STORE (HIDDEN INITIALLY) -->
+      <section id="inStoreSection" class="mt-12 hidden">
+        <div class="section-divider"></div>
+
+        <div class="text-center mb-10">
+          <h2 class="brand-font text-3xl text-[var(--kumkum)] uppercase">In Store</h2>
+          <div class="h-1 w-20 bg-[var(--haldi)] mx-auto mt-2"></div>
+          <p class="text-stone-600 mt-3 max-w-2xl mx-auto">
+            Choose a category to explore. Click any card to view details.
+          </p>
+        </div>
+
+        <!-- 6 ICON CARDS GRID -->
+        <div id="storeCardsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+
+        <!-- DETAILS VIEW -->
+        <div id="storeDetailView" class="hidden mt-10">
+          <div class="flex items-center justify-between gap-4 mb-6">
+            <button onclick="backToStoreCards()"
+              class="px-4 py-2 rounded-full border border-[var(--stroke)] bg-white hover:bg-[#fff9e6] font-bold text-[var(--chandan)] flex items-center gap-2">
+              <i data-feather="arrow-left" class="w-4 h-4"></i>
+              Back to all
+            </button>
+
+            <span class="text-xs font-black uppercase tracking-widest text-stone-400">
+              Pratham Sanskruti • In Store
+            </span>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-[var(--stroke)] shadow-sm p-8">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-2xl flex items-center justify-center bg-[#fff3c4] border border-[var(--stroke)]">
+                <i id="detailIcon" data-feather="star" class="w-6 h-6 text-[var(--kumkum)]"></i>
+              </div>
+
+              <div class="flex-1">
+                <h3 id="detailTitle" class="brand-font text-2xl text-[var(--kumkum)] mb-2"></h3>
+                <p id="detailIntro" class="text-stone-600 font-medium leading-relaxed"></p>
+              </div>
+            </div>
+
+            <div class="mt-8 grid md:grid-cols-2 gap-8">
+              <div>
+                <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">What we do</h5>
+                <p id="detailBody" class="text-sm text-stone-600 leading-relaxed"></p>
+              </div>
+              <div>
+                <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Why it matters</h5>
+                <p id="detailWhy" class="text-sm text-stone-600 leading-relaxed"></p>
+              </div>
+            </div>
+
+            <div class="text-center mt-10">
+              <button onclick="goToFestivalCalendar()" class="kumkum-btn shadow-lg">Continue to Festival Calendar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- CALENDAR -->
+    <section id="calendarSection">
+      <div class="section-divider"></div>
+
+      <div class="sticky top-[60px] bg-[var(--panel)] py-4 z-40 border-b-2 border-[var(--haldi)] mb-10">
+        <h4 class="brand-font text-center text-lg mb-4 text-[var(--chandan)] uppercase tracking-widest">2026 Monthly Directory</h4>
+        <div id="monthsGrid" class="flex flex-wrap justify-center gap-2"></div>
+      </div>
+
+      <div id="festivalDirectory" class="space-y-16"></div>
+
+      <div class="text-center mt-16">
+        <button onclick="openJoinForm()" class="kumkum-btn shadow-lg">Join Pratham Sanskruti</button>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- FESTIVAL MODAL -->
+<div id="festivalModal" class="modal-backdrop" onclick="closeModal()">
+  <div class="modal" onclick="event.stopPropagation()">
+    <div class="md:w-1/2 w-full h-64 md:h-auto bg-stone-100">
+      <img id="modalImg" class="w-full h-full object-cover" src="">
     </div>
-  </section>
+    <div class="md:w-1/2 w-full p-8 overflow-y-auto">
+      <button onclick="closeModal()" class="float-right text-stone-400 hover:text-red-600"><i data-feather="x"></i></button>
+      <h2 id="modalTitle" class="brand-font text-2xl text-[var(--kumkum)] mb-2"></h2>
+      <div id="modalMeta" class="text-xs font-bold text-stone-500 uppercase tracking-widest border-b pb-4 mb-6"></div>
 
-  <main class="shell">
-    <div class="main-card">
-
-      <section id="about" class="mb-16 text-center">
-        <h2 class="brand-font text-3xl text-[var(--brown)] font-bold uppercase mb-4">About Pratham Sanskruti</h2>
-        <p class="text-stone-600 max-w-3xl mx-auto text-sm md:text-base leading-relaxed mb-12">
-          Your trusted companion for Hindu festivals, traditions, and cultural celebrations. We preserve and share the timeless wisdom of Sanatan Dharma, making ancient knowledge accessible to everyone.
-        </p>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="feature-card">
-            <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mx-auto mb-4">
-              <i data-feather="calendar" class="text-orange-800"></i>
-            </div>
-            <h4 class="font-bold text-stone-900 mb-2">Complete 2026 Calendar</h4>
-            <p class="text-xs text-stone-500 leading-relaxed">Every Hindu festival with precise dates, tithis, and nakshatra information for the entire year.</p>
-          </div>
-          <div class="feature-card">
-            <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mx-auto mb-4">
-              <i data-feather="book-open" class="text-orange-800"></i>
-            </div>
-            <h4 class="font-bold text-stone-900 mb-2">Rituals & Procedures</h4>
-            <p class="text-xs text-stone-500 leading-relaxed">Step-by-step guidance on traditional puja vidhi, fasting rules, and celebration customs.</p>
-          </div>
-          <div class="feature-card">
-            <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mx-auto mb-4">
-              <i data-feather="zap" class="text-orange-800"></i>
-            </div>
-            <h4 class="font-bold text-stone-900 mb-2">Cultural Significance</h4>
-            <p class="text-xs text-stone-500 leading-relaxed">Understand the deep spiritual meaning, mythological stories, and historical context of each festival.</p>
-          </div>
-          <div class="feature-card">
-            <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mx-auto mb-4">
-              <i data-feather="globe" class="text-orange-800"></i>
-            </div>
-            <h4 class="font-bold text-stone-900 mb-2">Regional Traditions</h4>
-            <p class="text-xs text-stone-500 leading-relaxed">Discover how festivals are celebrated differently across various regions and communities of India.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="months" class="mb-16 pt-10 border-t border-[var(--stroke)]">
-        <h2 class="section-title">Jump to Month</h2>
-        <div id="monthsGrid" class="grid grid-cols-3 md:grid-cols-6 gap-3"></div>
-      </section>
-
-      <section class="mt-12 pt-10 border-t border-[var(--stroke)]">
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
-          <div>
-            <h2 class="section-title m-0 border-0 p-0">Festival Directory</h2>
-            <div id="resultsMeta" class="text-xs font-bold text-stone-500 italic mt-1"></div>
-          </div>
-          <div class="flex bg-stone-100 p-1 rounded-lg">
-            <button id="viewGrid" class="view-btn active"><i data-feather="grid" class="w-4 h-4"></i> </button>
-            <button id="viewTable" class="view-btn ml-1"><i data-feather="list" class="w-4 h-4"></i> </button>
-          </div>
-        </div>
-        
-        <div id="allMonths" class="space-y-12"></div>
-      </section>
-    </div>
-  </main>
-
-  <footer class="bg-[#2b1a12] text-white py-12 text-center">
-    <p class="brand-font text-orange-400 text-base mb-2 uppercase">Pratham Sanskruti</p>
-    <p class="text-stone-500 text-[11px]">&copy; 2026 • Eternal Wisdom for the Modern World</p>
-  </footer>
-
-  <div id="modalBackdrop" class="modal-backdrop">
-    <div class="modal">
-      <div class="modal-left"><img id="modalImg" src=""></div>
-      <div class="modal-right">
-        <span id="closeModalBtn" class="float-right text-3xl cursor-pointer text-stone-400">&times;</span>
-        <h2 id="modalTitle" class="brand-font text-2xl text-stone-900 mb-2"></h2>
-        <div id="modalMeta" class="text-orange-700 font-bold uppercase text-[10px] border-b pb-4 mb-5"></div>
-        <div class="text-sm text-stone-600 leading-relaxed mb-5">
-          <strong class="block text-stone-900 text-xs uppercase mb-1">Rituals & Procedure:</strong>
-          <p id="modalProcedure"></p>
-        </div>
-        <div class="text-sm text-stone-600 leading-relaxed">
-          <strong class="block text-stone-900 text-xs uppercase mb-1">Spiritual Significance:</strong>
-          <p id="modalSignificance"></p>
-        </div>
+      <div class="mb-6">
+        <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Procedure</h5>
+        <p id="modalProc" class="text-sm text-stone-600 leading-relaxed"></p>
+      </div>
+      <div>
+        <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Significance</h5>
+        <p id="modalSign" class="text-sm text-stone-600 leading-relaxed"></p>
       </div>
     </div>
   </div>
+</div>
 
-  <script>
+<!-- JOIN MODAL -->
+<div id="joinModal" class="modal-backdrop" onclick="closeJoinForm()">
+  <div class="modal !max-w-md p-10 relative flex-col" onclick="event.stopPropagation()">
+    <button onclick="closeJoinForm()" class="absolute top-4 right-4 text-stone-400"><i data-feather="x"></i></button>
+    <h3 class="brand-font text-3xl text-[var(--kumkum)] mb-6 text-center">Membership</h3>
+    <form class="space-y-4">
+      <input type="text" placeholder="Full Name" class="w-full border-b-2 border-stone-200 py-3 focus:border-[var(--haldi)] transition-all outline-none bg-transparent">
+      <input type="email" placeholder="Email" class="w-full border-b-2 border-stone-200 py-3 focus:border-[var(--haldi)] transition-all outline-none bg-transparent">
+      <button type="submit" class="w-full kumkum-btn mt-4 shadow-lg">REGISTER INTEREST</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  feather.replace();
+
+  // -----------------------------
+  // IN STORE DATA (6 SERVICES)
+  // -----------------------------
+  const storeServices = [
+    {
+      key: "rituals",
+      icon: "sun",
+      title: "Ritual Procedures / Sacred Events",
+      intro:
+        "Pratham Sanskruti unites timeless Hindu tradition with modern precision by creating clear, practical blueprints for sacred events like Shanti Pujas and Griha Pravesha.",
+      body:
+        "Every act in a sacred ritual — lighting a diya, offering flowers, observing a fast, participating in a yatra — carries intention and transforms the mind toward gratitude and self-awareness. We design each ceremony so spiritual depth is matched by smooth logistics, giving families confidence that both dharmic and practical details are fully cared for. Through sacred gatherings, spirituality becomes a living flow through homes, temples, and communities — an ongoing samskruti, a culture of refinement.\n\nIn this way, Pratham Sanskruti shows how India’s timeless wisdom can guide modern life toward greater harmony, seva, and inner growth.",
+      why:
+        "Sacred Rituals & Timing align worship with auspicious moments using tithi, nakshatra, and muhurat from the Panchang so your effort flows with cosmic rhythm, deepening peace, success, and spiritual benefit. Sacred events purify and uplift both individual and community, strengthening family bonds, connecting generations, and renewing our relationship with society, ancestors, and nature. In Indian tradition, festivals are utsava — occasions that lift our inner energy through worship, music, dance, colour, and shared food, keeping living samskruti (a culture of refinement) active in daily life."
+    },
+    {
+      key: "calendar",
+      icon: "calendar",
+      title: "Hindu Calendar",
+      intro:
+        "At Pratham Sanskruti, we help you stay effortlessly aligned with this timeless rhythm — with timely reminders and support.",
+      body:
+        "Our service provides timely reminders for key Hindu calendar (Upcoming Upavas and Festivals) events and supports you with arrangements as per your needs. So you never miss an auspicious day, and every sacred moment is celebrated smoothly, meaningfully, and on time.",
+      why:
+        "Hindu calendar events are sacred dates marked by tithis, nakshatras, and seasons, guiding when to perform important rituals, festivals, vrats, and family ceremonies. From Gudi Padwa and Ugadi to Navratri, Diwali, and personalized auspicious muhurats, each occasion carries spiritual significance and unique traditions for every region and family."
+    },
+    {
+      key: "aarti",
+      icon: "music",
+      title: "Aarti and Mantra",
+      intro:
+        "Guided audio and video resources so your family can chant confidently, perform pooja and aarti step by step, and observe each ritual at the right time.",
+      body:
+        "We provide guided audio and video resources so your family can chant confidently, perform pooja and aarti step by step, and observe each ritual at the right time. Our service helps you maintain authentic samskruti at home, makes daily and festival worship simple and stress-free, and ensures children learn these traditions correctly from the start.",
+      why:
+        "Correct chanting and properly performed pooja or aarti create the right spiritual vibration, focus the mind, and express devotion with clarity and respect. Accurate pronunciation of mantras and following the traditional sequence of each ritual bring sound, intention, and action into harmony, making worship more meaningful and powerful."
+    },
+    {
+      key: "seva",
+      icon: "heart",
+      title: "Sevā–Dān",
+      intro:
+        "At Pratham Sanskruti, dāna (donation) is at the heart of what we do — a sacred duty that strengthens society.",
+      body:
+        "In the Hindu tradition, dāna is not just charity; it is a sacred duty that purifies the heart, supports those in need, and strengthens the fabric of society. Acts such as annadān (food), vastra dān (clothes), dhana dān (money), and vidyā dān (knowledge) are all seen as powerful ways to live a life of dharma and compassion.",
+      why:
+        "We organise four structured donation focused events every year, creating easy, trusted pathways for families and communities to give back in meaningful ways. Through carefully planned drives and collaborations, Pratham Sanskruti ensures your contributions reach the right causes, at the right time, in the right spirit of selfless seva."
+    },
+    {
+      key: "workshops",
+      icon: "users",
+      title: "Cultural Workshops",
+      intro:
+        "Small, engaging Cultural Workshops for children to build early awareness of traditions, stories, and values.",
+      body:
+        "Through age-appropriate activities like stories, simple bhajans, arts and crafts, and festival themed games, kids experience culture as something joyful and living, not just theoretical.",
+      why:
+        "These workshops help children develop a positive sense of identity, respect for elders, and pride in India’s diverse heritage, while also building confidence and social skills. By bringing culture, manners, and values together in a fun format, Pratham Sanskruti supports parents in giving their children strong cultural roots in a modern world."
+    },
+    {
+      key: "hampers",
+      icon: "gift",
+      title: "Pooja Items / Hamper & Gifting",
+      intro:
+        "A variety of pooja hampers and gifting options tailored for special occasions like festivals, weddings, and religious days.",
+      body:
+        "We offer curated pooja hampers and gifting options that blend tradition with luxury — thoughtfully packed for the occasion and delivered with care.",
+      why:
+        "Hampers can feature handcrafted brass/terracotta diyas, sandalwood-jasmine incense, engraved kumkum holders, painted Ganesha/Lakshmi idols, desi ghee sweets, and eco-friendly puja essentials in silk/wooden boxes."
+    }
+  ];
+
+  function buildStoreCards() {
+    const grid = document.getElementById("storeCardsGrid");
+    if (!grid) return;
+
+    grid.innerHTML = storeServices.map(s => `
+      <div class="bg-white rounded-2xl border border-[var(--stroke)] shadow-sm p-6 cursor-pointer hover:bg-[#fff9e6] transition"
+           onclick="openStoreDetail('${s.key}')">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-2xl flex items-center justify-center bg-[#fff3c4] border border-[var(--stroke)]">
+            <i data-feather="${s.icon}" class="w-6 h-6 text-[var(--kumkum)]"></i>
+          </div>
+          <div class="flex-1">
+            <h4 class="font-black text-[var(--chandan)] leading-tight">${s.title}</h4>
+            <p class="text-sm text-stone-600 mt-2 leading-relaxed">${s.intro}</p>
+            <div class="mt-4 text-[10px] font-black uppercase tracking-widest text-[var(--kumkum)]">
+              Tap to view details →
+            </div>
+          </div>
+        </div>
+      </div>
+    `).join("");
+
     feather.replace();
-    let monthsData = [];
-    let searchQuery = "";
-    let currentView = 'grid';
+  }
 
-    async function init() {
-      try {
-        const res = await fetch("./festivals.json");
-        const data = await res.json();
-        monthsData = data.months || [];
-        renderMonthJump();
-        renderMainList();
-      } catch (e) { console.error("Could not load festivals.json"); }
+  function startJourney() {
+    const store = document.getElementById("inStoreSection");
+    store.classList.remove("hidden");
+
+    document.getElementById("storeDetailView").classList.add("hidden");
+    document.getElementById("storeCardsGrid").classList.remove("hidden");
+
+    buildStoreCards();
+    store.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function openStoreDetail(key) {
+    const s = storeServices.find(x => x.key === key);
+    if (!s) return;
+
+    document.getElementById("storeCardsGrid").classList.add("hidden");
+    document.getElementById("storeDetailView").classList.remove("hidden");
+
+    document.getElementById("detailTitle").innerText = s.title;
+    document.getElementById("detailIntro").innerText = s.intro;
+    document.getElementById("detailBody").innerText = s.body;
+    document.getElementById("detailWhy").innerText = s.why;
+
+    const iconEl = document.getElementById("detailIcon");
+    iconEl.setAttribute("data-feather", s.icon);
+    feather.replace();
+
+    document.getElementById("storeDetailView").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function backToStoreCards() {
+    document.getElementById("storeDetailView").classList.add("hidden");
+    document.getElementById("storeCardsGrid").classList.remove("hidden");
+    feather.replace();
+  }
+
+  function goToFestivalCalendar() {
+    const cal = document.getElementById("calendarSection");
+    cal.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  // -----------------------------
+  // FESTIVAL CALENDAR (YOUR JSON)
+  // -----------------------------
+  let festivalData = [];
+
+  async function loadFestivals() {
+    try {
+      const response = await fetch('festivals.json');
+      const data = await response.json();
+      festivalData = data.months;
+      buildCalendar();
+    } catch (e) {
+      console.error("JSON file 'festivals.json' not found or has errors.", e);
     }
+  }
 
-    function renderMonthJump() {
-      const container = document.getElementById("monthsGrid");
-      container.innerHTML = "";
-      monthsData.forEach((m, idx) => {
-        const btn = document.createElement("button");
-        btn.className = "month-btn text-xs";
-        btn.textContent = m.month;
-        btn.onclick = () => document.getElementById(`month-${idx}`).scrollIntoView({ behavior: "smooth", block: "start" });
-        container.appendChild(btn);
-      });
-    }
+  function buildCalendar() {
+    const nav = document.getElementById('monthsGrid');
+    const directory = document.getElementById('festivalDirectory');
 
-    function renderMainList() {
-      const container = document.getElementById("allMonths");
-      container.innerHTML = "";
-      const q = searchQuery.toLowerCase().trim();
-      let totalMatch = 0;
+    nav.innerHTML = "";
+    directory.innerHTML = "";
 
-      monthsData.forEach((m, idx) => {
-        const items = (m.items || []).filter(i => i.name.toLowerCase().includes(q));
-        if (items.length === 0) return;
-        totalMatch += items.length;
+    festivalData.forEach((m, idx) => {
+      const btn = document.createElement('button');
+      btn.className = 'month-btn';
+      btn.innerText = m.month.substring(0,3);
+      btn.onclick = () => document.getElementById(`month-block-${idx}`).scrollIntoView({ behavior: 'smooth', block: 'start' });
+      nav.appendChild(btn);
 
-        const block = document.createElement("div");
-        block.id = `month-${idx}`;
-        block.className = "scroll-mt-24";
-        
-        let html = `<div class="flex items-center gap-4 mb-5"><h3 class="brand-font text-xl text-stone-800">${m.month}</h3><div class="h-px bg-stone-200 flex-grow"></div></div>`;
-        
-        if (currentView === 'grid') {
-          html += `<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">`;
-          items.forEach(f => {
-            html += `<div class="fest-card" onclick='openModal(${JSON.stringify(f)}, "${m.month}")'>
-              <div class="font-bold text-stone-900 text-sm mb-1">${f.name}</div>
-              <div class="text-[10px] text-stone-500 font-bold uppercase">${f.date} • ${f.tithi}</div>
-            </div>`;
-          });
-          html += `</div>`;
-        } else {
-          html += `<div class="overflow-x-auto"><table class="fest-table"><thead><tr><th>Date</th><th>Festival</th><th>Tithi</th></tr></thead><tbody>`;
-          items.forEach(f => {
-            html += `<tr onclick='openModal(${JSON.stringify(f)}, "${m.month}")'>
-              <td class="font-bold text-orange-800 text-xs whitespace-nowrap">${f.date}</td>
-              <td class="font-bold text-stone-800 text-sm">${f.name}</td>
-              <td class="text-stone-400 text-[10px] uppercase">${f.tithi}</td>
-            </tr>`;
-          });
-          html += `</tbody></table></div>`;
-        }
-        block.innerHTML = html;
-        container.appendChild(block);
-      });
-      document.getElementById("resultsMeta").textContent = `Found ${totalMatch} Festivals`;
-    }
+      const section = document.createElement('div');
+      section.id = `month-block-${idx}`;
+      section.className = 'scroll-mt-32';
+      section.innerHTML = `
+        <div class="flex items-center gap-4 mb-8">
+          <h3 class="brand-font text-3xl text-[var(--chandan)]">${m.month}</h3>
+          <div class="h-px bg-[var(--haldi)] flex-grow"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          ${m.items.map(f => `
+            <div class="fest-item" onclick='openModal(${JSON.stringify(f)}, "${m.month}")'>
+              <div class="flex justify-between items-center">
+                <div>
+                  <h5 class="font-bold text-lg">${f.name}</h5>
+                  <p class="text-[10px] text-[var(--kumkum)] font-bold uppercase tracking-tighter">${f.date} • ${f.tithi}</p>
+                </div>
+                <i data-feather="chevron-right" class="w-4 h-4 text-stone-300"></i>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+      directory.appendChild(section);
+    });
 
-    function openModal(f, mName) {
-      document.getElementById("modalTitle").textContent = f.name;
-      document.getElementById("modalMeta").textContent = `${mName} • ${f.date} • ${f.tithi}`;
-      document.getElementById("modalImg").src = f.img || "https://images.unsplash.com/photo-1545063127-704172828669?w=800";
-      document.getElementById("modalProcedure").textContent = f.procedure || "Regional rituals may vary.";
-      document.getElementById("modalSignificance").textContent = f.significance || "Significance details being updated.";
-      document.getElementById("modalBackdrop").style.display = "flex";
-      document.body.style.overflow = "hidden";
-    }
+    feather.replace();
+  }
 
-    document.getElementById("searchInput").oninput = (e) => { searchQuery = e.target.value; renderMainList(); };
-    document.getElementById("viewGrid").onclick = () => { currentView = 'grid'; updateToggle(true); renderMainList(); };
-    document.getElementById("viewTable").onclick = () => { currentView = 'table'; updateToggle(false); renderMainList(); };
-    
-    function updateToggle(isGrid) {
-      document.getElementById("viewGrid").classList.toggle('active', isGrid);
-      document.getElementById("viewTable").classList.toggle('active', !isGrid);
-    }
-    
-    document.getElementById("closeModalBtn").onclick = () => { document.getElementById("modalBackdrop").style.display = "none"; document.body.style.overflow = "auto"; };
-    window.onclick = (e) => { if (e.target.id === "modalBackdrop") document.getElementById("closeModalBtn").click(); };
+  function openModal(f, mName) {
+    document.getElementById('modalTitle').innerText = f.name;
+    document.getElementById('modalMeta').innerText = `${mName} • ${f.date} • ${f.tithi}`;
+    document.getElementById('modalImg').src = f.img;
+    document.getElementById('modalProc').innerText = f.procedure;
+    document.getElementById('modalSign').innerText = f.significance;
+    document.getElementById('festivalModal').style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    feather.replace();
+  }
 
-    init();
-  </script>
+  function closeModal() {
+    document.getElementById('festivalModal').style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+
+  function openJoinForm() {
+    document.getElementById('joinModal').style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    feather.replace();
+  }
+
+  function closeJoinForm() {
+    document.getElementById('joinModal').style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+
+  // Init
+  loadFestivals();
+</script>
+
 </body>
 </html>
