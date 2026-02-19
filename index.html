@@ -195,38 +195,21 @@
 <!-- FESTIVAL MODAL -->
 <div id="festivalModal" class="modal-backdrop" onclick="closeModal()">
   <div class="modal" onclick="event.stopPropagation()">
-    <div class="md:w-1/2 w-full h-64 md:h-auto bg-stone-100 flex-shrink-0">
-      <img id="modalImg" class="w-full h-full object-cover" src="" alt="">
+    <div class="md:w-1/2 w-full h-64 md:h-auto bg-stone-100">
+      <img id="modalImg" class="w-full h-full object-cover" src="">
     </div>
-    <div class="md:w-1/2 w-full p-8 overflow-y-auto flex-1 min-w-0">
+    <div class="md:w-1/2 w-full p-8 overflow-y-auto">
       <button onclick="closeModal()" class="float-right text-stone-400 hover:text-red-600"><i data-feather="x"></i></button>
-      <h2 id="modalTitle" class="brand-font text-2xl text-[var(--kumkum)] mb-1"></h2>
-      <p id="modalHindi" class="text-base text-stone-600 mb-3"></p>
+      <h2 id="modalTitle" class="brand-font text-2xl text-[var(--kumkum)] mb-2"></h2>
       <div id="modalMeta" class="text-xs font-bold text-stone-500 uppercase tracking-widest border-b pb-4 mb-6"></div>
 
       <div class="mb-6">
+        <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Procedure</h5>
+        <p id="modalProc" class="text-sm text-stone-600 leading-relaxed"></p>
+      </div>
+      <div>
         <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Significance</h5>
         <p id="modalSign" class="text-sm text-stone-600 leading-relaxed"></p>
-      </div>
-      <div class="mb-6" id="modalKathaBlock">
-        <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Katha</h5>
-        <p id="modalKatha" class="text-sm text-stone-600 leading-relaxed"></p>
-      </div>
-      <div class="mb-6" id="modalProcBlock">
-        <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Procedure</h5>
-        <div id="modalProc" class="text-sm text-stone-600 leading-relaxed space-y-2"></div>
-      </div>
-      <div class="mb-6" id="modalFastBlock">
-        <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Fasting</h5>
-        <p id="modalFast" class="text-sm text-stone-600 leading-relaxed"></p>
-      </div>
-      <div class="mb-6" id="modalDaanBlock">
-        <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Daan</h5>
-        <p id="modalDaan" class="text-sm text-stone-600 leading-relaxed"></p>
-      </div>
-      <div id="modalNotesBlock" class="hidden">
-        <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Notes</h5>
-        <p id="modalNotes" class="text-sm text-stone-600 leading-relaxed"></p>
       </div>
     </div>
   </div>
@@ -429,8 +412,8 @@
             <div class="fest-item" onclick='openModal(${JSON.stringify(f)}, "${m.month}")'>
               <div class="flex justify-between items-center">
                 <div>
-                  <h5 class="font-bold text-lg">${f.englishname}</h5>
-                  <p class="text-[10px] text-[var(--kumkum)] font-bold uppercase tracking-tighter">${f.date} • ${f.day} • ${f.tithimonth}</p>
+                  <h5 class="font-bold text-lg">${f.name}</h5>
+                  <p class="text-[10px] text-[var(--kumkum)] font-bold uppercase tracking-tighter">${f.date} • ${f.tithi}</p>
                 </div>
                 <i data-feather="chevron-right" class="w-4 h-4 text-stone-300"></i>
               </div>
@@ -445,63 +428,11 @@
   }
 
   function openModal(f, mName) {
-    document.getElementById('modalTitle').innerText = f.englishname || '';
-    document.getElementById('modalHindi').innerText = f.hindiname || '';
-    document.getElementById('modalMeta').innerText = [mName, f.date, f.day, f.type, f.tithimonth, f.muhurat, f.focus].filter(Boolean).join(' • ');
-    document.getElementById('modalImg').src = f.images ? "images/" + f.images : '';
-    document.getElementById('modalImg').alt = f.englishname || '';
-    document.getElementById('modalSign').innerText = f.significance || '—';
-
-    const kathaBlock = document.getElementById('modalKathaBlock');
-    const kathaEl = document.getElementById('modalKatha');
-    if (f.katha) {
-      kathaBlock.classList.remove('hidden');
-      kathaEl.innerText = f.katha;
-    } else {
-      kathaBlock.classList.add('hidden');
-    }
-
-    const procEl = document.getElementById('modalProc');
-    const procBlock = document.getElementById('modalProcBlock');
-    const procItems = [
-      f.morning && { label: 'Morning', text: f.morning },
-      f.daytime && { label: 'Daytime', text: f.daytime },
-      f.mainpuja && { label: 'Main Puja', text: f.mainpuja }
-    ].filter(Boolean);
-    if (procItems.length) {
-      procBlock.classList.remove('hidden');
-      procEl.innerHTML = procItems.map(({ label, text }) => `<p><strong class="text-stone-700">${label}:</strong> ${text}</p>`).join('');
-    } else {
-      procBlock.classList.add('hidden');
-    }
-
-    const fastBlock = document.getElementById('modalFastBlock');
-    const fastEl = document.getElementById('modalFast');
-    if (f.fastingrules) {
-      fastBlock.classList.remove('hidden');
-      fastEl.innerText = f.fastingrules;
-    } else {
-      fastBlock.classList.add('hidden');
-    }
-
-    const daanBlock = document.getElementById('modalDaanBlock');
-    const daanEl = document.getElementById('modalDaan');
-    if (f.daan) {
-      daanBlock.classList.remove('hidden');
-      daanEl.innerText = f.daan;
-    } else {
-      daanBlock.classList.add('hidden');
-    }
-
-    const notesBlock = document.getElementById('modalNotesBlock');
-    const notesEl = document.getElementById('modalNotes');
-    if (f.notes) {
-      notesBlock.classList.remove('hidden');
-      notesEl.innerText = f.notes;
-    } else {
-      notesBlock.classList.add('hidden');
-    }
-
+    document.getElementById('modalTitle').innerText = f.name;
+    document.getElementById('modalMeta').innerText = `${mName} • ${f.date} • ${f.tithi}`;
+    document.getElementById('modalImg').src = f.img;
+    document.getElementById('modalProc').innerText = f.procedure;
+    document.getElementById('modalSign').innerText = f.significance;
     document.getElementById('festivalModal').style.display = 'flex';
     document.body.style.overflow = 'hidden';
     feather.replace();
