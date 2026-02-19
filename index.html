@@ -289,15 +289,25 @@
 
             <!-- ===== VIEW TOGGLE (GRID / TABLE) ===== -->
             <div class="flex items-center justify-center md:justify-end gap-2">
-              <button id="viewGridBtn" onclick="setView('grid')"
-                      class="px-4 py-2 rounded-full border border-[var(--stroke)] bg-white hover:bg-[#fff9e6] font-black text-[var(--chandan)]">
-                Grid View
-              </button>
-              <button id="viewTableBtn" onclick="setView('table')"
-                      class="px-4 py-2 rounded-full border border-[var(--stroke)] bg-white hover:bg-[#fff9e6] font-black text-[var(--chandan)]">
-                Table View
-              </button>
-            </div>
+  <!-- Grid View -->
+  <button id="viewGridBtn" onclick="setView('grid')"
+          class="w-10 h-10 flex items-center justify-center rounded-full 
+                 border border-[var(--stroke)] bg-white 
+                 hover:bg-[#fff9e6] text-[var(--chandan)]"
+          title="Grid View">
+    <i data-feather="grid" class="w-5 h-5"></i>
+  </button>
+
+  <!-- Table View -->
+  <button id="viewTableBtn" onclick="setView('table')"
+          class="w-10 h-10 flex items-center justify-center rounded-full 
+                 border border-[var(--stroke)] bg-white 
+                 hover:bg-[#fff9e6] text-[var(--chandan)]"
+          title="Table View">
+    <i data-feather="list" class="w-5 h-5"></i>
+  </button>
+</div>
+
           </div>
 
           <div id="monthsGrid" class="flex flex-wrap justify-center md:justify-start gap-2 mt-4"></div>
