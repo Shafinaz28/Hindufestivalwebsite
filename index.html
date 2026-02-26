@@ -65,7 +65,31 @@
 
     /* ✅ MONTH-WISE CALENDAR (In Store > Hindu Calendar > More) */
     .mw-wrap{background:#fff;border:1px solid var(--stroke);border-radius:18px;overflow:hidden;box-shadow:0 8px 22px rgba(139,61,31,.08)}
-    .mw-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 14px;background:linear-gradient(90deg,#fff7db,#fff)}
+.mw-head{
+  display:flex;
+  flex-direction:column;        /* ✅ stack in rows */
+  align-items:center;           /* center align */
+  gap:12px;
+  padding:14px 14px;
+  background:linear-gradient(90deg,#fff7db,#fff);
+}
+.mw-head-top{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  gap:4px;
+}
+
+.mw-head-controls{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  align-items:center;
+  justify-content:center;  /* ✅ buttons center */
+}
     .mw-title{font-weight:900;color:var(--chandan)}
     .mw-sub{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:rgba(139,61,31,.65)}
     .mw-btn{padding:10px 14px;border-radius:999px;border:1px solid var(--stroke);background:#fff;font-weight:900;color:var(--chandan);transition:.2s}
@@ -87,6 +111,36 @@
     }
     .mw-dot{width:7px;height:7px;border-radius:999px;background:var(--kumkum);flex:0 0 auto}
     .mw-note{padding:12px 14px;background:#fffef2;border-top:1px solid rgba(179,0,0,.10);font-size:12px;color:rgba(43,26,18,.65);font-weight:700}
+
+    /* ✅ Join CTA (after festivals) */
+    .join-cta{
+      background:linear-gradient(135deg,#fff7db 0%, #ffffff 55%, #fff0f0 100%);
+      border:1px solid var(--stroke);
+      border-radius:22px;
+      box-shadow:0 18px 44px rgba(139,61,31,.10);
+      overflow:hidden;
+    }
+    .join-pill{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:10px 14px;border-radius:999px;
+      background:#fff;border:1px solid rgba(179,0,0,.12);
+      font-weight:900;color:var(--chandan);font-size:12px;
+    }
+    .join-benefit{
+      background:#fff;
+      border:1px solid rgba(179,0,0,.12);
+      border-radius:18px;
+      padding:14px;
+      display:flex;gap:12px;align-items:flex-start;
+      transition:.2s;
+    }
+    .join-benefit:hover{transform:translateY(-2px);background:#fff9e6}
+    .join-ico{
+      width:44px;height:44px;border-radius:16px;
+      display:flex;align-items:center;justify-content:center;
+      background:#fff3c4;border:1px solid rgba(179,0,0,.12);
+      flex:0 0 auto;
+    }
   </style>
 </head>
 
@@ -212,17 +266,18 @@
           </div>
 
           <div class="p-8">
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-2xl flex items-center justify-center bg-[#fff3c4] border border-[var(--stroke)]">
-                <i id="detailIcon" data-feather="star" class="w-6 h-6 text-[var(--kumkum)]"></i>
+            <!-- ✅ Center aligned detail heading -->
+            <div class="flex flex-col items-center text-center gap-3">
+              <div class="w-14 h-14 rounded-2xl flex items-center justify-center bg-[#fff3c4] border border-[var(--stroke)]">
+                <i id="detailIcon" data-feather="star" class="w-7 h-7 text-[var(--kumkum)]"></i>
               </div>
-              <div class="flex-1">
-                <h3 id="detailTitle" class="brand-font text-2xl text-[var(--kumkum)] mb-2"></h3>
+              <div class="max-w-2xl">
+                <h3 id="detailTitle" class="brand-font text-3xl text-[var(--kumkum)] mb-2"></h3>
                 <p id="detailIntro" class="text-stone-600 font-medium leading-relaxed"></p>
               </div>
             </div>
 
-            <div class="mt-8 grid md:grid-cols-2 gap-8">
+            <div class="mt-10 grid md:grid-cols-2 gap-8">
               <div>
                 <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">What we do</h5>
                 <p id="detailBody" class="text-sm text-stone-600 leading-relaxed whitespace-pre-line"></p>
@@ -235,12 +290,7 @@
 
             <div class="mt-8">
               <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">More</h5>
-
-              <!-- ✅ More content renders here:
-                   - for other services: cards
-                   - for Hindu Calendar service: Month-wise calendar (prev/next + dropdown) -->
               <div id="detailMoreWrap" class="more-grid"></div>
-
               <div class="text-center mt-6">
                 <button id="moreBtn" onclick="showMoreAll()" class="haldi-btn shadow-md px-8 py-3 text-sm">MORE →</button>
               </div>
@@ -256,7 +306,7 @@
     </div>
   </section>
 
-  <!-- FESTIVAL CALENDAR (KEEP YOUR FESTIVAL LIST AS IT IS) -->
+  <!-- FESTIVAL CALENDAR -->
   <section id="calendar" class="mt-12">
     <div class="section-divider"></div>
     <div class="bg-[var(--panel)] rounded-3xl border border-[var(--stroke)] shadow-[var(--shadow)] p-7 md:p-10">
@@ -281,6 +331,68 @@
       <div id="festivalDirectory" class="space-y-14"></div>
 
       <div id="calendarError" class="hidden mt-8 bg-white border border-[var(--stroke)] rounded-2xl p-6 text-sm text-stone-600"></div>
+
+      <!-- ✅ AFTER ALL FESTIVALS: ATTRACTIVE JOIN CTA -->
+      <div class="mt-14 join-cta">
+        <div class="p-8 md:p-10">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div class="min-w-0">
+              <div class="join-pill mb-3">
+                <i data-feather="sparkles" class="w-4 h-4 text-[var(--kumkum)]"></i>
+                Registration Benefits
+              </div>
+              <h3 class="brand-font text-3xl md:text-4xl text-[var(--kumkum)] uppercase">
+                Join Pratham Sanskruti
+              </h3>
+              <p class="mt-2 text-stone-700 font-semibold max-w-2xl leading-relaxed">
+                Registration includes <b>3 WhatsApp reminders</b>, festival <b>significance with history</b>, <b>pooja vidhi</b>,
+                and <b>mantra jaap</b> for vibration cleansing. Plus get <b>5%–15% discount</b> on all items purchased.
+              </p>
+            </div>
+
+            <div class="flex flex-col items-stretch gap-3">
+              <button onclick="openJoinForm()" class="kumkum-btn shadow-lg flex items-center justify-center gap-2">
+                <i data-feather="edit-3" class="w-5 h-5"></i>
+                Click to Register
+              </button>
+              <div class="text-xs text-stone-600 font-semibold text-center">
+                Simple form • OTP/Email verification (placeholder)
+              </div>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-4 mt-8">
+            <div class="join-benefit">
+              <div class="join-ico"><i data-feather="bell" class="w-5 h-5 text-[var(--kumkum)]"></i></div>
+              <div>
+                <div class="font-black text-[var(--chandan)]">3 WA Reminders</div>
+                <div class="text-sm text-stone-600 font-semibold mt-1">Never miss key tithi/tyohar alerts.</div>
+              </div>
+            </div>
+
+            <div class="join-benefit">
+              <div class="join-ico"><i data-feather="book-open" class="w-5 h-5 text-[var(--kumkum)]"></i></div>
+              <div>
+                <div class="font-black text-[var(--chandan)]">Significance + History</div>
+                <div class="text-sm text-stone-600 font-semibold mt-1">Understand the “why” behind each festival.</div>
+              </div>
+            </div>
+
+            <div class="join-benefit">
+              <div class="join-ico"><i data-feather="activity" class="w-5 h-5 text-[var(--kumkum)]"></i></div>
+              <div>
+                <div class="font-black text-[var(--chandan)]">Mantra Jaap Cleansing</div>
+                <div class="text-sm text-stone-600 font-semibold mt-1">Morning / Evening vibration set option.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 text-sm text-stone-600 font-semibold">
+            Note: Lunar tithis vary regionally. Vaishnavism, Shaivism, Shaktism, Smartism may observe overlapping festivals with deity-specific emphasis.
+          </div>
+        </div>
+      </div>
+      <!-- ✅ END JOIN CTA -->
 
     </div>
   </section>
@@ -364,6 +476,7 @@
         <input class="input" type="text" name="name" placeholder="Full Name" required>
         <input class="input" type="email" name="email" placeholder="Email" required>
         <input class="input" type="tel" name="phone" placeholder="Phone" required>
+
         <textarea class="w-full border border-stone-200 rounded-2xl p-4 outline-none focus:border-[var(--haldi)]" name="address" rows="3" placeholder="Location Address" required></textarea>
 
         <div class="text-xs font-black uppercase tracking-widest text-stone-400">Which Hindu tradition (sampradaya) do you primarily follow?</div>
@@ -415,12 +528,6 @@
     v.play().catch(()=>{});
   });
 
-  /* =========================
-     IN STORE DATA
-     ✅ IMPORTANT CHANGE:
-     Hindu Calendar "more" NO LONGER says "shown below in Festival Calendar".
-     Instead, clicking MORE shows Month-wise calendar INSIDE this page.
-  ========================= */
   const storeServices = [
     {
       key:"rituals", icon:"sun", title:"Ritual Procedures / Sacred Events", images:"Ritual-Procedures-Sacred-Events.jpg",
@@ -449,7 +556,7 @@ Our service provides timely reminders for key Hindu calendar events and supports
 So you never miss an auspicious day, and every sacred moment is celebrated smoothly, meaningfully, and on time.`,
       why:`Hindu calendar events are sacred dates marked by tithis, nakshatras, and seasons—guiding when to perform important rituals, festivals, vrats, and family ceremonies.
 From Gudi Padwa and Ugadi to Navratri, Diwali, and personalized auspicious muhurats, each occasion carries spiritual significance and unique traditions for every region and family.`,
-      more:[] // ✅ no list text here
+      more:[]
     },
     {
       key:"aarti", icon:"music", title:"Aarti and Mantra", images:"Aarti-and-Mantra.jpg",
@@ -505,6 +612,7 @@ Mindfulness via Mantras: improves focus and calm` }
 
   function safeText(v){return (v===undefined||v===null)?"":String(v)}
 
+  /* ✅ STORE CARDS: ICONS CENTER + TEXT CENTER */
   function buildStoreCards(){
     const grid = document.getElementById("storeCardsGrid");
     if(!grid) return;
@@ -516,13 +624,13 @@ Mindfulness via Mantras: improves focus and calm` }
           <img src="images/${s.images}" alt="${s.title}" class="w-full h-full object-cover" onerror="this.src='images/placeholder.jpg'">
         </div>
         <div class="p-6">
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-2xl flex items-center justify-center bg-[#fff3c4] border border-[var(--stroke)]">
-              <i data-feather="${s.icon}" class="w-6 h-6 text-[var(--kumkum)]"></i>
+          <div class="flex flex-col items-center text-center gap-4">
+            <div class="w-14 h-14 rounded-2xl flex items-center justify-center bg-[#fff3c4] border border-[var(--stroke)]">
+              <i data-feather="${s.icon}" class="w-7 h-7 text-[var(--kumkum)]"></i>
             </div>
-            <div class="flex-1">
-              <h4 class="font-black text-[var(--chandan)] leading-tight">${s.title}</h4>
-              <p class="text-sm text-stone-600 mt-2 leading-relaxed">${s.intro}</p>
+            <div class="max-w-sm">
+              <h4 class="font-black text-[var(--chandan)] leading-tight text-lg">${s.title}</h4>
+              <p class="text-sm text-stone-600 mt-2 leading-relaxed font-semibold">${s.intro}</p>
               <div class="mt-4 text-[10px] font-black uppercase tracking-widest text-[var(--kumkum)]">Tap to view details →</div>
             </div>
           </div>
@@ -564,13 +672,9 @@ Mindfulness via Mantras: improves focus and calm` }
     iconEl.setAttribute("data-feather", s.icon);
     feather.replace();
 
-    // reset more area
     document.getElementById("detailMoreWrap").innerHTML = "";
     document.getElementById("detailMoreWrap").className = "more-grid";
 
-    // show/hide MORE button:
-    // - for calendar service: always show, because it shows the month-wise calendar UI
-    // - for others: show only if s.more exists
     const moreBtn = document.getElementById("moreBtn");
     if(s.key === "calendar") moreBtn.classList.remove("hidden");
     else if(s.more && s.more.length) moreBtn.classList.remove("hidden");
@@ -615,30 +719,22 @@ Mindfulness via Mantras: improves focus and calm` }
     return "star";
   }
 
-  /* =========================
-     ✅ Month-wise calendar data (from festivals.json)
-  ========================= */
   const YEAR = 2026;
   const MONTHS_FULL = ["January","February","March","April","May","June","July","August","September","October","November","December"];
   const MONTHS_ABBR = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
-  // monthIndex -> dayNumber -> array of festival objects
-  let monthDayFest = {}; // built after festivals.json loads
+  let monthDayFest = {};
 
   function parseDayNumber(dateStr){
-    // supports: "01-Jan", "1-Jan", "01 Jan", "01", "2026-01-01"
     const s = (dateStr||"").trim();
     const m1 = s.match(/^(\d{1,2})/);
     if(m1) return parseInt(m1[1],10);
-
     const m2 = s.match(/-(\d{1,2})-?$/);
     if(m2) return parseInt(m2[1],10);
-
     return null;
   }
 
   function getMonthIndexFromFestival(f, monthName){
-    // if date has "-Jan" style, use it. else use the month block name.
     const s = (safeText(f.date)||"");
     const ab = MONTHS_ABBR.findIndex(a => s.toLowerCase().includes(a.toLowerCase()));
     if(ab !== -1) return ab;
@@ -662,56 +758,57 @@ Mindfulness via Mantras: improves focus and calm` }
     });
   }
 
-  /* =========================
-     ✅ Month-wise Calendar UI (Prev/Next + Dropdown)
-     - Renders inside In Store > Hindu Calendar > More
-  ========================= */
   let mwMonthIndex = 0;
 
   function renderMonthWiseCalendar(){
     const wrap = document.getElementById("detailMoreWrap");
-    wrap.className = ""; // override grid layout
+    wrap.className = "";
     wrap.innerHTML = `
       <div class="mw-wrap">
         <div class="mw-head">
-          <div class="min-w-0">
-            <div class="mw-sub">FESTIVAL CALENDAR</div>
-            <div class="mw-title brand-font text-[var(--kumkum)] text-2xl">${MONTHS_FULL[mwMonthIndex]} ${YEAR}</div>
-          </div>
+  
+  <!-- ✅ ROW 1: Title -->
+  <div class="mw-head-top">
+    <div class="mw-sub">FESTIVAL CALENDAR</div>
+    <div class="mw-title brand-font text-[var(--kumkum)] text-2xl">
+      ${MONTHS_FULL[mwMonthIndex]} ${YEAR}
+    </div>
+  </div>
 
-          <div class="flex items-center gap-2 flex-wrap justify-end">
-            <button class="mw-btn" type="button" onclick="mwPrev()">
-              <span class="inline-flex items-center gap-2"><i data-feather="chevron-left" class="w-4 h-4"></i> Previous</span>
-            </button>
+  <!-- ✅ ROW 2: Controls -->
+  <div class="mw-head-controls">
+    <button class="mw-btn" type="button" onclick="mwPrev()">
+      <span class="inline-flex items-center gap-2">
+        <i data-feather="chevron-left" class="w-4 h-4"></i> Previous
+      </span>
+    </button>
 
-            <select class="mw-dd" onchange="mwSelect(this.value)">
-              ${MONTHS_FULL.map((m,i)=>`<option value="${i}" ${i===mwMonthIndex?"selected":""}>${m}</option>`).join("")}
-            </select>
+    <select class="mw-dd" onchange="mwSelect(this.value)">
+      ${MONTHS_FULL.map((m,i)=>`<option value="${i}" ${i===mwMonthIndex?"selected":""}>${m}</option>`).join("")}
+    </select>
 
-            <button class="mw-btn" type="button" onclick="mwNext()">
-              <span class="inline-flex items-center gap-2">Next <i data-feather="chevron-right" class="w-4 h-4"></i></span>
-            </button>
-          </div>
-        </div>
+    <button class="mw-btn" type="button" onclick="mwNext()">
+      <span class="inline-flex items-center gap-2">
+        Next <i data-feather="chevron-right" class="w-4 h-4"></i>
+      </span>
+    </button>
+  </div>
+
+</div>
 
         <div class="mw-grid" id="mwGridHead"></div>
         <div class="mw-grid" id="mwGridBody"></div>
 
-        <div class="mw-note">
-          Tap any festival pill in the dates list below (Festival Calendar section) to view full details in the popup.
-        </div>
+       
       </div>
     `;
 
-    // head (Sun..Sat)
     const dow = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
     document.getElementById("mwGridHead").innerHTML = dow.map(d=>`<div class="mw-dow">${d}</div>`).join("");
 
-    // body
-    const firstDay = new Date(YEAR, mwMonthIndex, 1).getDay(); // 0=Sun
+    const firstDay = new Date(YEAR, mwMonthIndex, 1).getDay();
     const daysInMonth = new Date(YEAR, mwMonthIndex+1, 0).getDate();
 
-    // 6 rows x 7 cols (42)
     const totalCells = 42;
     let html = "";
     for(let i=0;i<totalCells;i++){
@@ -747,31 +844,14 @@ Mindfulness via Mantras: improves focus and calm` }
     feather.replace();
   }
 
-  function mwPrev(){
-    mwMonthIndex = (mwMonthIndex - 1 + 12) % 12;
-    renderMonthWiseCalendar();
-  }
-  function mwNext(){
-    mwMonthIndex = (mwMonthIndex + 1) % 12;
-    renderMonthWiseCalendar();
-  }
-  function mwSelect(v){
-    mwMonthIndex = parseInt(v,10);
-    if(Number.isNaN(mwMonthIndex)) mwMonthIndex = 0;
-    renderMonthWiseCalendar();
-  }
+  function mwPrev(){ mwMonthIndex = (mwMonthIndex - 1 + 12) % 12; renderMonthWiseCalendar(); }
+  function mwNext(){ mwMonthIndex = (mwMonthIndex + 1) % 12; renderMonthWiseCalendar(); }
+  function mwSelect(v){ mwMonthIndex = parseInt(v,10); if(Number.isNaN(mwMonthIndex)) mwMonthIndex = 0; renderMonthWiseCalendar(); }
 
-  /* =========================
-     ✅ show "More"
-     - For Hindu Calendar service => show month-wise calendar (NO list)
-     - For other services => show existing more cards
-  ========================= */
   function showMoreAll(){
     if(!currentService) return;
 
-    // ✅ SPECIAL: Hindu Calendar -> Month-wise calendar (prev/next + dropdown)
     if(currentService.key === "calendar"){
-      // make sure festivals.json already loaded
       if(!festivalData || !festivalData.length){
         const wrap = document.getElementById("detailMoreWrap");
         wrap.className = "";
@@ -787,16 +867,13 @@ Mindfulness via Mantras: improves focus and calm` }
         return;
       }
 
-      // default month = current real month (optional), else Jan
       const now = new Date();
       mwMonthIndex = (now.getFullYear() === YEAR) ? now.getMonth() : 0;
-
       renderMonthWiseCalendar();
       document.getElementById("moreBtn").classList.add("hidden");
       return;
     }
 
-    // ✅ NORMAL: other services -> cards
     if(!currentService.more || !currentService.more.length) return;
 
     const wrap = document.getElementById("detailMoreWrap");
@@ -809,16 +886,23 @@ Mindfulness via Mantras: improves focus and calm` }
       const card = document.createElement("div");
       card.className = "more-card";
       card.innerHTML = `
-        <div class="flex items-start gap-4">
-          <div class="more-ico">
-            <i data-feather="${icon}" class="w-5 h-5 text-[var(--kumkum)]"></i>
-          </div>
-          <div class="min-w-0">
-            <div class="font-black text-[var(--chandan)] mb-1">${item.title || "More"}</div>
-            <div class="text-sm text-stone-600 leading-relaxed whitespace-pre-line">${item.text || ""}</div>
-          </div>
-        </div>
-      `;
+  <div class="flex flex-col items-center text-center gap-4">
+    
+    <div class="more-ico mx-auto">
+      <i data-feather="${icon}" class="w-6 h-6 text-[var(--kumkum)]"></i>
+    </div>
+
+    <div class="max-w-md">
+      <div class="font-black text-[var(--chandan)] text-lg mb-2">
+        ${item.title || "More"}
+      </div>
+      <div class="text-sm text-stone-600 leading-relaxed whitespace-pre-line font-medium">
+        ${item.text || ""}
+      </div>
+    </div>
+
+  </div>
+`;
       wrap.appendChild(card);
     });
 
@@ -837,9 +921,6 @@ Mindfulness via Mantras: improves focus and calm` }
     document.getElementById("calendar").scrollIntoView({behavior:"smooth", block:"start"});
   }
 
-  /* =========================
-     JOIN MODAL
-  ========================= */
   function openJoinForm(){
     document.getElementById("joinModal").style.display="flex";
     document.body.style.overflow="hidden";
@@ -855,9 +936,6 @@ Mindfulness via Mantras: improves focus and calm` }
     closeJoinForm();
   });
 
-  /* =========================
-     FESTIVAL CALENDAR (GRID + TABLE) - KEEP SAME
-  ========================= */
   let festivalData=[];
   let calendarView="grid";
 
@@ -984,9 +1062,7 @@ Mindfulness via Mantras: improves focus and calm` }
       if(!Array.isArray(months)||!months.length) throw new Error("Invalid JSON structure. Expected {months:[{month:'January',items:[...]}]}");
       festivalData=months;
 
-      // ✅ build month-day festival map for month-wise calendar (In Store)
       buildMonthDayFest();
-
       buildMonthsNav();
       setCalendarView("grid");
     }catch(e){
@@ -997,9 +1073,6 @@ Mindfulness via Mantras: improves focus and calm` }
     }
   }
 
-  /* =========================
-     FESTIVAL MODAL
-  ========================= */
   function openFestivalModal(encodedFestival, encodedMonth){
     const f = JSON.parse(decodeURIComponent(encodedFestival));
     const mName = decodeURIComponent(encodedMonth);
