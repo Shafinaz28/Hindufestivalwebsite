@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Pratham Sanskruti | Festival Calendar</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      /* Backgrounds */
+      --bg: radial-gradient(circle at 12% 10%, #ffffff 0%, #fff6fb 38%, #e9fcff 100%);
+      --panel: #ffffff;
+
+      /* THEME */
+      --primary: #770533;     /* deep maroon */
+      --primary-2: #A6036A;   /* magenta */
+      --accent: #F08905;      /* orange */
+      --accent-2: #F75583;    /* pink */
+      --sky: #15CFE5;         /* cyan */
+
+      /* Semantic */
+      --kumkum: #A6036A;
+      --chandan: #770533;
+      --haldi: #F08905;
+
+      /* Neutrals */
+      --ink: #1f2937;
+      --sky-soft: #E9FCFF;
+      --sky-border: rgba(21, 207, 229, 0.28);
+
+      --stroke: rgba(119, 5, 51, 0.14);
+      --shadow: 0 18px 55px rgba(31, 41, 55, 0.12);
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background:var(--bg);
+      color:#2b1a12;
+      scroll-behavior:smooth;
+    }
+    .brand-font{ font-family:'Cinzel',serif; }
+    .page-pad{ padding-top:74px; }
+
+    .topbar{
+      position:fixed; top:0; left:0; right:0;
+      z-index:50;
+      background:linear-gradient(90deg,var(--primary),#800046);
+      border-bottom:3px solid var(--haldi);
+      box-shadow:0 4px 15px rgba(0,0,0,.16);
+    }
+
+    .viewbtn{
+      width:44px; height:44px;
+      display:flex; align-items:center; justify-content:center;
+      border-radius:999px;
+      border:1px solid var(--stroke);
+      background:#fff;
+      color:var(--chandan);
+      transition:.18s;
+    }
+    .viewbtn:hover{ background:rgba(240,137,5,.10); }
+    .viewbtn.active{
+      background:var(--primary-2);
+      color:#fff;
+      border-color:var(--primary-2);
+      box-shadow:0 10px 24px rgba(166,3,106,.22);
+    }
+
+    .monthPill{
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid var(--stroke);
+      background:#fff;
+      font-weight:900;
+      color:rgba(31,41,55,.78);
+      font-size:11px;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      transition:.18s;
+    }
+    .monthPill:hover{ background:rgba(240,137,5,.10); transform:translateY(-1px); }
+    .monthPill.active{
+      background:var(--primary-2);
+      color:#fff;
+      border-color:var(--primary-2);
+      box-shadow:0 10px 22px rgba(166,3,106,.18);
+    }
+
+    /* LIST CARDS (grid view) */
+    .festCard{
+      background:#fff;
+      border:1px solid var(--stroke);
+      border-radius:16px;
+      overflow:hidden;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      padding:14px 16px;
+      transition:.18s;
+    }
+    .festCard:hover{ box-shadow:0 18px 40px rgba(31,41,55,.10); transform:translateY(-1px); }
+    .festLeft{ min-width:0; }
+    .festName{
+      font-weight:900;
+      color:#111827;
+      font-size:15px;
+      line-height:1.2;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      max-width:100%;
+    }
+    .festMeta{
+      margin-top:4px;
+      font-weight:900;
+      font-size:10px;
+      letter-spacing:.10em;
+      text-transform:uppercase;
+      color:var(--primary-2);
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      max-width:100%;
+    }
+    .festArrow{
+      width:34px; height:34px;
+      border-radius:999px;
+      border:1px solid rgba(31,41,55,.10);
+      background:#fff;
+      display:flex; align-items:center; justify-content:center;
+      color:rgba(31,41,55,.55);
+      flex:0 0 auto;
+    }
+
+    /* TABLE VIEW */
+    .tableWrap{
+      background:#fff;
+      border:1px solid var(--stroke);
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 14px 34px rgba(31,41,55,.08);
+    }
+
+    /* MODAL */
+    .modal-backdrop{
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,.82);
+      backdrop-filter:blur(8px);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      z-index:1000;
+      padding:18px;
+    }
+    .modal{
+      background:#fff;
+      width:95%;
+      max-width:980px;
+      border-radius:22px;
+      border:4px solid var(--haldi);
+      display:flex;
+      overflow:hidden;
+      max-height:86vh;
+    }
+    @media(max-width:768px){
+      .modal{ flex-direction:column; overflow-y:auto; }
+    }
+
+    .modalLabel{
+      font-size:10px;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:.22em;
+      color:rgba(31,41,55,.55);
+      margin-bottom:8px;
+    }
+
+    .chip{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      border:1px solid rgba(31,41,55,.12);
+      background:rgba(240,137,5,.10);
+      color:var(--chandan);
+      padding:8px 12px;
+      border-radius:999px;
+      font-weight:900;
+      font-size:11px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+  </style>
+</head>
+
+<body class="page-pad">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3">
+        <img
+          src="./images/logo.png"
+          alt="Pratham Sanskruti Logo"
+          class="w-10 h-10 rounded-full object-cover ring-2 ring-[var(--accent)]"
+          onerror="this.style.display='none'"
+        />
+        <div class="brand-font text-white text-xl md:text-2xl uppercase tracking-widest leading-tight">
+          Pratham Sanskruti
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-bold text-[#ffe9c8]">
+        <a href="index.html" class="hover:text-white">Home</a>
+        <a href="instore.html" class="hover:text-white">In Store</a>
+        <a href="calendar.html" class="hover:text-white">Calendar</a>
+        <!-- <a href="contact.html" class="hover:text-white">Contact</a> -->
+        <button class="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/20"
+                onclick="openJoinForm()">
+          Join
+        </button>
+      </nav>
+
+      <button
+        class="md:hidden w-11 h-11 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 flex items-center justify-center"
+        onclick="toggleMobileMenu()"
+        aria-label="Open menu"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+        id="mobileMenuBtn"
+      >
+        <i data-feather="menu" class="w-6 h-6 text-white"></i>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/15 bg-[rgba(119,5,51,.95)]">
+      <div class="mx-auto max-w-6xl px-4 py-4 flex flex-col gap-3 text-sm font-extrabold text-[#ffe9c8]">
+        <a href="index.html" class="py-2 px-3 rounded-xl hover:bg-white/10">Home</a>
+        <a href="instore.html" class="py-2 px-3 rounded-xl hover:bg-white/10">In Store</a>
+        <a href="calendar.html" class="py-2 px-3 rounded-xl hover:bg-white/10">Calendar</a>
+        <!-- <a href="contact.html" class="py-2 px-3 rounded-xl hover:bg-white/10">Contact</a> -->
+        <button onclick="openJoinForm(); closeMobileMenu();"
+                class="px-4 py-3 rounded-full bg-[var(--haldi)] text-[#2b1a12] font-black">
+          Join
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-6xl px-4 pb-16">
+    <section class="mt-12">
+      <div class="bg-[var(--panel)] rounded-3xl border border-[var(--stroke)] shadow-[var(--shadow)] p-7 md:p-10">
+
+        <div class="text-center mb-8">
+          <div class="brand-font text-3xl text-[var(--primary-2)] uppercase">Festival Calendar</div>
+          <div class="h-1 w-20 bg-[var(--haldi)] mx-auto mt-2 rounded-full"></div>
+        </div>
+
+        <!-- Top controls -->
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-5 mb-6">
+          <div class="text-[11px] font-black tracking-[0.35em] uppercase text-stone-500">
+            2026 Monthly Directory
+          </div>
+
+          <div class="flex items-center gap-2 justify-start md:justify-end">
+            <button id="gridBtn" class="viewbtn active" type="button" title="Grid View" onclick="setView('grid')">
+              <i data-feather="grid" class="w-5 h-5"></i>
+            </button>
+            <button id="tableBtn" class="viewbtn" type="button" title="Table View" onclick="setView('table')">
+              <i data-feather="list" class="w-5 h-5"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Month pills -->
+        <div id="monthPills" class="flex flex-wrap gap-2 mb-8"></div>
+
+        <!-- Month title -->
+        <div class="flex items-center gap-4 mb-6">
+          <div id="monthTitle" class="brand-font text-3xl text-[var(--primary-2)] uppercase tracking-wide">Loading…</div>
+          <div class="h-[2px] flex-1 bg-[var(--haldi)] rounded-full"></div>
+        </div>
+
+        <!-- GRID VIEW -->
+        <div id="gridView" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+
+        <!-- TABLE VIEW -->
+        <div id="tableView" class="hidden">
+          <div class="tableWrap">
+            <table class="w-full text-left text-sm">
+              <thead class="bg-[rgba(240,137,5,.10)]">
+                <tr>
+                  <th class="px-4 py-3 font-black text-[var(--chandan)]">Festival</th>
+                  <th class="px-4 py-3 font-black text-[var(--chandan)]">Date</th>
+                  <th class="px-4 py-3 font-black text-[var(--chandan)]">Day</th>
+                  <th class="px-4 py-3 font-black text-[var(--chandan)] hidden md:table-cell">Type</th>
+                  <th class="px-4 py-3 font-black text-[var(--chandan)] hidden md:table-cell">Tithi / Month</th>
+                  <th class="px-4 py-3 font-black text-[var(--chandan)]">Open</th>
+                </tr>
+              </thead>
+              <tbody id="tableBody" class="divide-y divide-stone-100"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="calendarError" class="hidden mt-8 bg-white border border-[var(--stroke)] rounded-2xl p-6 text-sm text-stone-600"></div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FESTIVAL MODAL -->
+  <div id="festivalModal" class="modal-backdrop" onclick="closeFestivalModal()">
+    <div class="modal" onclick="event.stopPropagation()">
+      <div class="md:w-1/2 w-full h-64 md:h-auto bg-stone-100 flex-shrink-0">
+        <img id="modalImg" class="w-full h-full object-cover"
+             src="images/placeholder.jpg" alt=""
+             onerror="this.src='images/placeholder.jpg'">
+      </div>
+
+      <div class="md:w-1/2 w-full p-6 overflow-y-auto flex-1 min-w-0">
+        <button onclick="closeFestivalModal()" class="float-right text-stone-400 hover:text-red-600" type="button">
+          <i data-feather="x"></i>
+        </button>
+
+        <div class="mb-3">
+          <div id="modalTitle" class="brand-font text-2xl text-[var(--primary-2)] mb-1"></div>
+          <div id="modalHindi" class="text-base text-stone-600"></div>
+        </div>
+
+        <div id="modalMeta" class="text-xs font-bold text-stone-500 uppercase tracking-widest border-b pb-4 mb-6"></div>
+
+        <div class="mb-6">
+          <div class="modalLabel">Significance</div>
+          <div id="modalSign" class="text-sm text-stone-600 leading-relaxed"></div>
+        </div>
+
+        <div class="mb-6" id="modalKathaBlock">
+          <div class="modalLabel">Katha</div>
+          <div id="modalKatha" class="text-sm text-stone-600 leading-relaxed"></div>
+        </div>
+
+        <div class="mb-6" id="modalProcBlock">
+          <div class="modalLabel">Procedure</div>
+          <div id="modalProc" class="text-sm text-stone-600 leading-relaxed space-y-2"></div>
+        </div>
+
+        <div class="mb-6" id="modalFastBlock">
+          <div class="modalLabel">Fasting</div>
+          <div id="modalFast" class="text-sm text-stone-600 leading-relaxed"></div>
+        </div>
+
+        <div class="mb-6" id="modalDaanBlock">
+          <div class="modalLabel">Daan</div>
+          <div id="modalDaan" class="text-sm text-stone-600 leading-relaxed"></div>
+        </div>
+
+        <div id="modalNotesBlock" class="hidden">
+          <div class="modalLabel">Notes</div>
+          <div id="modalNotes" class="text-sm text-stone-600 leading-relaxed"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JOIN MODAL (simple placeholder) -->
+  <div id="joinModal" class="modal-backdrop" onclick="closeJoinForm()">
+    <div class="modal p-0 relative flex-col" style="max-width: 560px;" onclick="event.stopPropagation()">
+      <div class="p-5 border-b border-stone-100 flex items-start justify-between gap-4">
+        <div>
+          <div class="brand-font text-xl text-[var(--primary-2)]">Join Pratham Sanskruti</div>
+          <div class="text-sm text-stone-600 mt-1">Registration placeholder.</div>
+        </div>
+        <button onclick="closeJoinForm()" class="text-stone-400 hover:text-red-600" type="button"><i data-feather="x"></i></button>
+      </div>
+
+      <div class="p-5 overflow-y-auto">
+        <form id="joinForm" class="space-y-3">
+          <input class="w-full border-b-2 border-stone-200 py-3 outline-none font-semibold" type="text" name="name" placeholder="Full Name" required />
+          <input class="w-full border-b-2 border-stone-200 py-3 outline-none font-semibold" type="email" name="email" placeholder="Email" required />
+          <input class="w-full border-b-2 border-stone-200 py-3 outline-none font-semibold" type="tel" name="phone" placeholder="Phone" required />
+          <button type="submit" class="w-full rounded-full bg-[var(--primary-2)] text-white font-black py-3">REGISTER</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // -----------------------------
+    // Mobile menu
+    // -----------------------------
+    function toggleMobileMenu(){
+      const m = document.getElementById("mobileMenu");
+      const b = document.getElementById("mobileMenuBtn");
+      const isOpen = !m.classList.contains("hidden");
+      if(isOpen){ m.classList.add("hidden"); b?.setAttribute("aria-expanded","false"); }
+      else{ m.classList.remove("hidden"); b?.setAttribute("aria-expanded","true"); }
+      feather.replace();
+    }
+    function closeMobileMenu(){
+      const m = document.getElementById("mobileMenu");
+      const b = document.getElementById("mobileMenuBtn");
+      m.classList.add("hidden");
+      b?.setAttribute("aria-expanded","false");
+      feather.replace();
+    }
+
+    // -----------------------------
+    // Helpers (safe getters)
+    // -----------------------------
+    function safeText(v){ return (v === undefined || v === null) ? "" : String(v); }
+
+    const YEAR = 2026;
+    const MONTHS_FULL = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    const MONTHS_ABBR = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+    function getFestName(f){
+      return safeText(
+        f.englishname ?? f.englishName ?? f.title ?? f.name ?? f.festival ?? f.event ?? ""
+      );
+    }
+    function getFestHindi(f){
+      return safeText(f.hindiname ?? f.hindiName ?? f.hindi ?? "");
+    }
+    function getFestImg(f){
+      const file = safeText(f.images ?? f.image ?? f.img ?? "").trim();
+      return file ? ("images/" + file) : "images/placeholder.jpg";
+    }
+
+    // Accepts date like "27-Nov" or "27 Nov"
+    function parseDayMonth(dateStr){
+      const s = safeText(dateStr).trim();
+      const m = s.match(/^(\d{1,2})\s*[- ]\s*([A-Za-z]{3})/);
+      if(!m) return null;
+      const day = parseInt(m[1], 10);
+      const mon = m[2].toLowerCase();
+      const mi = MONTHS_ABBR.findIndex(a => a.toLowerCase() === mon);
+      if(mi === -1 || Number.isNaN(day)) return null;
+      return { day, mi };
+    }
+
+    function sortByDay(list){
+      return [...list].sort((a,b)=>{
+        const da = parseInt(String(a.date||"").slice(0,2),10);
+        const db = parseInt(String(b.date||"").slice(0,2),10);
+        return (isNaN(da)?999:da) - (isNaN(db)?999:db);
+      });
+    }
+
+    // -----------------------------
+    // Data
+    // -----------------------------
+    let ALL_FESTIVALS = [];                 // flat list (250)
+    let MONTH_DATA = {};                   // { "January": [festivals...] }
+    let currentMonthIndex = 0;
+    let currentView = "grid";              // 'grid' | 'table'
+
+    function buildMonthData(){
+      MONTH_DATA = {};
+      MONTHS_FULL.forEach(m => MONTH_DATA[m] = []);
+
+      ALL_FESTIVALS.forEach(f => {
+        const dm = parseDayMonth(f.date);
+        if(!dm) return;
+        const monthName = MONTHS_FULL[dm.mi];
+        MONTH_DATA[monthName].push(f);
+      });
+
+      // sort each month list by day
+      MONTHS_FULL.forEach(m => {
+        MONTH_DATA[m] = sortByDay(MONTH_DATA[m]);
+      });
+    }
+
+    // -----------------------------
+    // View toggle (Grid / Table)  ✅ FIXED
+    // -----------------------------
+    function setView(view){
+      currentView = view;
+
+      const gridBtn = document.getElementById("gridBtn");
+      const tableBtn = document.getElementById("tableBtn");
+
+      const grid = document.getElementById("gridView");
+      const table = document.getElementById("tableView");
+
+      if(view === "grid"){
+        gridBtn.classList.add("active");
+        tableBtn.classList.remove("active");
+        grid.classList.remove("hidden");
+        table.classList.add("hidden");
+      }else{
+        tableBtn.classList.add("active");
+        gridBtn.classList.remove("active");
+        table.classList.remove("hidden");
+        grid.classList.add("hidden");
+        renderTable(); // ensure table is updated
+      }
+
+      feather.replace();
+    }
+
+    // -----------------------------
+    // Month pills
+    // -----------------------------
+    function renderMonthPills(){
+      const wrap = document.getElementById("monthPills");
+      wrap.innerHTML = "";
+
+      MONTHS_FULL.forEach((m, idx) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "monthPill" + (idx === currentMonthIndex ? " active" : "");
+        btn.textContent = MONTHS_ABBR[idx];
+        btn.onclick = () => {
+          currentMonthIndex = idx;
+          renderMonthPills();
+          renderMonthSection();
+        };
+        wrap.appendChild(btn);
+      });
+    }
+
+    function renderMonthSection(){
+      const monthName = MONTHS_FULL[currentMonthIndex];
+      document.getElementById("monthTitle").textContent = monthName;
+      renderGrid();
+      if(currentView === "table") renderTable();
+      feather.replace();
+    }
+
+    // -----------------------------
+    // GRID view (2-column cards like screenshot)
+    // -----------------------------
+    function renderGrid(){
+      const monthName = MONTHS_FULL[currentMonthIndex];
+      const list = MONTH_DATA[monthName] || [];
+      const grid = document.getElementById("gridView");
+
+      grid.innerHTML = "";
+
+      if(!list.length){
+        grid.innerHTML = `<div class="col-span-full text-stone-600 font-semibold">No festivals available for ${monthName}.</div>`;
+        return;
+      }
+
+      list.forEach(f => {
+        const card = document.createElement("button");
+        card.type = "button";
+        card.className = "festCard text-left";
+        card.onclick = () => openFestivalModal(f, monthName);
+
+        const name = getFestName(f) || "Festival";
+        const metaParts = [
+          safeText(f.date),
+          safeText(f.day),
+          safeText(f.tithimonth)
+        ].filter(Boolean);
+
+        card.innerHTML = `
+          <div class="festLeft">
+            <div class="festName">${escapeHtml(name)}</div>
+            <div class="festMeta">${escapeHtml(metaParts.join(" • "))}</div>
+          </div>
+          <div class="festArrow" aria-hidden="true">
+            <i data-feather="chevron-right" class="w-5 h-5"></i>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // -----------------------------
+    // TABLE view
+    // -----------------------------
+    function renderTable(){
+      const monthName = MONTHS_FULL[currentMonthIndex];
+      const list = MONTH_DATA[monthName] || [];
+      const body = document.getElementById("tableBody");
+
+      body.innerHTML = "";
+
+      if(!list.length){
+        body.innerHTML = `<tr><td colspan="6" class="px-4 py-5 text-stone-500 font-semibold">No festivals available for ${monthName}.</td></tr>`;
+        return;
+      }
+
+      list.forEach(f => {
+        const tr = document.createElement("tr");
+        tr.className = "hover:bg-[rgba(240,137,5,.06)]";
+
+        const name = getFestName(f) || "Festival";
+        const date = safeText(f.date);
+        const day  = safeText(f.day);
+        const type = safeText(f.type);
+        const tithi = safeText(f.tithimonth);
+
+        tr.innerHTML = `
+          <td class="px-4 py-3 font-extrabold text-stone-800">${escapeHtml(name)}</td>
+          <td class="px-4 py-3 font-black text-[var(--primary-2)]">${escapeHtml(date)}</td>
+          <td class="px-4 py-3 font-bold text-stone-600">${escapeHtml(day)}</td>
+          <td class="px-4 py-3 text-stone-600 hidden md:table-cell">${escapeHtml(type)}</td>
+          <td class="px-4 py-3 text-stone-600 hidden md:table-cell">${escapeHtml(tithi)}</td>
+          <td class="px-4 py-3">
+            <button type="button"
+              class="px-3 py-2 rounded-full bg-[rgba(240,137,5,.12)] border border-[rgba(240,137,5,.25)] font-black text-[var(--chandan)] hover:bg-[rgba(240,137,5,.18)]">
+              Open
+            </button>
+          </td>
+        `;
+
+        // attach click safely (no inline JSON)
+        tr.querySelector("button").onclick = () => openFestivalModal(f, monthName);
+
+        body.appendChild(tr);
+      });
+
+      feather.replace();
+    }
+
+    // -----------------------------
+    // MODAL
+    // -----------------------------
+    function openFestivalModal(f, monthName){
+      const modal = document.getElementById("festivalModal");
+      modal.style.display = "flex";
+      document.body.style.overflow = "hidden";
+
+      // image
+      const img = document.getElementById("modalImg");
+      img.src = getFestImg(f);
+      img.alt = getFestName(f) || "Festival";
+      img.onerror = function(){ this.src = "images/placeholder.jpg"; };
+
+      // names
+      document.getElementById("modalTitle").textContent = getFestName(f) || "Festival";
+      document.getElementById("modalHindi").textContent = getFestHindi(f);
+
+      // meta
+      const meta = [
+        monthName,
+        safeText(f.date),
+        safeText(f.day),
+        safeText(f.type),
+        safeText(f.tithimonth),
+        safeText(f.muhurat),
+        safeText(f.focus)
+      ].filter(Boolean);
+      document.getElementById("modalMeta").textContent = meta.join(" • ");
+
+      // significance
+      document.getElementById("modalSign").textContent = safeText(f.significance) || "—";
+
+      // katha
+      const kBlock = document.getElementById("modalKathaBlock");
+      if(f.katha){
+        kBlock.classList.remove("hidden");
+        document.getElementById("modalKatha").textContent = safeText(f.katha);
+      } else {
+        kBlock.classList.add("hidden");
+        document.getElementById("modalKatha").textContent = "";
+      }
+
+      // procedure
+      const proc = [];
+      if(f.morning) proc.push({label:"Morning", text:f.morning});
+      if(f.daytime) proc.push({label:"Daytime", text:f.daytime});
+      if(f.mainpuja) proc.push({label:"Main Puja", text:f.mainpuja});
+
+      const pBlock = document.getElementById("modalProcBlock");
+      const pEl = document.getElementById("modalProc");
+      if(proc.length){
+        pBlock.classList.remove("hidden");
+        pEl.innerHTML = proc.map(x => `<p><b class="text-stone-700">${escapeHtml(x.label)}:</b> ${escapeHtml(safeText(x.text))}</p>`).join("");
+      } else {
+        pBlock.classList.add("hidden");
+        pEl.innerHTML = "";
+      }
+
+      // fasting
+      const fBlock = document.getElementById("modalFastBlock");
+      if(f.fastingrules){
+        fBlock.classList.remove("hidden");
+        document.getElementById("modalFast").textContent = safeText(f.fastingrules);
+      } else {
+        fBlock.classList.add("hidden");
+        document.getElementById("modalFast").textContent = "";
+      }
+
+      // daan
+      const dBlock = document.getElementById("modalDaanBlock");
+      if(f.daan){
+        dBlock.classList.remove("hidden");
+        document.getElementById("modalDaan").textContent = safeText(f.daan);
+      } else {
+        dBlock.classList.add("hidden");
+        document.getElementById("modalDaan").textContent = "";
+      }
+
+      // notes
+      const nBlock = document.getElementById("modalNotesBlock");
+      if(f.notes){
+        nBlock.classList.remove("hidden");
+        document.getElementById("modalNotes").textContent = safeText(f.notes);
+      } else {
+        nBlock.classList.add("hidden");
+        document.getElementById("modalNotes").textContent = "";
+      }
+
+      feather.replace();
+    }
+
+    function closeFestivalModal(){
+      document.getElementById("festivalModal").style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+
+    // -----------------------------
+    // Join modal
+    // -----------------------------
+    function openJoinForm(){
+      document.getElementById("joinModal").style.display = "flex";
+      document.body.style.overflow = "hidden";
+      feather.replace();
+    }
+    function closeJoinForm(){
+      document.getElementById("joinModal").style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+    document.getElementById("joinForm")?.addEventListener("submit", function(e){
+      e.preventDefault();
+      alert("Submitted (placeholder). Backend / OTP later.");
+      closeJoinForm();
+    });
+
+    // -----------------------------
+    // Load festivals.json (supports multiple structures)
+    // -----------------------------
+    async function loadFestivals(){
+      const err = document.getElementById("calendarError");
+      err.classList.add("hidden");
+      err.innerHTML = "";
+
+      try{
+        const res = await fetch("festivals.json", { cache: "no-store" });
+        if(!res.ok) throw new Error("festivals.json not found");
+
+        const data = await res.json();
+        let flat = [];
+
+        // supported:
+        // 1) [ {...}, {...} ]
+        // 2) { items:[...] } or { festivals:[...] }
+        // 3) { months:[ {month:'January', items:[...]} ] }
+        if(Array.isArray(data)){
+          flat = data;
+        } else if(Array.isArray(data.items)){
+          flat = data.items;
+        } else if(Array.isArray(data.festivals)){
+          flat = data.festivals;
+        } else if(Array.isArray(data.months)){
+          data.months.forEach(m => (m.items || []).forEach(x => flat.push(x)));
+        } else {
+          throw new Error("Invalid JSON structure. Use array or {months:[{items:[]}] }");
+        }
+
+        ALL_FESTIVALS = flat;
+
+        buildMonthData();
+
+        // default month = current month (only if YEAR matches system year)
+        const now = new Date();
+        currentMonthIndex = (now.getFullYear() === YEAR) ? now.getMonth() : 0;
+
+        renderMonthPills();
+        renderMonthSection();
+
+        // default view
+        setView("grid");
+
+        feather.replace();
+      } catch(e){
+        err.classList.remove("hidden");
+        err.innerHTML = `
+          <div class="font-extrabold text-[var(--primary-2)] mb-2">Calendar not loading</div>
+          <div>Keep <b>festivals.json</b> in the same folder and run via <b>Live Server</b> (not file://).</div>
+          <div class="mt-2 text-xs text-stone-500 font-semibold">Error: ${escapeHtml(safeText(e.message))}</div>
+        `;
+      }
+    }
+
+    // -----------------------------
+    // small HTML escape for safety
+    // -----------------------------
+    function escapeHtml(str){
+      return String(str)
+        .replaceAll("&","&amp;")
+        .replaceAll("<","&lt;")
+        .replaceAll(">","&gt;")
+        .replaceAll('"',"&quot;")
+        .replaceAll("'","&#039;");
+    }
+
+    // Init
+    feather.replace();
+    loadFestivals();
+  </script>
+
+</body>
+</html>
