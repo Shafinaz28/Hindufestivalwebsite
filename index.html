@@ -16,49 +16,39 @@
 </head>
 
 <body class="page-pad">
+
+    <!-- TOPBAR -->
   <!-- TOPBAR -->
   <header class="topbar">
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between gap-4">
       <a href="index.html" class="flex items-center gap-3">
-        <img
-          src="./images/logo.png"
-          alt="Pratham Sanskruti Logo"
+        <img src="./images/logo.png" alt="Pratham Sanskruti Logo"
           class="w-10 h-10 rounded-full object-cover ring-2 ring-[var(--accent)]"
-          onerror="this.style.display='none'"
-        />
+          onerror="this.style.display='none'" />
         <div class="brand-font text-white text-xl md:text-2xl uppercase tracking-widest leading-tight">
           Pratham Sanskruti
         </div>
       </a>
 
-      <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center gap-6 text-sm font-bold text-[#ffe9c8]">
         <a href="index.html" class="hover:text-white">Home</a>
         <a href="instore.html" class="hover:text-white">In Store</a>
         <a href="calendar.html" class="hover:text-white">Calendar</a>
         <!-- <a href="contact.html" class="hover:text-white">Contact</a> -->
-        <button
-          onclick="openJoinForm()"
-          class="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/20"
-        >
+        <button onclick="openJoinForm()"
+          class="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/20">
           Join
         </button>
       </nav>
 
-      <!-- Mobile Hamburger -->
       <button
         class="md:hidden w-11 h-11 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 flex items-center justify-center"
-        onclick="toggleMobileMenu()"
-        aria-label="Open menu"
-        aria-controls="mobileMenu"
-        aria-expanded="false"
-        id="mobileMenuBtn"
-      >
+        onclick="toggleMobileMenu()" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false"
+        id="mobileMenuBtn">
         <i data-feather="menu" class="w-6 h-6 text-white"></i>
       </button>
     </div>
 
-    <!-- Mobile Menu Panel -->
     <div id="mobileMenu" class="md:hidden hidden border-t border-white/15 bg-[rgba(119,5,51,.95)]">
       <div class="mx-auto max-w-6xl px-4 py-4 flex flex-col gap-3 text-sm font-extrabold text-[#ffe9c8]">
         <a href="index.html" class="py-2 px-3 rounded-xl hover:bg-white/10">Home</a>
@@ -66,10 +56,8 @@
         <a href="calendar.html" class="py-2 px-3 rounded-xl hover:bg-white/10">Calendar</a>
         <!-- <a href="contact.html" class="py-2 px-3 rounded-xl hover:bg-white/10">Contact</a> -->
 
-        <button
-          onclick="openJoinForm(); closeMobileMenu();"
-          class="kumkum-btn w-full shadow-lg justify-center mt-2"
-        >
+        <button onclick="openJoinForm(); closeMobileMenu();"
+          class="kumkum-btn w-full shadow-lg justify-center mt-2">
           <i data-feather="edit-3" class="w-5 h-5"></i>
           Join
         </button>
@@ -224,71 +212,82 @@
   </div>
 </section>
 
-  <!-- JOIN MODAL (NO CHANGE) -->
-  <!-- <div id="joinModal" class="modal-backdrop" onclick="closeJoinForm()">
-    <div class="modal p-0 relative flex-col" style="max-width: 560px;" onclick="event.stopPropagation()">
-      <div class="p-5 border-b border-stone-100 flex items-start justify-between gap-4">
-        <div>
-          <div class="brand-font text-xl text-[var(--primary-2)]">Join Pratham Sanskruti</div>
-          <div class="text-sm text-stone-600 mt-1">Your Hindu Festival Guide: Reminders, Puja Kits & Kids Workshops.</div>
-          <div class="text-xs text-stone-500 mt-1">
-            Registration includes 3 WA reminders, significance, pooja vidhi & mantra jaap (vibration cleansing). Members get 5%–15% discount on purchases.
-          </div>
+<div id="joinModal" class="modal-backdrop" onclick="closeJoinForm()">
+  <div class="modal p-0 relative flex-col" style="max-width: 620px;" onclick="event.stopPropagation()">
+    
+    <div class="p-5 border-b border-stone-100 flex items-start justify-between gap-4">
+      <div>
+        <div class="brand-font text-xl text-[var(--primary-2)]">Join Pratham Sanskruti</div>
+        <div class="text-sm text-stone-600 mt-1">
+          Your Hindu Festival Guide: Reminders, Puja Kits & Kids Workshops.
         </div>
-        <button onclick="closeJoinForm()" class="text-stone-400 hover:text-red-600"><i data-feather="x"></i></button>
       </div>
+      <button onclick="closeJoinForm()" class="text-stone-400 hover:text-red-600">
+        <i data-feather="x"></i>
+      </button>
+    </div>
 
-      <div class="p-5 overflow-y-auto">
-        <form id="joinForm" class="space-y-3">
-          <input class="input" type="text" name="name" placeholder="Full Name" required />
-          <input class="input" type="email" name="email" placeholder="Email" required />
-          <input class="input" type="tel" name="phone" placeholder="Phone" required />
+    <div class="p-5 overflow-y-auto">
+      <form id="joinForm" class="space-y-3">
+        
+        <input class="input" type="text" name="name" placeholder="Full Name" required />
+        <input class="input" type="email" name="email" placeholder="Email" required />
+        <input class="input" type="tel" name="phone" placeholder="Phone" required />
+        <textarea class="input" name="address" rows="3" placeholder="Location Address" required></textarea>
 
-          <textarea class="w-full border-2 border-[var(--sky-border)] rounded-2xl p-3 outline-none focus:border-[var(--accent)] font-semibold text-sm"
-            name="address" rows="3" placeholder="Location Address" required></textarea>
-
-          <div class="text-xs font-black uppercase tracking-widest text-stone-400">
-            Which Hindu tradition (sampradaya) do you primarily follow?
+        <div>
+          <div class="text-xs font-black uppercase tracking-widest text-stone-400 mb-2">
+            A Big Heart Follower Of (Which Hindu tradition / sampradaya do you primarily follow?)
           </div>
-          <select class="select" name="sampradaya" required>
+
+          <select class="select" id="sampradayaSelect" name="sampradaya" required>
             <option value="" disabled selected>Select</option>
-            <option>Vaishnavism</option>
-            <option>Shaivism</option>
-            <option>Shaktism</option>
-            <option>Smartism</option>
-            <option>Other</option>
-            <option>None</option>
+            <option value="Vaishnavism">Vaishnavism</option>
+            <option value="Shaivism">Shaivism</option>
+            <option value="Shaktism">Shaktism</option>
+            <option value="Smartism">Smartism</option>
+            <option value="Other">Other</option>
+            <option value="None">None</option>
           </select>
 
-          <div class="grid md:grid-cols-2 gap-3">
-            <div>
-              <div class="text-xs font-black uppercase tracking-widest text-stone-400 mb-2">Call Reminders</div>
-              <select class="select" name="callReminders" required>
-                <option value="" disabled selected>Select</option>
-                <option>Yes</option>
-                <option>No</option>
-              </select>
+          <div id="sampradayaInfo" class="sampradaya-info hidden"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-3">
+          <div>
+            <div class="text-xs font-black uppercase tracking-widest text-stone-400 mb-2">
+              Call Reminders
             </div>
-            <div>
-              <div class="text-xs font-black uppercase tracking-widest text-stone-400 mb-2">Vibration Set</div>
-              <select class="select" name="vibrationSet" required>
-                <option value="" disabled selected>Select</option>
-                <option>Morning</option>
-                <option>Evening</option>
-                <option>Both</option>
-              </select>
-            </div>
+            <select class="select" name="callReminders" required>
+              <option value="" disabled selected>Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
           </div>
 
-          <input class="input" type="password" name="password" placeholder="Password" required />
-          <div class="text-xs text-stone-500 font-semibold">
-            Verify via OTP/email (integration placeholder). Lunar tithis vary regionally.
+          <div>
+            <div class="text-xs font-black uppercase tracking-widest text-stone-400 mb-2">
+              Vibration Set
+            </div>
+            <select class="select" name="vibrationSet" required>
+              <option value="" disabled selected>Select</option>
+              <option value="Morning">Morning</option>
+              <option value="Evening">Evening</option>
+            </select>
           </div>
-          <button type="submit" class="kumkum-btn w-full shadow-lg">REGISTER</button>
-        </form>
-      </div>
+        </div>
+
+        <input class="input" type="password" name="password" placeholder="Password" required />
+
+        <div class="text-xs text-stone-500 leading-relaxed">
+          Password verification via OTP / email can be connected later in backend.
+        </div>
+
+        <button type="submit" class="kumkum-btn w-full shadow-lg">REGISTER</button>
+      </form>
     </div>
-  </div> -->
+  </div>
+</div>
   <script src="./app.js"></script>
 </body>
 </html>

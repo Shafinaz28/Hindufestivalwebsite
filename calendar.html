@@ -95,6 +95,82 @@
       border-color:var(--primary-2);
       box-shadow:0 10px 22px rgba(166,3,106,.18);
     }
+ .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      background: linear-gradient(90deg, var(--primary), var(--primary-2));
+      border-bottom: 3px solid var(--accent);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, .18)
+    }
+
+    .haldi-btn {
+      background: var(--haldi);
+      color: #fff;
+      font-weight: 900;
+      padding: 14px 26px;
+      border-radius: 999px;
+      transition: .25s;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center
+    }
+    .haldi-btn:hover { filter: brightness(.95); transform: scale(1.03) }
+
+    .kumkum-btn {
+      background: var(--kumkum);
+      color: #fff;
+      font-weight: 900;
+      padding: 14px 26px;
+      border-radius: 999px;
+      transition: .25s;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center
+    }
+    .kumkum-btn:hover { filter: brightness(.95); transform: scale(1.02) }
+
+    .select {
+      width: 100%;
+      border: 2px solid var(--sky-border);
+      border-radius: 999px;
+      padding: 5px 14px;
+      background: #fff;
+      font-weight: 900;
+      color: var(--chandan);
+      outline: none;
+    }
+    .select:focus { border-color: var(--accent) }
+
+    .input {
+      width: 100%;
+      border-bottom: 2px solid rgba(31, 41, 55, .18);
+      padding: 12px 0;
+      background: transparent;
+      outline: none;
+      font-weight: 700;
+    }
+    .input:focus { border-bottom-color: var(--accent) }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--stroke);
+      box-shadow: var(--shadow);
+      border-radius: 24px;
+    }
+
+    .soft-chip {
+      background: rgba(240, 137, 5, .14);
+      border: 1px solid var(--stroke);
+    }
 
     /* LIST CARDS (grid view) */
     .festCard{
@@ -201,21 +277,38 @@
       letter-spacing:.08em;
       text-transform:uppercase;
     }
+
+    .sampradaya-info {
+  margin-top: 12px;
+  background: rgba(166, 3, 106, 0.06);
+  border: 1px solid rgba(166, 3, 106, 0.18);
+  border-radius: 16px;
+  padding: 14px 16px;
+  color: #6b3d57;
+  font-size: 13px;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.sampradaya-info strong {
+  color: var(--primary-2);
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 800;
+}
   </style>
 </head>
 
 <body class="page-pad">
 
   <!-- TOPBAR -->
+  <!-- TOPBAR -->
   <header class="topbar">
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between gap-4">
       <a href="index.html" class="flex items-center gap-3">
-        <img
-          src="./images/logo.png"
-          alt="Pratham Sanskruti Logo"
+        <img src="./images/logo.png" alt="Pratham Sanskruti Logo"
           class="w-10 h-10 rounded-full object-cover ring-2 ring-[var(--accent)]"
-          onerror="this.style.display='none'"
-        />
+          onerror="this.style.display='none'" />
         <div class="brand-font text-white text-xl md:text-2xl uppercase tracking-widest leading-tight">
           Pratham Sanskruti
         </div>
@@ -226,20 +319,16 @@
         <a href="instore.html" class="hover:text-white">In Store</a>
         <a href="calendar.html" class="hover:text-white">Calendar</a>
         <!-- <a href="contact.html" class="hover:text-white">Contact</a> -->
-        <button class="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/20"
-                onclick="openJoinForm()">
+        <button onclick="openJoinForm()"
+          class="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/20">
           Join
         </button>
       </nav>
 
       <button
         class="md:hidden w-11 h-11 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 flex items-center justify-center"
-        onclick="toggleMobileMenu()"
-        aria-label="Open menu"
-        aria-controls="mobileMenu"
-        aria-expanded="false"
-        id="mobileMenuBtn"
-      >
+        onclick="toggleMobileMenu()" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false"
+        id="mobileMenuBtn">
         <i data-feather="menu" class="w-6 h-6 text-white"></i>
       </button>
     </div>
@@ -250,8 +339,10 @@
         <a href="instore.html" class="py-2 px-3 rounded-xl hover:bg-white/10">In Store</a>
         <a href="calendar.html" class="py-2 px-3 rounded-xl hover:bg-white/10">Calendar</a>
         <!-- <a href="contact.html" class="py-2 px-3 rounded-xl hover:bg-white/10">Contact</a> -->
+
         <button onclick="openJoinForm(); closeMobileMenu();"
-                class="px-4 py-3 rounded-full bg-[var(--haldi)] text-[#2b1a12] font-black">
+          class="kumkum-btn w-full shadow-lg justify-center mt-2">
+          <i data-feather="edit-3" class="w-5 h-5"></i>
           Join
         </button>
       </div>
@@ -374,27 +465,82 @@
     </div>
   </div>
 
-  <!-- JOIN MODAL (simple placeholder) -->
-  <div id="joinModal" class="modal-backdrop" onclick="closeJoinForm()">
-    <div class="modal p-0 relative flex-col" style="max-width: 560px;" onclick="event.stopPropagation()">
-      <div class="p-5 border-b border-stone-100 flex items-start justify-between gap-4">
-        <div>
-          <div class="brand-font text-xl text-[var(--primary-2)]">Join Pratham Sanskruti</div>
-          <div class="text-sm text-stone-600 mt-1">Registration placeholder.</div>
+<div id="joinModal" class="modal-backdrop" onclick="closeJoinForm()">
+  <div class="modal p-0 relative flex-col" style="max-width: 620px;" onclick="event.stopPropagation()">
+    
+    <div class="p-5 border-b border-stone-100 flex items-start justify-between gap-4">
+      <div>
+        <div class="brand-font text-xl text-[var(--primary-2)]">Join Pratham Sanskruti</div>
+        <div class="text-sm text-stone-600 mt-1">
+          Your Hindu Festival Guide: Reminders, Puja Kits & Kids Workshops.
         </div>
-        <button onclick="closeJoinForm()" class="text-stone-400 hover:text-red-600" type="button"><i data-feather="x"></i></button>
       </div>
+      <button onclick="closeJoinForm()" class="text-stone-400 hover:text-red-600">
+        <i data-feather="x"></i>
+      </button>
+    </div>
 
-      <div class="p-5 overflow-y-auto">
-        <form id="joinForm" class="space-y-3">
-          <input class="w-full border-b-2 border-stone-200 py-3 outline-none font-semibold" type="text" name="name" placeholder="Full Name" required />
-          <input class="w-full border-b-2 border-stone-200 py-3 outline-none font-semibold" type="email" name="email" placeholder="Email" required />
-          <input class="w-full border-b-2 border-stone-200 py-3 outline-none font-semibold" type="tel" name="phone" placeholder="Phone" required />
-          <button type="submit" class="w-full rounded-full bg-[var(--primary-2)] text-white font-black py-3">REGISTER</button>
-        </form>
-      </div>
+    <div class="p-5 overflow-y-auto">
+      <form id="joinForm" class="space-y-3">
+        
+        <input class="input" type="text" name="name" placeholder="Full Name" required />
+        <input class="input" type="email" name="email" placeholder="Email" required />
+        <input class="input" type="tel" name="phone" placeholder="Phone" required />
+        <textarea class="input" name="address" rows="3" placeholder="Location Address" required></textarea>
+
+        <div>
+          <div class="text-xs font-black uppercase tracking-widest text-stone-400 mb-2">
+            A Big Heart Follower Of (Which Hindu tradition / sampradaya do you primarily follow?)
+          </div>
+
+          <select class="select" id="sampradayaSelect" name="sampradaya" required>
+            <option value="" disabled selected>Select</option>
+            <option value="Vaishnavism">Vaishnavism</option>
+            <option value="Shaivism">Shaivism</option>
+            <option value="Shaktism">Shaktism</option>
+            <option value="Smartism">Smartism</option>
+            <option value="Other">Other</option>
+            <option value="None">None</option>
+          </select>
+
+          <div id="sampradayaInfo" class="sampradaya-info hidden"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-3">
+          <div>
+            <div class="text-xs font-black uppercase tracking-widest text-stone-400 mb-2">
+              Call Reminders
+            </div>
+            <select class="select" name="callReminders" required>
+              <option value="" disabled selected>Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          <div>
+            <div class="text-xs font-black uppercase tracking-widest text-stone-400 mb-2">
+              Vibration Set
+            </div>
+            <select class="select" name="vibrationSet" required>
+              <option value="" disabled selected>Select</option>
+              <option value="Morning">Morning</option>
+              <option value="Evening">Evening</option>
+            </select>
+          </div>
+        </div>
+
+        <input class="input" type="password" name="password" placeholder="Password" required />
+
+        <div class="text-xs text-stone-500 leading-relaxed">
+          Password verification via OTP / email can be connected later in backend.
+        </div>
+
+        <button type="submit" class="kumkum-btn w-full shadow-lg">REGISTER</button>
+      </form>
     </div>
   </div>
+</div>
 
   <script>
     // -----------------------------
@@ -816,6 +962,71 @@
     feather.replace();
     loadFestivals();
   </script>
+<script>
+  const sampradayaDescriptions = {
+    Vaishnavism: `
+      <strong>Vaishnavism</strong>
+      Vaishnavism festivals are centered on Vishnu and his avatars like Rama and Krishna.
+      These traditions strongly emphasize bhakti, devotion, nama japa, temple worship,
+      Ekadashi observances, Janmashtami, Rama Navami, and other Vishnu-related celebrations.
+    `,
+    Shaivism: `
+      <strong>Shaivism</strong>
+      Shaivism festivals focus on Lord Shiva, with special importance given to
+      Maha Shivaratri, Pradosha Vratam, monthly Shivaratri, ascetic vigils, abhishekam,
+      and lingam-centered worship practices.
+    `,
+    Shaktism: `
+      <strong>Shaktism</strong>
+      Shaktism is goddess-centric, honoring Devi in forms such as Durga, Lakshmi,
+      Saraswati, Kali, and Lalita. Navaratri, Durga Puja, Varalakshmi Vrata,
+      and other Devi festivals are especially important, often observed with intense rituals and community celebrations.
+    `,
+    Smartism: `
+      <strong>Smartism</strong>
+      Smartism follows a non-exclusive approach and often includes Panchayatana puja,
+      honoring Shiva, Vishnu, Devi, Surya, and Ganesha together. It observes shared
+      pan-Hindu festivals with a balanced and inclusive spiritual outlook.
+    `,
+    Other: `
+      <strong>Other</strong>
+      You may follow a regional, family-based, temple-based, guru-based, or personal
+      spiritual tradition that does not fit into one category. You can still register
+      and receive reminders and updates based on your needs.
+    `,
+    None: `
+      <strong>None</strong>
+      Even if you do not primarily follow a specific sampradaya, you can still join
+      Pratham Sanskruti to receive cultural guidance, festival reminders, puja support,
+      and family-friendly resources.
+    `
+  };
 
+  const sampradayaSelect = document.getElementById("sampradayaSelect");
+  const sampradayaInfo = document.getElementById("sampradayaInfo");
+
+  if (sampradayaSelect && sampradayaInfo) {
+    sampradayaSelect.addEventListener("change", function () {
+      const value = this.value;
+
+      if (value && sampradayaDescriptions[value]) {
+        sampradayaInfo.innerHTML = sampradayaDescriptions[value];
+        sampradayaInfo.classList.remove("hidden");
+      } else {
+        sampradayaInfo.innerHTML = "";
+        sampradayaInfo.classList.add("hidden");
+      }
+    });
+  }
+
+  const joinForm = document.getElementById("joinForm");
+  if (joinForm) {
+    joinForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Registration submitted. OTP / email verification can be connected in backend.");
+      closeJoinForm();
+    });
+  }
+</script>
 </body>
 </html>

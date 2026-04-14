@@ -932,3 +932,69 @@ window.addEventListener("resize", () => {
   }
 
   setInterval(changeSlide, 4000); // change every 4 seconds
+
+
+  const sampradayaDescriptions = {
+    Vaishnavism: `
+      <strong>Vaishnavism</strong>
+      Vaishnavism festivals are centered on Vishnu and his avatars like Rama and Krishna.
+      These traditions strongly emphasize bhakti, devotion, nama japa, temple worship,
+      Ekadashi observances, Janmashtami, Rama Navami, and other Vishnu-related celebrations.
+    `,
+    Shaivism: `
+      <strong>Shaivism</strong>
+      Shaivism festivals focus on Lord Shiva, with special importance given to
+      Maha Shivaratri, Pradosha Vratam, monthly Shivaratri, ascetic vigils, abhishekam,
+      and lingam-centered worship practices.
+    `,
+    Shaktism: `
+      <strong>Shaktism</strong>
+      Shaktism is goddess-centric, honoring Devi in forms such as Durga, Lakshmi,
+      Saraswati, Kali, and Lalita. Navaratri, Durga Puja, Varalakshmi Vrata,
+      and other Devi festivals are especially important, often observed with intense rituals and community celebrations.
+    `,
+    Smartism: `
+      <strong>Smartism</strong>
+      Smartism follows a non-exclusive approach and often includes Panchayatana puja,
+      honoring Shiva, Vishnu, Devi, Surya, and Ganesha together. It observes shared
+      pan-Hindu festivals with a balanced and inclusive spiritual outlook.
+    `,
+    Other: `
+      <strong>Other</strong>
+      You may follow a regional, family-based, temple-based, guru-based, or personal
+      spiritual tradition that does not fit into one category. You can still register
+      and receive reminders and updates based on your needs.
+    `,
+    None: `
+      <strong>None</strong>
+      Even if you do not primarily follow a specific sampradaya, you can still join
+      Pratham Sanskruti to receive cultural guidance, festival reminders, puja support,
+      and family-friendly resources.
+    `
+  };
+
+  const sampradayaSelect = document.getElementById("sampradayaSelect");
+  const sampradayaInfo = document.getElementById("sampradayaInfo");
+
+  if (sampradayaSelect && sampradayaInfo) {
+    sampradayaSelect.addEventListener("change", function () {
+      const value = this.value;
+
+      if (value && sampradayaDescriptions[value]) {
+        sampradayaInfo.innerHTML = sampradayaDescriptions[value];
+        sampradayaInfo.classList.remove("hidden");
+      } else {
+        sampradayaInfo.innerHTML = "";
+        sampradayaInfo.classList.add("hidden");
+      }
+    });
+  }
+
+  const joinForm = document.getElementById("joinForm");
+  if (joinForm) {
+    joinForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Registration submitted. OTP / email verification can be connected in backend.");
+      closeJoinForm();
+    });
+  }
