@@ -98,7 +98,7 @@
       width: 100%;
       border: 2px solid var(--sky-border);
       border-radius: 999px;
-      padding: 10px 14px;
+      padding: 5px 14px;
       background: #fff;
       font-weight: 900;
       color: var(--chandan);
@@ -180,15 +180,26 @@
     .calTitle { font-weight: 900; color: var(--primary-2) }
 
     .calControls {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: center;
-      justify-content: center;
-      padding: 12px 14px;
-      background: #fff;
-      border-top: 1px solid rgba(119, 5, 51, .10)
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: #fff;
+  border-top: 1px solid rgba(119, 5, 51, .10);
+}
+
+/* 🔥 IMPORTANT FIX */
+.calBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap; /* prevents text breaking */
+}
+
+.calControls select {
+  height: 40px;
+}
 
     .calBtn {
       padding: 10px 14px;
@@ -336,6 +347,343 @@
     }
 
     .moreText tr:last-child td { border-bottom: none; }
+
+    .calendar-click{
+  cursor:pointer;
+  transition:.2s;
+}
+
+.calendar-click:hover{
+  color:var(--primary-2);
+  text-decoration:underline;
+}
+
+.calendar-grid-wrap{
+  background:#fff;
+  border:2px solid var(--sky-border);
+  border-radius:18px;
+  padding:18px;
+  overflow-x:auto;
+}
+
+.calendar-month-title{
+  font-family:"Cinzel", serif;
+  color:var(--primary-2);
+  font-size:28px;
+  margin-bottom:16px;
+}
+
+.calendar-table{
+  width:100%;
+  border-collapse:collapse;
+  background:#fff;
+}
+
+.calendar-table th,
+.calendar-table td{
+  border:1px solid #e5e7eb;
+  padding:10px 12px;
+  text-align:left;
+  font-size:14px;
+  vertical-align:top;
+}
+
+.calendar-table th{
+  background:#f8f3f3;
+  color:#7a1b4d;
+  font-weight:800;
+}
+
+.calendar-month-grid{
+  display:grid;
+  grid-template-columns:repeat(7, minmax(120px, 1fr));
+  border:1px solid #e5e7eb;
+  min-width:840px;
+}
+
+.calendar-day-head{
+  background:#f7efe8;
+  color:#a6036a;
+  font-weight:800;
+  text-align:center;
+  padding:10px 6px;
+  border-right:1px solid #e5e7eb;
+  border-bottom:1px solid #e5e7eb;
+  font-size:12px;
+}
+
+.calendar-day-cell{
+  min-height:105px;
+  padding:8px;
+  border-right:1px solid #e5e7eb;
+  border-bottom:1px solid #e5e7eb;
+  background:#fff;
+}
+
+.calendar-day-cell.off{
+  background:#eef3f5;
+}
+
+.calendar-day-number{
+  font-size:12px;
+  font-weight:900;
+  color:#1f2937;
+  margin-bottom:6px;
+}
+
+.calendar-festival-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:4px 8px;
+  border-radius:999px;
+  border:1px solid #f0a45e;
+  background:#fff4e8;
+  color:#8d0c4e;
+  font-size:11px;
+  font-weight:800;
+  margin-bottom:4px;
+  cursor:pointer;
+  line-height:1.2;
+}
+
+.calendar-festival-dot{
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:#c2185b;
+  flex-shrink:0;
+}
+
+  .moreWrap {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  @media (min-width: 768px) {
+    .moreWrap {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .moreDropdown {
+    background: rgba(233, 252, 255, .55);
+    border: 1px solid var(--stroke);
+    border-radius: 18px;
+    overflow: hidden;
+  }
+
+  .moreDropdown summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-weight: 900;
+    color: var(--chandan);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    user-select: none;
+  }
+
+  .moreDropdown summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .moreDropdown summary::after {
+    content: "+";
+    font-size: 22px;
+    line-height: 1;
+    color: var(--primary-2);
+    transition: transform 0.25s ease;
+    flex-shrink: 0;
+  }
+
+  .moreDropdown[open] summary::after {
+    transform: rotate(45deg);
+  }
+
+  .moreDropdownBody {
+    padding: 0 16px 16px;
+    font-size: 13px;
+    line-height: 1.75;
+    color: rgba(31, 41, 55, .85);
+    font-weight: 600;
+    white-space: normal;
+  }
+
+  .moreDropdownBody p {
+    margin: 10px 0;
+  }
+
+  .moreDropdownBody ul {
+    margin: 10px 0 0 0;
+    padding-left: 20px;
+    list-style: disc;
+  }
+
+  .moreDropdownBody li {
+    margin-bottom: 8px;
+  }
+
+  .moreDropdownBody table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    border: 1px solid rgba(119, 5, 51, .14);
+    border-radius: 14px;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .moreDropdownBody th,
+  .moreDropdownBody td {
+    border-bottom: 1px solid rgba(119, 5, 51, .10);
+    padding: 12px 10px;
+    text-align: left;
+    font-size: 13px;
+    vertical-align: top;
+  }
+
+  .moreDropdownBody th {
+    background: linear-gradient(90deg, rgba(240, 137, 5, .14), rgba(21, 207, 229, .10), #fff);
+    color: var(--chandan);
+    font-weight: 900;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+  }
+
+  .moreDropdownBody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .moreWrap {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .moreWrap {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.moreDropdown {
+  background: rgba(233, 252, 255, .55);
+  border: 1px solid var(--stroke);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.moreDropdown summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-weight: 900;
+  color: var(--chandan);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  user-select: none;
+}
+
+.moreDropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.moreDropdown summary::after {
+  content: "+";
+  font-size: 22px;
+  line-height: 1;
+  color: var(--primary-2);
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+
+.moreDropdown[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.moreDropdownBody {
+  padding: 0 16px 16px;
+  font-size: 13px;
+  line-height: 1.75;
+  color: rgba(31, 41, 55, .85);
+  font-weight: 600;
+}
+
+.moreDropdownBody p {
+  margin: 10px 0;
+}
+
+.moreDropdownBody ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.moreDropdownBody li {
+  margin-bottom: 8px;
+}
+
+.festivalListCard {
+  background: #fff;
+  border: 1px solid var(--sky-border);
+  border-radius: 16px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.festivalListCard:hover {
+  box-shadow: 0 10px 26px rgba(31, 41, 55, .10);
+  transform: translateY(-2px);
+}
+
+.festivalListDate {
+  font-size: 11px;
+  font-weight: 900;
+  color: #ef4b1a;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.festivalListName {
+  font-weight: 900;
+  color: var(--chandan);
+  font-size: 16px;
+}
+
+.festivalListMeta {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--primary-2);
+  margin-top: 3px;
+  line-height: 1.4;
+}
+.sampradaya-info {
+  margin-top: 12px;
+  background: rgba(166, 3, 106, 0.06);
+  border: 1px solid rgba(166, 3, 106, 0.18);
+  border-radius: 16px;
+  padding: 14px 16px;
+  color: #6b3d57;
+  font-size: 13px;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.sampradaya-info strong {
+  color: var(--primary-2);
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 800;
+}
   </style>
 </head>
 
@@ -441,43 +789,83 @@
               </div>
 
               <!-- MORE -->
-              <div id="moreSection" class="hidden mt-10">
-                <div class="text-[10px] font-black uppercase tracking-[0.35em] text-stone-400 mb-3"></div>
-                <div id="moreWrap" class="moreWrap"></div>
-              </div>
+<div id="moreSection" class="hidden mt-10">
+  <div class="flex justify-center">
+    <button
+      id="readMoreBtn"
+      type="button"
+      onclick="toggleReadMore()"
+      class="kumkum-btn px-8 py-3"
+    >
+      Read More
+    </button>
+  </div>
 
-              <!-- ✅ Hindu Calendar appears ONLY for 2nd card -->
-              <div id="hinduCalendarPanel" class="hidden mt-10">
-                <div class="calWrap">
-                  <div class="calHead">
-                    <div class="calSub">Festival Calendar</div>
-                    <div id="calMonthTitle" class="brand-font text-2xl calTitle uppercase tracking-wide"></div>
-                    <div class="h-1 w-20 bg-[var(--accent)] mx-auto mt-2 rounded-full"></div>
-                  </div>
+  <div id="moreWrap" class="moreWrap hidden mt-6"></div>
 
-                  <div class="calControls">
-                    <button id="calPrevBtn" class="calBtn" type="button">‹ Previous</button>
-                    <select id="calMonthSelect" class="select"></select>
-                    <select id="calYearSelect" class="select"></select>
-                    <button id="calNextBtn" class="calBtn" type="button">Next ›</button>
-                  </div>
+  <!-- CALENDAR OPTIONS ONLY FOR CARD 2 -->
+  <div id="hinduCalendarPanel" class="hidden mt-8">
+    <div class="flex flex-col md:flex-row gap-3 justify-center mb-6">
+      <button id="showGridBtn" type="button" class="haldi-btn px-6 py-3" onclick="switchCalendarView('grid')">
+        Calendar View
+      </button>
+      <button id="showListBtn" type="button" class="kumkum-btn px-6 py-3" onclick="switchCalendarView('list')">
+        List View
+      </button>
+    </div>
 
-                  <div class="calGridHead">
-                    <div class="calDow">Sun</div>
-                    <div class="calDow">Mon</div>
-                    <div class="calDow">Tue</div>
-                    <div class="calDow">Wed</div>
-                    <div class="calDow">Thu</div>
-                    <div class="calDow">Fri</div>
-                    <div class="calDow">Sat</div>
-                  </div>
-                  <div id="calGrid" class="calGrid"></div>
-                </div>
+    <!-- COMMON MONTH/YEAR CONTROLS -->
+    <div class="calWrap mb-6">
+      <div class="calHead">
+        <div class="calSub">Festival Calendar</div>
+        <div id="calMonthTitle" class="brand-font text-2xl calTitle uppercase tracking-wide"></div>
+        <div class="h-1 w-20 bg-[var(--accent)] mx-auto mt-2 rounded-full"></div>
+      </div>
 
-                <div id="calErr"
-                  class="hidden mt-4 bg-white border border-[var(--stroke)] rounded-2xl p-4 text-sm text-stone-600">
-                </div>
-              </div>
+      <div class="calControls">
+  <button id="calPrevBtn" class="calBtn" type="button">‹ Previous</button>
+
+  <select id="calMonthSelect" class="select"></select>
+  <select id="calYearSelect" class="select"></select>
+
+  <button id="calNextBtn" class="calBtn" type="button">Next ›</button>
+</div>
+    </div>
+
+    <!-- OPTION 1 -->
+    <div id="calendarGridView" class="hidden">
+      <div class="calWrap">
+        <div class="calGridHead">
+          <div class="calDow">Sun</div>
+          <div class="calDow">Mon</div>
+          <div class="calDow">Tue</div>
+          <div class="calDow">Wed</div>
+          <div class="calDow">Thu</div>
+          <div class="calDow">Fri</div>
+          <div class="calDow">Sat</div>
+        </div>
+        <div id="calGrid" class="calGrid"></div>
+      </div>
+    </div>
+
+    <!-- OPTION 2 -->
+    <div id="calendarListView" class="hidden">
+      <div class="panel p-5 md:p-7">
+        <div class="text-[10px] font-black uppercase tracking-[0.35em] text-stone-400 mb-4">
+          Monthly Directory
+        </div>
+        <div id="festivalListWrap" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+      </div>
+    </div>
+
+    <div id="calErr"
+      class="hidden mt-4 bg-white border border-[var(--stroke)] rounded-2xl p-4 text-sm text-stone-600">
+    </div>
+  </div>
+</div>
+
+
+                
 
               <div class="mt-10 flex justify-center">
                 <button onclick="openJoinForm()" class="haldi-btn shadow-lg px-10 py-3">
@@ -493,119 +881,175 @@
     </section>
   </main>
 
-  <!-- FESTIVAL MODAL -->
-  <div id="festivalModal" class="modal-backdrop" onclick="closeFestivalModal()">
-    <div class="modal" onclick="event.stopPropagation()">
-      <div class="md:w-1/2 w-full h-64 md:h-auto bg-stone-100 flex-shrink-0">
-        <img id="modalImg" class="w-full h-full object-cover" src="images/placeholder.jpg" alt=""
-          onerror="this.src='images/placeholder.jpg'">
+<!-- FESTIVAL INFO MODAL -->
+<div id="festivalInfoModal" class="modal-backdrop" onclick="closeFestivalInfoModal()">
+  <div class="modal" style="max-width: 980px;" onclick="event.stopPropagation()">
+    <div class="md:w-1/2 w-full h-64 md:h-auto bg-stone-100 flex-shrink-0">
+      <img id="festivalModalImg" class="w-full h-full object-cover" src="images/placeholder.jpg" alt="Festival Image" onerror="this.src='images/placeholder.jpg'">
+    </div>
+
+    <div class="md:w-1/2 w-full p-6 overflow-y-auto flex-1 min-w-0">
+      <button onclick="closeFestivalInfoModal()" class="float-right text-stone-400 hover:text-red-600">
+        <i data-feather="x"></i>
+      </button>
+
+      <h2 id="festivalModalTitle" class="brand-font text-2xl text-[var(--primary-2)] mb-1"></h2>
+      <p id="festivalModalHindi" class="text-base text-stone-600 mb-3"></p>
+
+      <div id="festivalModalMeta" class="text-xs font-bold text-stone-500 uppercase tracking-widest border-b pb-4 mb-6"></div>
+
+      <div class="mb-6">
+        <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Significance</h5>
+        <p id="festivalModalSignificance" class="text-sm text-stone-600 leading-relaxed"></p>
       </div>
 
-      <div class="md:w-1/2 w-full p-6 overflow-y-auto flex-1 min-w-0">
-        <button onclick="closeFestivalModal()" class="float-right text-stone-400 hover:text-red-600">
-          <i data-feather="x"></i>
-        </button>
+      <div class="mb-6" id="festivalModalKathaBlock">
+        <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Katha</h5>
+        <p id="festivalModalKatha" class="text-sm text-stone-600 leading-relaxed"></p>
+      </div>
 
-        <h2 id="modalTitle" class="brand-font text-2xl text-[var(--primary-2)] mb-1"></h2>
-        <p id="modalHindi" class="text-base text-stone-600 mb-3"></p>
+      <div class="mb-6" id="festivalModalProcedureBlock">
+        <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Procedure</h5>
+        <div id="festivalModalProcedure" class="text-sm text-stone-600 leading-relaxed space-y-2"></div>
+      </div>
 
-        <div id="modalMeta"
-          class="text-xs font-bold text-stone-500 uppercase tracking-widest border-b pb-4 mb-6"></div>
+      <div class="mb-6" id="festivalModalFastingBlock">
+        <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Fasting</h5>
+        <p id="festivalModalFasting" class="text-sm text-stone-600 leading-relaxed"></p>
+      </div>
 
-        <div class="mb-6">
-          <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Significance</h5>
-          <p id="modalSign" class="text-sm text-stone-600 leading-relaxed"></p>
-        </div>
+      <div class="mb-6" id="festivalModalDaanBlock">
+        <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Daan</h5>
+        <p id="festivalModalDaan" class="text-sm text-stone-600 leading-relaxed"></p>
+      </div>
 
-        <div class="mb-6" id="modalKathaBlock">
-          <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Katha</h5>
-          <p id="modalKatha" class="text-sm text-stone-600 leading-relaxed"></p>
-        </div>
-
-        <div class="mb-6" id="modalProcBlock">
-          <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Procedure</h5>
-          <div id="modalProc" class="text-sm text-stone-600 leading-relaxed space-y-2"></div>
-        </div>
-
-        <div class="mb-6" id="modalFastBlock">
-          <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Fasting</h5>
-          <p id="modalFast" class="text-sm text-stone-600 leading-relaxed"></p>
-        </div>
-
-        <div class="mb-6" id="modalDaanBlock">
-          <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Daan</h5>
-          <p id="modalDaan" class="text-sm text-stone-600 leading-relaxed"></p>
-        </div>
-
-        <div id="modalNotesBlock" class="hidden">
-          <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Notes</h5>
-          <p id="modalNotes" class="text-sm text-stone-600 leading-relaxed"></p>
-        </div>
+      <div class="mb-6" id="festivalModalNotesBlock">
+        <h5 class="text-[10px] font-black text-stone-400 uppercase mb-2">Notes</h5>
+        <p id="festivalModalNotes" class="text-sm text-stone-600 leading-relaxed"></p>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- JOIN MODAL -->
-  <div id="joinModal" class="modal-backdrop" onclick="closeJoinForm()">
-    <div class="modal !max-w-lg p-0 relative flex-col" onclick="event.stopPropagation()">
-      <div class="p-6 border-b border-stone-100 flex items-start justify-between gap-4">
+<div id="joinModal" class="modal-backdrop" onclick="closeJoinForm()">
+  <div class="modal p-0 relative flex-col" style="max-width: 620px;" onclick="event.stopPropagation()">
+    
+    <div class="p-5 border-b border-stone-100 flex items-start justify-between gap-4">
+      <div>
+        <div class="brand-font text-xl text-[var(--primary-2)]">Join Pratham Sanskruti</div>
+        <div class="text-sm text-stone-600 mt-1">
+          Your Hindu Festival Guide: Reminders, Puja Kits & Kids Workshops.
+        </div>
+      </div>
+      <button onclick="closeJoinForm()" class="text-stone-400 hover:text-red-600">
+        <i data-feather="x"></i>
+      </button>
+    </div>
+
+    <div class="p-5 overflow-y-auto">
+      <form id="joinForm" class="space-y-3">
+        
+        <input class="input" type="text" name="name" placeholder="Full Name" required />
+        <input class="input" type="email" name="email" placeholder="Email" required />
+        <input class="input" type="tel" name="phone" placeholder="Phone" required />
+        <textarea class="input" name="address" rows="3" placeholder="Location Address" required></textarea>
+
         <div>
-          <div class="brand-font text-2xl text-[var(--primary-2)]">Join Pratham Sanskruti</div>
-          <div class="text-sm text-stone-600 mt-1">Registration placeholder.</div>
+          <div class="text-xs font-black uppercase tracking-widest text-stone-400 mb-2">
+            A Big Heart Follower Of (Which Hindu tradition / sampradaya do you primarily follow?)
+          </div>
+
+          <select class="select" id="sampradayaSelect" name="sampradaya" required>
+            <option value="" disabled selected>Select</option>
+            <option value="Vaishnavism">Vaishnavism</option>
+            <option value="Shaivism">Shaivism</option>
+            <option value="Shaktism">Shaktism</option>
+            <option value="Smartism">Smartism</option>
+            <option value="Other">Other</option>
+            <option value="None">None</option>
+          </select>
+
+          <div id="sampradayaInfo" class="sampradaya-info hidden"></div>
         </div>
-        <button onclick="closeJoinForm()" class="text-stone-400 hover:text-red-600"><i data-feather="x"></i></button>
-      </div>
-      <div class="p-6">
-        <form onsubmit="event.preventDefault(); alert('Submitted (placeholder)'); closeJoinForm();" class="space-y-3">
-          <input class="input" type="text" placeholder="Full Name" required>
-          <input class="input" type="email" placeholder="Email" required>
-          <input class="input" type="tel" placeholder="Phone" required>
-          <button class="kumkum-btn w-full" type="submit">REGISTER</button>
-        </form>
-      </div>
+
+        <div class="grid md:grid-cols-2 gap-3">
+          <div>
+            <div class="text-xs font-black uppercase tracking-widest text-stone-400 mb-2">
+              Call Reminders
+            </div>
+            <select class="select" name="callReminders" required>
+              <option value="" disabled selected>Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          <div>
+            <div class="text-xs font-black uppercase tracking-widest text-stone-400 mb-2">
+              Vibration Set
+            </div>
+            <select class="select" name="vibrationSet" required>
+              <option value="" disabled selected>Select</option>
+              <option value="Morning">Morning</option>
+              <option value="Evening">Evening</option>
+            </select>
+          </div>
+        </div>
+
+        <input class="input" type="password" name="password" placeholder="Password" required />
+
+        <div class="text-xs text-stone-500 leading-relaxed">
+          Password verification via OTP / email can be connected later in backend.
+        </div>
+
+        <button type="submit" class="kumkum-btn w-full shadow-lg">REGISTER</button>
+      </form>
     </div>
   </div>
+</div>
 
-  <script>
-    // -----------------------------
-    // MOBILE MENU
-    // -----------------------------
-    function toggleMobileMenu() {
-      const menu = document.getElementById("mobileMenu");
-      const btn = document.getElementById("mobileMenuBtn");
-      const open = menu.classList.contains("hidden");
-      menu.classList.toggle("hidden");
-      if (btn) btn.setAttribute("aria-expanded", open ? "true" : "false");
-      feather.replace();
-    }
-    function closeMobileMenu() {
-      const menu = document.getElementById("mobileMenu");
-      const btn = document.getElementById("mobileMenuBtn");
-      if (!menu.classList.contains("hidden")) menu.classList.add("hidden");
-      if (btn) btn.setAttribute("aria-expanded", "false");
-    }
+ 
+<script>
+  // -----------------------------
+  // MOBILE MENU
+  // -----------------------------
+  function toggleMobileMenu() {
+    const menu = document.getElementById("mobileMenu");
+    const btn = document.getElementById("mobileMenuBtn");
+    const open = menu.classList.contains("hidden");
+    menu.classList.toggle("hidden");
+    if (btn) btn.setAttribute("aria-expanded", open ? "true" : "false");
+    feather.replace();
+  }
 
-    // -----------------------------
-    // CONTENT (FULL)
-    // -----------------------------
-    const storeServices = [
-      {
-        key: "rituals",
-        icon: "sun",
-        title: "Ritual Procedures / Sacred Events",
-        images: "Ritual-Procedures-Sacred-Events.jpg",
-        intro: "Clear, practical blueprints for sacred events like Shanti Puja and Griha Pravesha.",
-        what: `Pratham Sanskruti unites timeless Hindu tradition with modern precision by creating clear, practical blueprints for sacred events like Shanti Pujas and Griha Pravesha. Every act in a sacred ritual – lighting a diya, offering flowers, observing a fast, participating in a yatra – carries intention and transforms the mind towards gratitude and self-awareness. We design each ceremony so that spiritual depth is matched by smooth logistics, giving families the confidence that both dharmic and practical details are fully cared for. Through these sacred gatherings, spirituality is experienced not as something separate, but as a living flow through homes, temples, and communities – an ongoing samskruti, a culture of refinement.
+  function closeMobileMenu() {
+    const menu = document.getElementById("mobileMenu");
+    const btn = document.getElementById("mobileMenuBtn");
+    if (!menu.classList.contains("hidden")) menu.classList.add("hidden");
+    if (btn) btn.setAttribute("aria-expanded", "false");
+  }
+
+  // -----------------------------
+  // CONTENT (FULL)
+  // -----------------------------
+  const storeServices = [
+    {
+      key: "rituals",
+      icon: "sun",
+      title: "Ritual Procedures / Sacred Events",
+      images: "Ritual-Procedures-Sacred-Events.jpg",
+      intro: "Clear, practical blueprints for sacred events like Shanti Puja and Griha Pravesha.",
+      what: `Pratham Sanskruti unites timeless Hindu tradition with modern precision by creating clear, practical blueprints for sacred events like Shanti Pujas and Griha Pravesha. Every act in a sacred ritual – lighting a diya, offering flowers, observing a fast, participating in a yatra – carries intention and transforms the mind towards gratitude and self-awareness. We design each ceremony so that spiritual depth is matched by smooth logistics, giving families the confidence that both dharmic and practical details are fully cared for. Through these sacred gatherings, spirituality is experienced not as something separate, but as a living flow through homes, temples, and communities – an ongoing samskruti, a culture of refinement.
 In this way, Pratham Sanskruti shows how India’s timeless wisdom can guide modern life towards greater harmony, seva, and inner growth.`,
-        why: `Sacred Rituals & Timing help align your worship with the most auspicious moments, using tithi, nakshatra, and muhurat from the Panchang so your effort flows with cosmic rhythm, deepening peace, success, and spiritual benefit. Sacred events purify and uplift both individual and community, strengthening family bonds, connecting generations, and renewing our relationship with society, ancestors, and nature. In Indian tradition, festivals are utsava – occasions that lift our inner energy through worship, music, dance, colour, and shared food, keeping living samskruti (a culture of refinement) active in daily life.`,
-        more: [
-          {
-            title: "Overview",
-            text: `Hindu culture features a vast array of ritual procedures and sacred events, categorized mainly into samskaras (16 key rites of passage), daily puja steps, and major festivals. These practices vary by region, sect, and tradition but emphasize purification, devotion, and life milestones.`
-          },
-          {
-            title: "Samskaras (Rites of Passage)",
-            text: `Garbhadhana (conception ritual)
+      why: `Sacred Rituals & Timing help align your worship with the most auspicious moments, using tithi, nakshatra, and muhurat from the Panchang so your effort flows with cosmic rhythm, deepening peace, success, and spiritual benefit. Sacred events purify and uplift both individual and community, strengthening family bonds, connecting generations, and renewing our relationship with society, ancestors, and nature. In Indian tradition, festivals are utsava – occasions that lift our inner energy through worship, music, dance, colour, and shared food, keeping living samskruti (a culture of refinement) active in daily life.`,
+      more: [
+        {
+          title: "Overview",
+          text: `Hindu culture features a vast array of ritual procedures and sacred events, categorized mainly into samskaras (16 key rites of passage), daily puja steps, and major festivals. These practices vary by region, sect, and tradition but emphasize purification, devotion, and life milestones.o	Hindu culture features a vast array of ritual procedures and sacred events, categorized mainly into samskaras (16 key rites of passage), daily puja steps, and major festivals. These practices vary by region, sect, and tradition but emphasize purification, devotion, and life milestones. No single exhaustive list exists due to Hinduism's diversity, but core ones are outlined below from traditional texts.`
+        },
+        {
+          title: "Samskaras (Rites of Passage)",
+          text: `Garbhadhana (conception ritual)
 Pumsavana (fetal nurturing, ~3rd month)
 Simantonnayana (hair-parting, pregnancy rite)
 Jatakarman (birth celebration)
@@ -621,10 +1065,10 @@ Keshanta/Ritusuddhi (coming of age)
 Samavartana (graduation)
 Vivaha (marriage)
 Antyeshti (funeral rites)`
-          },
-          {
-            title: "Puja Steps (Daily Worship)",
-            text: `Dhyana (meditation on deity)
+        },
+        {
+          title: "Puja Steps (Daily Worship)",
+          text: `Dhyana (meditation on deity)
 Avahana (invocation)
 Padya (foot wash)
 Arghya (water offering)
@@ -640,10 +1084,10 @@ Naivedya (food offering)
 Tambula (betel leaves)
 Pradakshina (circumambulation)
 Namaskara (prostration)`
-          },
-          {
-            title: "Major Festivals (Sacred Events)",
-            text: `
+        },
+        {
+          title: "Major Festivals (Sacred Events)",
+          text: `
 <p>Hindu festivals follow sacred lunar timings (tithi) from the Panchang, aligning human life with cosmic rhythm.</p>
 
 <table>
@@ -668,448 +1112,774 @@ Namaskara (prostration)`
 
 <p style="margin-top:12px;">Other notable sacred gatherings include <b>Kumbh Mela</b> and regional festivals like <b>Onam</b> and <b>Pongal</b>.</p>
 
-<p><b>For more – Join Pratham Sanskruti</b><br/>START THE JOURNEY TO YOUR ROOTS</p>
 `
-          }
-        ]
-      },
-
-      {
-        key: "calendar",
-        icon: "calendar",
-        title: "Hindu Calendar",
-        images: "Hindu-Calendar.jpg",
-        intro: "Timely reminders for key Hindu calendar events (Upcoming Upavas and Festivals).",
-        what: `At Pratham Sanskruti, we help you stay effortlessly aligned with this timeless rhythm. Our service provides timely reminders for key Hindu calendar (Upcoming Upavas and Festivals) events and supports you with arrangements as per your needs. So you never miss an auspicious day, and every sacred moment is celebrated smoothly, meaningfully, and on time.`,
-        why: `Hindu calendar events are sacred dates marked by tithis, nakshatras, and seasons, guiding when to perform important rituals, festivals, vrats, and family ceremonies. From Gudi Padwa and Ugadi to Navratri, Diwali, and personalized auspicious muhurats, each occasion carries spiritual significance and unique traditions for every region and family.`,
-        more: [
-          {
-            title: "Calendar View (Month wise)",
-            text: `Navigate month-by-month and click any festival to see: name (English + Hindi), tithi/month, muhurat, significance, katha, procedure, fasting rules, and daan.
-For more – Join Pratham Sanskruti - START THE JOURNEY TO YOUR ROOTS`
-          }
-        ]
-      },
-
-      {
-        key: "aarti",
-        icon: "music",
-        title: "Aarti and Mantra",
-        images: "Aarti-and-Mantra.jpg",
-        intro: "Guided audio and video resources so your family can chant confidently.",
-        what: `At Pratham Sanskruti, we provide guided audio and video resources so your family can chant confidently, perform pooja and aarti step by step, and observe each ritual at the right time. Our service helps you maintain authentic samskruti at home, makes daily and festival worship simple and stress free, and ensures children learn these traditions correctly from the start.`,
-        why: `Correct chanting and properly performed pooja or aarti create the right spiritual vibration, focus the mind, and express devotion with clarity and respect. Accurate pronunciation of mantras and following the traditional sequence of each ritual bring sound, intention, and action into harmony, making worship more meaningful and powerful.`,
-        more: [{ title: "More", text: `Will add few links\nFor more – Join Pratham Sanskruti - START THE JOURNEY TO YOUR ROOTS` }]
-      },
-
-      {
-        key: "seva",
-        icon: "heart",
-        title: "Sevā–Dān",
-        images: "Seva-Daan.jpg",
-        intro: "Donation drives rooted in dharma and compassion.",
-        what: `At Pratham Sanskruti, dāna (donation) is at the heart of what we do. In the Hindu tradition, dāna is not just charity; it is a sacred duty that purifies the heart, supports those in need, and strengthens the fabric of society. Acts such as annadān (food), vastra dān (clothes), dhana dān (money), and vidyā dān (knowledge) are all seen as powerful ways to live a life of dharma and compassion.`,
-        why: `We organise four structured donation focused events every year, creating easy, trusted pathways for families and communities to give back in meaningful ways. Through carefully planned drives and collaborations, Pratham Sanskruti ensures your contributions reach the right causes, at the right time, in the right spirit of selfless seva.`,
-        more: [
-          { title: "Forms of dāna", text: `In Hinduism, annadān (food donation), vastra dān (clothes donation), dhana dān (money donation), and vidyā dān (knowledge donation) are revered forms of dāna—selfless giving rooted in dharma.` },
-          { title: "1. Annadān (Food Donation)", text: `Providing food to the hungry sustains life, the foremost need, and is deemed supreme.` },
-          { title: "2. Vastra Dān (Clothes Donation)", text: `Gifting clothes protects from elements, upholds dignity, and symbolizes purity.` },
-          { title: "3. Dhana Dān (Money Donation)", text: `Donating wealth aids the needy without expectation, funding temples, education, or aid.` },
-          { title: "4. Vidyā Dān (Knowledge Donation)", text: `Sharing wisdom through teaching is one amongst the noblest dān, liberating minds.` },
-          { title: "More", text: `Will share pictures\nFor more – Join Pratham Sanskruti - START THE JOURNEY TO YOUR ROOTS` }
-        ]
-      },
-
-      {
-        key: "workshops",
-        icon: "users",
-        title: "Cultural Workshops",
-        images: "Cultural-Workshops.jpg",
-        intro: "Small, engaging workshops for children—stories, crafts, bhajans, festival games.",
-        what: `Pratham Sanskruti offers small, engaging Cultural Workshops for children to build early awareness of our traditions, festivals, stories, and values. Through age appropriate activities like stories, simple bhajans, arts and crafts, and festival themed games, kids experience culture as something joyful and living, not just theoretical.`,
-        why: `These workshops help children develop a positive sense of identity, respect for elders, and pride in India’s diverse heritage, while also building confidence and social skills.`,
-        more: [
-          {
-            title: "Key Spiritual Benefits",
-            text: `Ahimsa (Non-violence): Stories teach kindness and empathy.
-Satya (Truthfulness): Tales build honesty and trust.
-Seva (Selfless Service): Activities instill generosity.
-Dharma (Righteousness): Festivals clarify duties.
-Mindfulness via Mantras: Chanting calms minds.
-For more – Join Pratham Sanskruti - START THE JOURNEY TO YOUR ROOTS`
-          }
-        ]
-      },
-
-      {
-        key: "hampers",
-        icon: "gift",
-        title: "Pooja Items / Hamper and Gifting",
-        images: "Pooja-Hampers.jpg",
-        intro: "Premium pooja hampers and gifting options for festivals, weddings, and religious days.",
-        what: `Pratham Sanskruti offers a variety of pooja hampers and gifting options tailored for special occasions like festivals, weddings, and religious days.`,
-        why: `Pooja hampers blend tradition with luxury, featuring handcrafted brass/terracotta diyas, incense, engraved kumkum holders, idols, sweets, and eco-friendly essentials.`,
-        more: [
-          {
-            title: "Member Benefit",
-            text: `Open to Public but members get upto 15% discounts on total bill.
-Will share pictures
-For more – Join Pratham Sanskruti - START THE JOURNEY TO YOUR ROOTS`
-          }
-        ]
-      }
-    ];
-
-    // -----------------------------
-    // STORE UI
-    // -----------------------------
-    function renderCards() {
-      const grid = document.getElementById("storeCardsGrid");
-      grid.innerHTML = "";
-      storeServices.forEach(s => {
-        const card = document.createElement("button");
-        card.type = "button";
-        card.className = "text-left bg-white rounded-3xl border border-[var(--stroke)] shadow-sm hover:shadow-md transition overflow-hidden group";
-        card.onclick = () => openDetail(s.key);
-        card.innerHTML = `
-          <div class="h-40 bg-stone-100">
-            <img src="images/${s.images}" class="w-full h-full object-cover group-hover:scale-[1.02] transition"
-              onerror="this.src='images/placeholder.jpg'">
-          </div>
-          <div class="p-6">
-            <div class="flex items-center gap-3">
-              <span class="w-12 h-12 rounded-2xl flex items-center justify-center soft-chip">
-                <i data-feather="${s.icon}" class="w-6 h-6 text-[var(--primary-2)]"></i>
-              </span>
-              <div>
-                <div class="font-black text-[var(--chandan)]">${s.title}</div>
-                <div class="text-xs font-bold text-stone-500 mt-1">TAP TO VIEW DETAILS →</div>
-              </div>
-            </div>
-          </div>`;
-        grid.appendChild(card);
-      });
-      feather.replace();
-    }
-
-    let currentService = null;
-
-    // ✅ IMPORTANT CHANGE: render HTML safely
-    function renderMoreBlocks() {
-      const section = document.getElementById("moreSection");
-      const wrap = document.getElementById("moreWrap");
-      wrap.innerHTML = "";
-
-      const blocks = currentService?.more || [];
-      if (!blocks.length) {
-        section.classList.add("hidden");
-        return;
-      }
-      section.classList.remove("hidden");
-
-      blocks.forEach(b => {
-        const div = document.createElement("div");
-        div.className = "moreCard";
-        div.innerHTML = `
-          <div class="moreTitle">
-            <i data-feather="bookmark" class="w-4 h-4 text-[var(--primary-2)]"></i>
-            <span>${b.title || "More"}</span>
-          </div>
-          <div class="moreText">${b.text || ""}</div>
-        `;
-        wrap.appendChild(div);
-      });
-      feather.replace();
-    }
-
-    function openDetail(key) {
-      currentService = storeServices.find(x => x.key === key);
-      if (!currentService) return;
-
-      document.getElementById("storeCardsGrid").classList.add("hidden");
-      document.getElementById("storeDetailView").classList.remove("hidden");
-
-      document.getElementById("detailImg").src = `images/${currentService.images}`;
-      document.getElementById("detailIcon").setAttribute("data-feather", currentService.icon || "star");
-      document.getElementById("detailTitle").textContent = currentService.title || "";
-      document.getElementById("detailIntro").textContent = currentService.intro || "";
-      document.getElementById("detailBody").textContent = currentService.what || "";
-      document.getElementById("detailWhy").textContent = currentService.why || "";
-
-      renderMoreBlocks();
-      toggleHinduCalendarPanel();
-
-      feather.replace();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-
-    function backToStoreCards() {
-      document.getElementById("storeDetailView").classList.add("hidden");
-      document.getElementById("storeCardsGrid").classList.remove("hidden");
-      currentService = null;
-      feather.replace();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-
-    // -----------------------------
-    // FESTIVAL JSON (months/items)
-    // -----------------------------
-    const MONTHS_FULL = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    const MONTHS_ABBR = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-    const DEFAULT_YEAR = 2026;
-
-    let EVENT_MAP = {};
-
-    function safeText(v) { return (v === undefined || v === null) ? "" : String(v) }
-    function iso(y, m, d) {
-      const mm = String(m + 1).padStart(2, "0");
-      const dd = String(d).padStart(2, "0");
-      return `${y}-${mm}-${dd}`;
-    }
-    function parseDayMonthFromDateStr(s) {
-      const str = (s || "").trim();
-      const m = str.match(/^(\d{1,2})\s*[- ]\s*([A-Za-z]+)/);
-      if (!m) return null;
-      const day = parseInt(m[1], 10);
-      const monRaw = m[2].slice(0, 3).toLowerCase();
-      const mi = MONTHS_ABBR.findIndex(x => x.toLowerCase() === monRaw);
-      if (Number.isNaN(day) || mi < 0) return null;
-      return { day, mi };
-    }
-
-    async function loadFestivalsJSON() {
-      const err = document.getElementById("calErr");
-      err.classList.add("hidden");
-      err.innerHTML = "";
-
-      try {
-        const res = await fetch("festivals.json", { cache: "no-store" });
-        if (!res.ok) throw new Error("festivals.json not found");
-        const data = await res.json();
-
-        const months = data.months || data.Months || data.MONTHS;
-        if (!Array.isArray(months) || !months.length) throw new Error("Invalid JSON. Expected {months:[{month:'January',items:[...]}]}");
-
-        EVENT_MAP = {};
-        months.forEach(mBlock => {
-          (mBlock.items || []).forEach(f => {
-            const dm = parseDayMonthFromDateStr(f.date);
-            if (!dm) return;
-            const key = iso(DEFAULT_YEAR, dm.mi, dm.day);
-            if (!EVENT_MAP[key]) EVENT_MAP[key] = [];
-            EVENT_MAP[key].push(f);
-          });
-        });
-
-      } catch (e) {
-        err.classList.remove("hidden");
-        err.innerHTML = `
-          <div class="font-extrabold text-[var(--primary-2)] mb-1">Calendar not loading</div>
-          <div>Keep <b>festivals.json</b> in same folder and run via Live Server.</div>
-          <div class="mt-2 text-xs text-stone-500 font-semibold">Error: ${safeText(e.message)}</div>
-        `;
-        EVENT_MAP = {};
-      }
-    }
-
-    // -----------------------------
-    // CALENDAR UI
-    // -----------------------------
-    let calYear = DEFAULT_YEAR;
-    let calMonth = 0;
-    let calendarReady = false;
-
-    function fillMonthYearDropdowns() {
-      const mSel = document.getElementById("calMonthSelect");
-      const ySel = document.getElementById("calYearSelect");
-      if (!mSel || !ySel) return;
-
-      mSel.innerHTML = MONTHS_FULL.map((m, i) => `<option value="${i}">${m}</option>`).join("");
-      ySel.innerHTML = `<option value="${DEFAULT_YEAR}">${DEFAULT_YEAR}</option>`;
-
-      mSel.value = String(calMonth);
-      ySel.value = String(calYear);
-
-      mSel.onchange = () => { calMonth = Number(mSel.value); renderMonthCalendar(); };
-      ySel.onchange = () => { calYear = Number(ySel.value); renderMonthCalendar(); };
-    }
-
-    function hookCalendarButtons() {
-      const prev = document.getElementById("calPrevBtn");
-      const next = document.getElementById("calNextBtn");
-      const mSel = document.getElementById("calMonthSelect");
-
-      if (prev) prev.onclick = () => {
-        calMonth = (calMonth - 1 + 12) % 12;
-        if (mSel) mSel.value = String(calMonth);
-        renderMonthCalendar();
-      };
-
-      if (next) next.onclick = () => {
-        calMonth = (calMonth + 1) % 12;
-        if (mSel) mSel.value = String(calMonth);
-        renderMonthCalendar();
-      };
-    }
-
-    function renderMonthCalendar() {
-      const title = document.getElementById("calMonthTitle");
-      const grid = document.getElementById("calGrid");
-      if (!grid) return;
-
-      if (title) title.textContent = `${MONTHS_FULL[calMonth]} ${calYear}`;
-      grid.innerHTML = "";
-
-      const first = new Date(calYear, calMonth, 1);
-      const start = first.getDay();
-      const days = new Date(calYear, calMonth + 1, 0).getDate();
-
-      const totalCells = 42;
-      for (let i = 0; i < totalCells; i++) {
-        const dayNum = i - start + 1;
-        const inMonth = dayNum >= 1 && dayNum <= days;
-
-        const cell = document.createElement("div");
-        cell.className = "calCell" + (inMonth ? "" : " off");
-
-        if (!inMonth) { grid.appendChild(cell); continue; }
-
-        const num = document.createElement("div");
-        num.className = "calDaynum";
-        num.textContent = dayNum;
-        cell.appendChild(num);
-
-        const key = iso(calYear, calMonth, dayNum);
-        const events = EVENT_MAP[key] || [];
-
-        const show = events.slice(0, 4);
-        show.forEach(ev => {
-          const b = document.createElement("button");
-          b.type = "button";
-          b.className = "pill";
-          b.title = safeText(ev.englishname || "Festival");
-          b.innerHTML = `<span class="dot"></span><span class="min-w-0">${safeText(ev.englishname || "Festival")}</span>`;
-          b.onclick = () => openFestivalModal(ev);
-          cell.appendChild(b);
-        });
-
-        if (events.length > 4) {
-          const more = document.createElement("div");
-          more.className = "moreTxt";
-          more.textContent = `+${events.length - 4} more`;
-          cell.appendChild(more);
         }
+      ]
+    },
 
-        grid.appendChild(cell);
-      }
-      feather.replace();
+    {
+      key: "calendar",
+      icon: "calendar",
+      title: "Hindu Calendar",
+      images: "Hindu-Calendar.jpg",
+      intro: "Timely reminders for key Hindu calendar events (Upcoming Upavas and Festivals).",
+      what: `At Pratham Sanskruti, we help you stay effortlessly aligned with this timeless rhythm. Our service provides timely reminders for key Hindu calendar (Upcoming Upavas and Festivals) events and supports you with arrangements as per your needs. So you never miss an auspicious day, and every sacred moment is celebrated smoothly, meaningfully, and on time.`,
+      why: `Hindu calendar events are sacred dates marked by tithis, nakshatras, and seasons, guiding when to perform important rituals, festivals, vrats, and family ceremonies. From Gudi Padwa and Ugadi to Navratri, Diwali, and personalized auspicious muhurats, each occasion carries spiritual significance and unique traditions for every region and family.`,
+      more: [
+        {
+          title: "Calendar View (Month wise)",
+          text: `Navigate month-by-month and click any festival to see: name (English + Hindi), tithi/month, muhurat, significance, katha, procedure, fasting rules, and daan.
+For more – Join Pratham Sanskruti - START THE JOURNEY TO YOUR ROOTS`
+        }
+      ]
+    },
+
+    {
+      key: "aarti",
+      icon: "music",
+      title: "Aarti and Mantra",
+      images: "Aarti-and-Mantra.jpg",
+      intro: "Guided audio and video resources so your family can chant confidently.",
+      what: `At Pratham Sanskruti, we provide guided audio and video resources so your family can chant confidently, perform pooja and aarti step by step, and observe each ritual at the right time. Our service helps you maintain authentic samskruti at home, makes daily and festival worship simple and stress free, and ensures children learn these traditions correctly from the start.`,
+      why: `Correct chanting and properly performed pooja or aarti create the right spiritual vibration, focus the mind, and express devotion with clarity and respect. Accurate pronunciation of mantras and following the traditional sequence of each ritual bring sound, intention, and action into harmony, making worship more meaningful and powerful.`,
+      more: [
+        {
+          title: "More",
+          text: `Will add few links
+For more – Join Pratham Sanskruti - START THE JOURNEY TO YOUR ROOTS`
+        }
+      ]
+    },
+
+    {
+      key: "seva",
+      icon: "heart",
+      title: "Sevā–Dān",
+      images: "Seva-Daan.jpg",
+      intro: "Donation drives rooted in dharma and compassion.",
+      what: `At Pratham Sanskruti, dāna (donation) is at the heart of what we do. In the Hindu tradition, dāna is not just charity; it is a sacred duty that purifies the heart, supports those in need, and strengthens the fabric of society. Acts such as annadān (food), vastra dān (clothes), dhana dān (money), and vidyā dān (knowledge) are all seen as powerful ways to live a life of dharma and compassion.`,
+      why: `We organise four structured donation focused events every year, creating easy, trusted pathways for families and communities to give back in meaningful ways. Through carefully planned drives and collaborations, Pratham Sanskruti ensures your contributions reach the right causes, at the right time, in the right spirit of selfless seva.
+      In Hinduism, annadān (food donation), vastra dān (clothes donation), dhana dān (money donation), and vidyā dān (knowledge donation) are revered forms of dāna—selfless giving rooted in dharma. These acts purify the soul, generate punya (merit), and foster compassion, with scriptures like the Bhagavad Gita and Manusmriti promising manifold returns through karma's cycle.`,
+      more: [
+        
+        {
+          title: "1. Annadān (Food Donation)",
+          text: `Providing food to the hungry sustains life, the foremost need, and is deemed supreme as "annam is paramam dhanam" (food is the highest wealth). It averts hunger's suffering, promotes community harmony, and returns as nourishment in future lives—abundant harvests, health, or relief from famine for the giver. `
+        },
+        {
+          title: "2. Vastra Dān (Clothes Donation)",
+          text: `Gifting clothes protects from elements, upholds dignity, and symbolizes purity, often during festivals like Diwali. It alleviates shame and cold, yielding returns like comfortable attire, protection in adversity, or elevated social standing multiplied in subsequent births. `
+        },
+        {
+          title: "3. Dhana Dān (Money Donation)",
+          text: `Donating wealth aids the needy without expectation, funding temples, education, or aid, as praised in the Mahabharata for building positive karma. It rebounds as financial prosperity, opportunities, or freedom from debt, often exponentially via divine grace. `
+        },
+        {
+          title: "4. Vidyā Dān (Knowledge Donation)",
+          text: `Sharing wisdom through teaching is one amongst the noblest dān, liberating minds as "knowledge multiplies when shared." It empowers self-reliance and dharma, returning as intellectual clarity, guidance in crises, or spiritual enlightenment across lifetimes. `
+        },
+        {
+          title: "More",
+          text: `Will share pictures
+`
+        }
+      ]
+    },
+
+    {
+      key: "workshops",
+      icon: "users",
+      title: "Cultural Workshops",
+      images: "Cultural-Workshops.jpg",
+      intro: "Small, engaging workshops for children—stories, crafts, bhajans, festival games.",
+      what: `Pratham Sanskruti offers small, engaging Cultural Workshops for children to build early awareness of our traditions, festivals, stories, and values. Through age appropriate activities like stories, simple bhajans, arts and crafts, and festival themed games, kids experience culture as something joyful and living, not just theoretical.`,
+      why: `These workshops help children develop a positive sense of identity, respect for elders, and pride in India’s diverse heritage, while also building confidence and social skills.`,
+      more: [
+        {
+          title: "Key Spiritual Benefits",
+          text: `Ahimsa (Non-violence): Stories teach kindness to all beings, fostering empathy and reducing bullying. .
+Satya (Truthfulness): Bhagavad Gita tales build honesty, boosting confidence and trust. 
+Seva (Selfless Service): Activities simulate dān, instilling generosity for community harmony. 
+Dharma (Righteousness): Festival explorations clarify duties, aiding moral decision-making.
+Mindfulness via Mantras: Chanting calms minds, improving focus amid screen time.
+`
+        }
+      ]
+    },
+
+    {
+      key: "hampers",
+      icon: "gift",
+      title: "Pooja Items / Hamper and Gifting",
+      images: "Pooja-Hampers.jpg",
+      intro: "Premium pooja hampers and gifting options for festivals, weddings, and religious days.",
+      what: `Pratham Sanskruti offers a variety of pooja hampers and gifting options tailored for special occasions like festivals, weddings, and religious days.`,
+      why: ` 	Pooja hampers blend tradition with luxury, featuring handcrafted brass/terracotta diyas, sandalwood-jasmine incense, engraved kumkum holders, painted Ganesha/Lakshmi idols, desi ghee sweets, and eco-friendly puja essentials in silk/wooden boxes.
+Open to Public but members get upto 15% discounts on total bill.
+`,
+      more: [
+        {
+          title: "Member Benefit",
+          text: ``
+        }
+      ]
+    }
+  ];
+
+  // -----------------------------
+  // HELPERS
+  // -----------------------------
+  const MONTHS_FULL = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const MONTHS_ABBR = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const DEFAULT_YEAR = 2026;
+
+  let currentService = null;
+  let readMoreOpen = false;
+  let calendarReady = false;
+  let activeCalendarView = "grid";
+  let calYear = DEFAULT_YEAR;
+  let calMonth = 0;
+  let EVENT_MAP = {};
+
+  function safeText(v) {
+    return (v === undefined || v === null) ? "" : String(v);
+  }
+
+  function iso(y, m, d) {
+    const mm = String(m + 1).padStart(2, "0");
+    const dd = String(d).padStart(2, "0");
+    return `${y}-${mm}-${dd}`;
+  }
+
+  function parseDayMonthFromDateStr(s) {
+    const str = (s || "").trim();
+    const m = str.match(/^(\d{1,2})\s*[- ]\s*([A-Za-z]+)/);
+    if (!m) return null;
+    const day = parseInt(m[1], 10);
+    const monRaw = m[2].slice(0, 3).toLowerCase();
+    const mi = MONTHS_ABBR.findIndex(x => x.toLowerCase() === monRaw);
+    if (Number.isNaN(day) || mi < 0) return null;
+    return { day, mi };
+  }
+
+  function isHtmlContent(text) {
+    return /<\/?[a-z][\s\S]*>/i.test(text || "");
+  }
+
+  function convertLinesToBullets(text) {
+    const raw = (text || "").trim();
+    if (!raw) return "";
+
+    if (isHtmlContent(raw)) return raw;
+
+    const lines = raw
+      .split("\n")
+      .map(line => line.trim())
+      .filter(Boolean);
+
+    if (!lines.length) return "";
+    if (lines.length >= 2) {
+      return `<ul>${lines.map(line => `<li>${line}</li>`).join("")}</ul>`;
     }
 
-    async function initHinduCalendarUI() {
-      if (calendarReady) return;
-      calendarReady = true;
+    return `<p>${lines[0]}</p>`;
+  }
 
-      const now = new Date();
-      calMonth = (now.getFullYear() === DEFAULT_YEAR) ? now.getMonth() : 0;
-      calYear = DEFAULT_YEAR;
+  // -----------------------------
+  // STORE UI
+  // -----------------------------
+  function renderCards() {
+    const grid = document.getElementById("storeCardsGrid");
+    grid.innerHTML = "";
 
-      await loadFestivalsJSON();
-      fillMonthYearDropdowns();
-      hookCalendarButtons();
-      renderMonthCalendar();
+    storeServices.forEach(s => {
+      const card = document.createElement("button");
+      card.type = "button";
+      card.className = "text-left bg-white rounded-3xl border border-[var(--stroke)] shadow-sm hover:shadow-md transition overflow-hidden group";
+      card.onclick = () => openDetail(s.key);
+      card.innerHTML = `
+        <div class="h-40 bg-stone-100">
+          <img src="images/${s.images}" class="w-full h-full object-cover group-hover:scale-[1.02] transition"
+            onerror="this.src='images/placeholder.jpg'">
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-3">
+            <span class="w-12 h-12 rounded-2xl flex items-center justify-center soft-chip">
+              <i data-feather="${s.icon}" class="w-6 h-6 text-[var(--primary-2)]"></i>
+            </span>
+            <div>
+              <div class="font-black text-[var(--chandan)]">${s.title}</div>
+              <div class="text-xs font-bold text-stone-500 mt-1">TAP TO VIEW DETAILS →</div>
+            </div>
+          </div>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+
+    feather.replace();
+  }
+
+  function renderMoreBlocks() {
+    const section = document.getElementById("moreSection");
+    const wrap = document.getElementById("moreWrap");
+    const btn = document.getElementById("readMoreBtn");
+    const calPanel = document.getElementById("hinduCalendarPanel");
+
+    wrap.innerHTML = "";
+    readMoreOpen = false;
+
+    const blocks = currentService?.more || [];
+    const hasBlocks = blocks.length > 0;
+    const isCalendarCard = currentService?.key === "calendar";
+
+    if (!hasBlocks && !isCalendarCard) {
+      section.classList.add("hidden");
+      return;
     }
 
-    async function toggleHinduCalendarPanel() {
-      const panel = document.getElementById("hinduCalendarPanel");
-      if (!panel) return;
+    section.classList.remove("hidden");
+    wrap.classList.add("hidden");
+    calPanel.classList.add("hidden");
+    btn.textContent = "Read More";
+
+    blocks.forEach((b) => {
+      const details = document.createElement("details");
+      details.className = "moreDropdown";
+
+      details.innerHTML = `
+        <summary>
+          <span>${b.title || "More"}</span>
+        </summary>
+        <div class="moreDropdownBody">
+          ${convertLinesToBullets(b.text || "")}
+        </div>
+      `;
+
+      wrap.appendChild(details);
+    });
+
+    feather.replace();
+  }
+
+  function openDetail(key) {
+    currentService = storeServices.find(x => x.key === key);
+    if (!currentService) return;
+
+    document.getElementById("storeCardsGrid").classList.add("hidden");
+    document.getElementById("storeDetailView").classList.remove("hidden");
+
+    document.getElementById("detailImg").src = `images/${currentService.images}`;
+    document.getElementById("detailIcon").setAttribute("data-feather", currentService.icon || "star");
+    document.getElementById("detailTitle").textContent = currentService.title || "";
+    document.getElementById("detailIntro").textContent = currentService.intro || "";
+    document.getElementById("detailBody").textContent = currentService.what || "";
+    document.getElementById("detailWhy").textContent = currentService.why || "";
+
+    renderMoreBlocks();
+
+    feather.replace();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function backToStoreCards() {
+    document.getElementById("storeDetailView").classList.add("hidden");
+    document.getElementById("storeCardsGrid").classList.remove("hidden");
+    currentService = null;
+    feather.replace();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  // -----------------------------
+  // READ MORE
+  // -----------------------------
+  async function toggleReadMore() {
+    const wrap = document.getElementById("moreWrap");
+    const btn = document.getElementById("readMoreBtn");
+    const calPanel = document.getElementById("hinduCalendarPanel");
+
+    readMoreOpen = !readMoreOpen;
+
+    if (readMoreOpen) {
+      btn.textContent = "Show Less";
 
       if (currentService?.key === "calendar") {
-        panel.classList.remove("hidden");
-        calendarReady = false;
-        await initHinduCalendarUI();
+        wrap.classList.add("hidden");
+        calPanel.classList.remove("hidden");
+
+        if (!calendarReady) {
+          await initHinduCalendarUI();
+          calendarReady = true;
+        }
+
+        switchCalendarView("grid");
       } else {
-        panel.classList.add("hidden");
+        wrap.classList.remove("hidden");
+        calPanel.classList.add("hidden");
       }
+    } else {
+      btn.textContent = "Read More";
+      wrap.classList.add("hidden");
+      calPanel.classList.add("hidden");
     }
+  }
 
-    // -----------------------------
-    // FESTIVAL MODAL (FULL DETAILS)
-    // -----------------------------
-    function openFestivalModal(ev) {
-      const modal = document.getElementById("festivalModal");
-      modal.style.display = "flex";
-      document.body.style.overflow = "hidden";
+  // -----------------------------
+  // FESTIVAL JSON
+  // -----------------------------
+  async function loadFestivalsJSON() {
+    const err = document.getElementById("calErr");
+    err.classList.add("hidden");
+    err.innerHTML = "";
 
-      document.getElementById("modalImg").src = ev.images ? `images/${ev.images}` : "images/placeholder.jpg";
-      document.getElementById("modalTitle").textContent = safeText(ev.englishname);
-      document.getElementById("modalHindi").textContent = safeText(ev.hindiname);
+    try {
+      const res = await fetch("festivals.json", { cache: "no-store" });
+      if (!res.ok) throw new Error("festivals.json not found");
 
-      const meta = [
-        safeText(ev.date),
-        safeText(ev.day),
-        safeText(ev.type),
-        safeText(ev.tithimonth),
-        safeText(ev.muhurat),
-        safeText(ev.focus)
-      ].filter(Boolean);
-      document.getElementById("modalMeta").textContent = meta.join(" • ");
+      const data = await res.json();
+      const months = data.months || data.Months || data.MONTHS;
 
-      document.getElementById("modalSign").textContent = safeText(ev.significance) || "—";
-
-      const kBlock = document.getElementById("modalKathaBlock");
-      if (ev.katha) { kBlock.classList.remove("hidden"); document.getElementById("modalKatha").textContent = ev.katha; }
-      else { kBlock.classList.add("hidden"); }
-
-      const procItems = [];
-      if (ev.morning) procItems.push(`<p><b class="text-stone-700">Morning:</b> ${safeText(ev.morning)}</p>`);
-      if (ev.daytime) procItems.push(`<p><b class="text-stone-700">Daytime:</b> ${safeText(ev.daytime)}</p>`);
-      if (ev.mainpuja) procItems.push(`<p><b class="text-stone-700">Main Puja:</b> ${safeText(ev.mainpuja)}</p>`);
-      const pBlock = document.getElementById("modalProcBlock");
-      if (procItems.length) {
-        pBlock.classList.remove("hidden");
-        document.getElementById("modalProc").innerHTML = procItems.join("");
-      } else {
-        pBlock.classList.add("hidden");
-        document.getElementById("modalProc").innerHTML = "";
+      if (!Array.isArray(months) || !months.length) {
+        throw new Error("Invalid JSON. Expected {months:[{month:'January',items:[...]}]}");
       }
 
-      const fBlock = document.getElementById("modalFastBlock");
-      if (ev.fastingrules) { fBlock.classList.remove("hidden"); document.getElementById("modalFast").textContent = ev.fastingrules; }
-      else { fBlock.classList.add("hidden"); }
+      EVENT_MAP = {};
 
-      const dBlock = document.getElementById("modalDaanBlock");
-      if (ev.daan) { dBlock.classList.remove("hidden"); document.getElementById("modalDaan").textContent = ev.daan; }
-      else { dBlock.classList.add("hidden"); }
+      months.forEach(mBlock => {
+        (mBlock.items || []).forEach(f => {
+          const dm = parseDayMonthFromDateStr(f.date);
+          if (!dm) return;
+          const key = iso(DEFAULT_YEAR, dm.mi, dm.day);
+          if (!EVENT_MAP[key]) EVENT_MAP[key] = [];
+          EVENT_MAP[key].push(f);
+        });
+      });
 
-      const nBlock = document.getElementById("modalNotesBlock");
-      if (ev.notes) { nBlock.classList.remove("hidden"); document.getElementById("modalNotes").textContent = ev.notes; }
-      else { nBlock.classList.add("hidden"); }
+    } catch (e) {
+      err.classList.remove("hidden");
+      err.innerHTML = `
+        <div class="font-extrabold text-[var(--primary-2)] mb-1">Calendar not loading</div>
+        <div>Keep <b>festivals.json</b> in same folder and run via Live Server.</div>
+        <div class="mt-2 text-xs text-stone-500 font-semibold">Error: ${safeText(e.message)}</div>
+      `;
+      EVENT_MAP = {};
+    }
+  }
 
-      feather.replace();
+  // -----------------------------
+  // CALENDAR UI
+  // -----------------------------
+  function fillMonthYearDropdowns() {
+    const mSel = document.getElementById("calMonthSelect");
+    const ySel = document.getElementById("calYearSelect");
+    if (!mSel || !ySel) return;
+
+    mSel.innerHTML = MONTHS_FULL.map((m, i) => `<option value="${i}">${m}</option>`).join("");
+    ySel.innerHTML = `<option value="${DEFAULT_YEAR}">${DEFAULT_YEAR}</option>`;
+
+    mSel.value = String(calMonth);
+    ySel.value = String(calYear);
+
+    mSel.onchange = () => {
+      calMonth = Number(mSel.value);
+      refreshActiveCalendarView();
+    };
+
+    ySel.onchange = () => {
+      calYear = Number(ySel.value);
+      refreshActiveCalendarView();
+    };
+  }
+
+  function hookCalendarButtons() {
+    const prev = document.getElementById("calPrevBtn");
+    const next = document.getElementById("calNextBtn");
+    const mSel = document.getElementById("calMonthSelect");
+
+    if (prev) {
+      prev.onclick = () => {
+        calMonth = (calMonth - 1 + 12) % 12;
+        if (mSel) mSel.value = String(calMonth);
+        refreshActiveCalendarView();
+      };
     }
 
-    function closeFestivalModal() {
-      document.getElementById("festivalModal").style.display = "none";
-      document.body.style.overflow = "auto";
+    if (next) {
+      next.onclick = () => {
+        calMonth = (calMonth + 1) % 12;
+        if (mSel) mSel.value = String(calMonth);
+        refreshActiveCalendarView();
+      };
+    }
+  }
+
+  async function initHinduCalendarUI() {
+    const now = new Date();
+    calMonth = (now.getFullYear() === DEFAULT_YEAR) ? now.getMonth() : 0;
+    calYear = DEFAULT_YEAR;
+
+    await loadFestivalsJSON();
+    fillMonthYearDropdowns();
+    hookCalendarButtons();
+    refreshActiveCalendarView();
+  }
+
+  function switchCalendarView(view) {
+    activeCalendarView = view;
+
+    const gridView = document.getElementById("calendarGridView");
+    const listView = document.getElementById("calendarListView");
+
+    if (view === "grid") {
+      gridView.classList.remove("hidden");
+      listView.classList.add("hidden");
+      renderMonthCalendar();
+    } else {
+      listView.classList.remove("hidden");
+      gridView.classList.add("hidden");
+      renderFestivalListView();
+    }
+  }
+
+  function refreshActiveCalendarView() {
+    const title = document.getElementById("calMonthTitle");
+    if (title) title.textContent = `${MONTHS_FULL[calMonth]} ${calYear}`;
+
+    if (activeCalendarView === "grid") {
+      renderMonthCalendar();
+    } else {
+      renderFestivalListView();
+    }
+  }
+
+  function renderMonthCalendar() {
+    const title = document.getElementById("calMonthTitle");
+    const grid = document.getElementById("calGrid");
+    if (!grid) return;
+
+    if (title) title.textContent = `${MONTHS_FULL[calMonth]} ${calYear}`;
+    grid.innerHTML = "";
+
+    const first = new Date(calYear, calMonth, 1);
+    const start = first.getDay();
+    const days = new Date(calYear, calMonth + 1, 0).getDate();
+    const totalCells = 42;
+
+    for (let i = 0; i < totalCells; i++) {
+      const dayNum = i - start + 1;
+      const inMonth = dayNum >= 1 && dayNum <= days;
+
+      const cell = document.createElement("div");
+      cell.className = "calCell" + (inMonth ? "" : " off");
+
+      if (!inMonth) {
+        grid.appendChild(cell);
+        continue;
+      }
+
+      const num = document.createElement("div");
+      num.className = "calDaynum";
+      num.textContent = dayNum;
+      cell.appendChild(num);
+
+      const key = iso(calYear, calMonth, dayNum);
+      const events = EVENT_MAP[key] || [];
+
+      const show = events.slice(0, 4);
+      show.forEach(ev => {
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "pill";
+        b.title = safeText(ev.englishname || "Festival");
+        b.innerHTML = `<span class="dot"></span><span class="min-w-0">${safeText(ev.englishname || "Festival")}</span>`;
+        b.onclick = () => openFestivalInfoModal(ev);
+        cell.appendChild(b);
+      });
+
+      if (events.length > 4) {
+        const more = document.createElement("div");
+        more.className = "moreTxt";
+        more.textContent = `+${events.length - 4} more`;
+        cell.appendChild(more);
+      }
+
+      grid.appendChild(cell);
     }
 
-    // -----------------------------
-    // JOIN MODAL
-    // -----------------------------
-    function openJoinForm() {
-      document.getElementById("joinModal").style.display = "flex";
-      document.body.style.overflow = "hidden";
-      feather.replace();
-    }
-    function closeJoinForm() {
-      document.getElementById("joinModal").style.display = "none";
-      document.body.style.overflow = "auto";
-    }
-
-    // INIT
-    renderCards();
     feather.replace();
-  </script>
+  }
+
+  function renderFestivalListView() {
+    const title = document.getElementById("calMonthTitle");
+    const wrap = document.getElementById("festivalListWrap");
+    if (!wrap) return;
+
+    if (title) title.textContent = `${MONTHS_FULL[calMonth]} ${calYear}`;
+    wrap.innerHTML = "";
+
+    const days = new Date(calYear, calMonth + 1, 0).getDate();
+    let found = false;
+
+    for (let day = 1; day <= days; day++) {
+      const key = iso(calYear, calMonth, day);
+      const events = EVENT_MAP[key] || [];
+
+      events.forEach(ev => {
+        found = true;
+        const card = document.createElement("div");
+        card.className = "festivalListCard";
+        card.onclick = () => openFestivalInfoModal(ev);
+
+        card.innerHTML = `
+          <div class="festivalListName">${safeText(ev.englishname || "Festival")}</div>
+          <div class="festivalListMeta">${safeText(ev.tithimonth || "")}</div>
+          <div class="festivalListDate">${safeText(ev.date || "")}${safeText(ev.day ? " - " + ev.day : "")}</div>
+        `;
+
+        wrap.appendChild(card);
+      });
+    }
+
+    if (!found) {
+      wrap.innerHTML = `<div class="text-sm text-stone-500 font-semibold">No festivals found for this month.</div>`;
+    }
+  }
+
+  // -----------------------------
+  // FESTIVAL MODAL
+  // -----------------------------
+  function openFestivalInfoModal(ev) {
+    const modal = document.getElementById("festivalInfoModal");
+    modal.style.display = "flex";
+    document.body.style.overflow = "hidden";
+
+    document.getElementById("festivalModalImg").src = ev.images ? `images/${ev.images}` : "images/placeholder.jpg";
+    document.getElementById("festivalModalTitle").textContent = safeText(ev.englishname);
+    document.getElementById("festivalModalHindi").textContent = safeText(ev.hindiname);
+
+    const meta = [
+      safeText(MONTHS_FULL[calMonth]),
+      safeText(ev.date),
+      safeText(ev.day),
+      safeText(ev.type),
+      safeText(ev.tithimonth),
+      safeText(ev.muhurat),
+      safeText(ev.focus)
+    ].filter(Boolean);
+
+    document.getElementById("festivalModalMeta").textContent = meta.join(" • ");
+    document.getElementById("festivalModalSignificance").textContent = safeText(ev.significance) || "—";
+
+    const kBlock = document.getElementById("festivalModalKathaBlock");
+    if (ev.katha) {
+      kBlock.classList.remove("hidden");
+      document.getElementById("festivalModalKatha").textContent = safeText(ev.katha);
+    } else {
+      kBlock.classList.add("hidden");
+    }
+
+    const procedureParts = [];
+    if (ev.morning) procedureParts.push(`<p><b>Morning:</b> ${safeText(ev.morning)}</p>`);
+    if (ev.daytime) procedureParts.push(`<p><b>Daytime:</b> ${safeText(ev.daytime)}</p>`);
+    if (ev.mainpuja) procedureParts.push(`<p><b>Main Puja:</b> ${safeText(ev.mainpuja)}</p>`);
+
+    const pBlock = document.getElementById("festivalModalProcedureBlock");
+    if (procedureParts.length) {
+      pBlock.classList.remove("hidden");
+      document.getElementById("festivalModalProcedure").innerHTML = procedureParts.join("");
+    } else {
+      pBlock.classList.add("hidden");
+      document.getElementById("festivalModalProcedure").innerHTML = "";
+    }
+
+    const fBlock = document.getElementById("festivalModalFastingBlock");
+    if (ev.fastingrules) {
+      fBlock.classList.remove("hidden");
+      document.getElementById("festivalModalFasting").textContent = safeText(ev.fastingrules);
+    } else {
+      fBlock.classList.add("hidden");
+    }
+
+    const dBlock = document.getElementById("festivalModalDaanBlock");
+    if (ev.daan) {
+      dBlock.classList.remove("hidden");
+      document.getElementById("festivalModalDaan").textContent = safeText(ev.daan);
+    } else {
+      dBlock.classList.add("hidden");
+    }
+
+    const nBlock = document.getElementById("festivalModalNotesBlock");
+    if (ev.notes) {
+      nBlock.classList.remove("hidden");
+      document.getElementById("festivalModalNotes").textContent = safeText(ev.notes);
+    } else {
+      nBlock.classList.add("hidden");
+    }
+
+    feather.replace();
+  }
+
+  function closeFestivalInfoModal() {
+    document.getElementById("festivalInfoModal").style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+
+  // -----------------------------
+  // JOIN MODAL
+  // -----------------------------
+  function openJoinForm() {
+    document.getElementById("joinModal").style.display = "flex";
+    document.body.style.overflow = "hidden";
+    feather.replace();
+  }
+
+  function closeJoinForm() {
+    document.getElementById("joinModal").style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+
+  // -----------------------------
+  // INIT
+  // -----------------------------
+  renderCards();
+  feather.replace();
+</script>
+<script>
+  function isHtmlContent(text) {
+    return /<\/?[a-z][\s\S]*>/i.test(text || "");
+  }
+
+  function convertLinesToBullets(text) {
+    const raw = (text || "").trim();
+    if (!raw) return "";
+
+    if (isHtmlContent(raw)) {
+      return raw;
+    }
+
+    const lines = raw
+      .split("\n")
+      .map(line => line.trim())
+      .filter(Boolean);
+
+    if (!lines.length) return "";
+
+    const bulletLike = lines.filter(line =>
+      /^[•\-✔]/.test(line) ||
+      /^\d+\./.test(line) ||
+      /^[A-Za-z].*:\s/.test(line)
+    );
+
+    if (bulletLike.length >= 2 || lines.length >= 4) {
+      const items = lines.map(line =>
+        line.replace(/^[•\-✔]\s*/, "").replace(/^\d+\.\s*/, "")
+      );
+      return `<ul>${items.map(item => `<li>${item}</li>`).join("")}</ul>`;
+    }
+
+    return lines.map(line => `<p>${line}</p>`).join("");
+  }
+
+  function renderMoreBlocks() {
+    const section = document.getElementById("moreSection");
+    const wrap = document.getElementById("moreWrap");
+    wrap.innerHTML = "";
+
+    const blocks = currentService?.more || [];
+    if (!blocks.length) {
+      section.classList.add("hidden");
+      return;
+    }
+
+    section.classList.remove("hidden");
+
+    blocks.forEach((b, index) => {
+      const details = document.createElement("details");
+      details.className = "moreDropdown";
+      if (index === 0) details.open = true;
+
+      details.innerHTML = `
+        <summary>
+          <span>${b.title || "More"}</span>
+        </summary>
+        <div class="moreDropdownBody">
+          ${convertLinesToBullets(b.text || "")}
+        </div>
+      `;
+
+      wrap.appendChild(details);
+    });
+
+    feather.replace();
+  }
+</script>
+<script>
+  const sampradayaDescriptions = {
+    Vaishnavism: `
+      <strong>Vaishnavism</strong>
+      Vaishnavism festivals are centered on Vishnu and his avatars like Rama and Krishna.
+      These traditions strongly emphasize bhakti, devotion, nama japa, temple worship,
+      Ekadashi observances, Janmashtami, Rama Navami, and other Vishnu-related celebrations.
+    `,
+    Shaivism: `
+      <strong>Shaivism</strong>
+      Shaivism festivals focus on Lord Shiva, with special importance given to
+      Maha Shivaratri, Pradosha Vratam, monthly Shivaratri, ascetic vigils, abhishekam,
+      and lingam-centered worship practices.
+    `,
+    Shaktism: `
+      <strong>Shaktism</strong>
+      Shaktism is goddess-centric, honoring Devi in forms such as Durga, Lakshmi,
+      Saraswati, Kali, and Lalita. Navaratri, Durga Puja, Varalakshmi Vrata,
+      and other Devi festivals are especially important, often observed with intense rituals and community celebrations.
+    `,
+    Smartism: `
+      <strong>Smartism</strong>
+      Smartism follows a non-exclusive approach and often includes Panchayatana puja,
+      honoring Shiva, Vishnu, Devi, Surya, and Ganesha together. It observes shared
+      pan-Hindu festivals with a balanced and inclusive spiritual outlook.
+    `,
+    Other: `
+      <strong>Other</strong>
+      You may follow a regional, family-based, temple-based, guru-based, or personal
+      spiritual tradition that does not fit into one category. You can still register
+      and receive reminders and updates based on your needs.
+    `,
+    None: `
+      <strong>None</strong>
+      Even if you do not primarily follow a specific sampradaya, you can still join
+      Pratham Sanskruti to receive cultural guidance, festival reminders, puja support,
+      and family-friendly resources.
+    `
+  };
+
+  const sampradayaSelect = document.getElementById("sampradayaSelect");
+  const sampradayaInfo = document.getElementById("sampradayaInfo");
+
+  if (sampradayaSelect && sampradayaInfo) {
+    sampradayaSelect.addEventListener("change", function () {
+      const value = this.value;
+
+      if (value && sampradayaDescriptions[value]) {
+        sampradayaInfo.innerHTML = sampradayaDescriptions[value];
+        sampradayaInfo.classList.remove("hidden");
+      } else {
+        sampradayaInfo.innerHTML = "";
+        sampradayaInfo.classList.add("hidden");
+      }
+    });
+  }
+
+  const joinForm = document.getElementById("joinForm");
+  if (joinForm) {
+    joinForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Registration submitted. OTP / email verification can be connected in backend.");
+      closeJoinForm();
+    });
+  }
+</script>
+
 
 </body>
 </html>

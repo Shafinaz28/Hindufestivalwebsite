@@ -1,13 +1,13 @@
 {
   "year": 2026,
-  "assetBasePath": "images/festivals/2026/",
+  "assetBasePath": "images/",
   "months": [
     {
       "month": "JANUARY",
       "items": [
         {
           "id": 1,
-          "images": "akshaya-tritiya.jpg",
+          "images": "images/akshaya-tritiya.jpg",
           "date": "01-Jan",
           "day": "Thu",
           "englishname": "Rohini Vrat",

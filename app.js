@@ -40,93 +40,262 @@ const storeServices = [
     title: "Ritual Procedures / Sacred Events",
     images: "Ritual-Procedures-Sacred-Events.jpg",
     intro: "Clear, practical blueprints for sacred events like Shanti Puja and Griha Pravesha.",
-    what: `Pratham Sanskruti unites timeless Hindu tradition with modern precision by creating clear, practical blueprints for sacred events like Shanti Pujas and Griha Pravesha.
-Every act in a sacred ritual—lighting a diya, offering flowers, observing a fast, participating in a yatra—carries intention and transforms the mind towards gratitude and self-awareness.
-We design each ceremony so that spiritual depth is matched by smooth logistics, giving families the confidence that both dharmic and practical details are fully cared for.
-Through these sacred gatherings, spirituality is experienced as a living flow through homes, temples, and communities—an ongoing samskruti, a culture of refinement.
-In this way, Pratham Sanskruti shows how India’s timeless wisdom can guide modern life towards greater harmony, seva, and inner growth.`,
-    why: `Sacred Rituals & Timing help align your worship with the most auspicious moments, using tithi, nakshatra, and muhurat from the Panchang so your effort flows with cosmic rhythm, deepening peace, success, and spiritual benefit.
-Sacred events purify and uplift both individual and community, strengthening family bonds, connecting generations, and renewing our relationship with society, ancestors, and nature.
-In Indian tradition, festivals are utsava—occasions that lift our inner energy through worship, music, dance, colour, and shared food, keeping living samskruti active in daily life.`,
+
+    whatPoints: [
+      "Pratham Sanskruti brings timeless Hindu tradition into a clear, practical format.",
+      "We help families plan sacred events like Shanti Puja and Griha Pravesha smoothly.",
+      "Every ritual is structured with both spiritual meaning and practical clarity.",
+      "Our guidance makes ceremonies feel authentic, organized, and stress free."
+    ],
+
+    whyPoints: [
+      "Sacred timing aligns worship with tithi, nakshatra, and muhurat.",
+      "Rituals strengthen family bonds and connect generations.",
+      "Festivals uplift community energy through devotion and shared celebration.",
+      "These traditions preserve living samskruti in modern daily life."
+    ],
+
     more: [
-      { title: "More: Overview", text: `Hindu culture features a vast array of ritual procedures and sacred events, categorized mainly into samskaras (16 key rites of passage), daily puja steps, and major festivals.
-These practices vary by region, sect, and tradition but emphasize purification, devotion, and life milestones.` },
-      { title: "Samskaras (Rites of Passage)", text: `Garbhadhana • Pumsavana • Simantonnayana • Jatakarman • Namakarana • Nishkramana • Annaprashana • Chudakarana • Karnavedha • Vidyarambha • Upanayana • Vedarambha • Keshanta/Ritusuddhi • Samavartana • Vivaha • Antyeshti` },
-      { title: "Puja Steps (Daily Worship)", text: `Dhyana • Avahana • Padya • Arghya • Achamana • Snana • Vastra • Yajnopavita • Gandha • Pushpa • Dhupa • Dipa • Naivedya • Tambula • Pradakshina • Namaskara` },
-      { title: "Major Festivals (Sacred Events)", text: `Other notable events include Kumbh Mela (pilgrimage every 3–12 years) and regional ones like Onam or Pongal.` }
+      {
+        title: "Overview",
+        points: [
+          "Hindu culture includes many sacred rituals and observances.",
+          "These are connected to life milestones and devotion.",
+          "Practices vary by tradition and region.",
+          "They emphasize purification, prayer, and meaning."
+        ]
+      },
+      {
+        title: "Samskaras (Rites of Passage)",
+        points: [
+          "Garbhadhana",
+          "Pumsavana",
+          "Simantonnayana",
+          "Jatakarman",
+          "Namakarana",
+          "Vivaha"
+        ]
+      },
+      {
+        title: "Puja Steps (Daily Worship)",
+        points: [
+          "Dhyana",
+          "Avahana",
+          "Padya",
+          "Arghya",
+          "Naivedya",
+          "Namaskara"
+        ]
+      },
+      {
+        title: "Major Festivals (Sacred Events)",
+        table: true,
+        headers: ["Festival", "Timing (Lunar)", "Key Observance"],
+        rows: [
+          ["Diwali", "Kartika Amavasya", "Lakshmi Puja"],
+          ["Holi", "Phalguna Purnima", "Colors & Holika Dahan"],
+          ["Navaratri", "Ashwina Shukla Paksha", "Devi Worship"],
+          ["Ganesh Chaturthi", "Bhadrapada Shukla Chaturthi", "Ganapati Puja"]
+        ]
+      }
     ]
   },
+
   {
     key: "calendar",
     icon: "calendar",
     title: "Hindu Calendar",
     images: "Hindu-Calendar.jpg",
     intro: "Timely reminders for key Hindu calendar events (Upcoming Upavas and Festivals).",
-    what: `At Pratham Sanskruti, we help you stay effortlessly aligned with this timeless rhythm.
-Our service provides timely reminders for key Hindu calendar events and supports you with arrangements as per your needs.
-So you never miss an auspicious day, and every sacred moment is celebrated smoothly, meaningfully, and on time.`,
-    why: `Hindu calendar events are sacred dates marked by tithis, nakshatras, and seasons—guiding when to perform important rituals, festivals, vrats, and family ceremonies.
-From Gudi Padwa and Ugadi to Navratri, Diwali, and personalized auspicious muhurats, each occasion carries spiritual significance and unique traditions for every region and family.`,
-    more: []
+
+    whatPoints: [
+      "We help families stay aligned with sacred dates through timely reminders.",
+      "Important vrats, tithis, and festivals are made easy to follow.",
+      "Users get support for planning events as per their needs.",
+      "Every sacred day can be observed on time and with clarity."
+    ],
+
+    whyPoints: [
+      "The Hindu calendar guides rituals through tithi, nakshatra, and seasonal rhythm.",
+      "It helps identify auspicious days for puja, vrat, and family ceremonies.",
+      "Regional festivals and muhurats can be planned correctly.",
+      "It keeps households connected to spiritual time and tradition."
+    ],
+
+    more: [
+      {
+        title: "Calendar Guidance",
+        points: [
+          "Track upcoming upavas and festivals.",
+          "Follow monthly sacred events clearly.",
+          "Plan family rituals using proper dates.",
+          "Stay spiritually aligned through reminders."
+        ]
+      }
+    ]
   },
+
   {
     key: "aarti",
     icon: "music",
     title: "Aarti and Mantra",
     images: "Aarti-and-Mantra.jpg",
     intro: "Guided audio and video resources so your family can chant confidently.",
-    what: `At Pratham Sanskruti, we provide guided audio and video resources so your family can chant confidently, perform pooja and aarti step by step, and observe each ritual at the right time.
-Our service helps you maintain authentic samskruti at home, makes daily and festival worship simple and stress free, and ensures children learn these traditions correctly from the start.`,
-    why: `Correct chanting and properly performed pooja or aarti create the right spiritual vibration, focus the mind, and express devotion with clarity and respect.
-Accurate pronunciation of mantras and following the traditional sequence of each ritual bring sound, intention, and action into harmony, making worship more meaningful and powerful.`,
-    more: [{ title: "Links (Add Later)", text: "Will add a few links (audio/video) here." }]
+
+    whatPoints: [
+      "We provide guided audio and video for aarti and mantra chanting.",
+      "Families can follow pooja and aarti step by step.",
+      "Children can learn rituals in the correct way from the beginning.",
+      "Daily worship becomes simpler and more confident."
+    ],
+
+    whyPoints: [
+      "Correct chanting creates spiritual vibration and focus.",
+      "Traditional sequence brings clarity and discipline to worship.",
+      "Proper pronunciation makes devotion more meaningful.",
+      "Mantra, intention, and action become aligned."
+    ],
+
+    more: [
+      {
+        title: "Aarti Support",
+        points: [
+          "Simple guided chanting support",
+          "Step-by-step ritual help",
+          "Family-friendly learning format",
+          "Audio/video links can be added later"
+        ]
+      }
+    ]
   },
+
   {
     key: "seva",
     icon: "heart",
     title: "Sevā–Dān",
     images: "Seva-Daan.jpg",
     intro: "Donation drives rooted in dharma and compassion.",
-    what: `At Pratham Sanskruti, dāna (donation) is at the heart of what we do.
-We organise four structured donation focused events every year, creating easy, trusted pathways for families and communities to give back in meaningful ways.`,
-    why: `In Hinduism, annadān (food donation), vastra dān (clothes donation), dhana dān (money donation), and vidyā dān (knowledge donation) are revered forms of dāna—selfless giving rooted in dharma.`,
+
+    whatPoints: [
+      "Pratham Sanskruti organizes structured donation-based events every year.",
+      "Families get trusted ways to contribute meaningfully.",
+      "Giving is made easier and more purposeful.",
+      "Each event is rooted in dharma and compassion."
+    ],
+
+    whyPoints: [
+      "Dāna is a core expression of selfless giving in Hindu tradition.",
+      "It supports society through food, clothing, money, and knowledge.",
+      "Giving builds inner humility and positive karma.",
+      "It turns spiritual values into social action."
+    ],
+
     more: [
-      { title: "Annadān (Food Donation)", text: "Provides food to the hungry and is regarded as supreme giving." },
-      { title: "Vastra Dān (Clothes Donation)", text: "Protects dignity and offers warmth and protection." },
-      { title: "Dhana Dān (Money Donation)", text: "Supports temples, education, and aid; builds positive karma." },
-      { title: "Vidyā Dān (Knowledge Donation)", text: "One of the noblest gifts; knowledge multiplies when shared." },
-      { title: "Pictures (Add Later)", text: "Will share pictures and add here." }
+      {
+        title: "Annadān",
+        points: [
+          "Provides food to the hungry",
+          "Highly valued in dharmic giving",
+          "Supports basic wellbeing",
+          "Encourages compassion"
+        ]
+      },
+      {
+        title: "Vastra Dān",
+        points: [
+          "Offers clothing support",
+          "Protects dignity",
+          "Provides warmth and comfort",
+          "Helps those in need"
+        ]
+      },
+      {
+        title: "Dhana Dān",
+        points: [
+          "Supports temples and good causes",
+          "Can aid education and relief",
+          "Encourages responsible charity",
+          "Builds positive karma"
+        ]
+      },
+      {
+        title: "Vidyā Dān",
+        points: [
+          "Sharing knowledge is a noble gift",
+          "Knowledge multiplies when given",
+          "Supports growth and learning",
+          "Creates long-term impact"
+        ]
+      }
     ]
   },
+
   {
     key: "workshops",
     icon: "users",
     title: "Cultural Workshops",
     images: "Cultural-Workshops.jpg",
     intro: "Small, engaging workshops for children—stories, crafts, bhajans, festival games.",
-    what: `Pratham Sanskruti offers small, engaging Cultural Workshops for children to build early awareness of our traditions, festivals, stories, and values.
-Through age appropriate activities like stories, simple bhajans, arts and crafts, and festival themed games, kids experience culture as something joyful and living.`,
-    why: `By bringing culture, manners, and values together in a fun format, Pratham Sanskruti supports parents in giving their children strong cultural roots in a modern world.`,
+
+    whatPoints: [
+      "Children learn culture through stories, bhajans, crafts, and games.",
+      "Workshops are small, engaging, and age appropriate.",
+      "Traditions are introduced in a joyful format.",
+      "Culture becomes a living experience for young minds."
+    ],
+
+    whyPoints: [
+      "Workshops help children build strong cultural roots.",
+      "They combine values, manners, and spiritual awareness.",
+      "Parents get support in passing tradition to the next generation.",
+      "Learning becomes memorable and meaningful."
+    ],
+
     more: [
       {
         title: "Key Spiritual Benefits",
-        text: `Ahimsa (Non-violence): fosters empathy
-Satya (Truthfulness): builds honesty and confidence
-Seva (Selfless Service): instills generosity
-Dharma (Righteousness): supports moral decisions
-Mindfulness via Mantras: improves focus and calm`
+        points: [
+          "Ahimsa builds empathy",
+          "Satya builds honesty",
+          "Seva builds generosity",
+          "Dharma supports right choices"
+        ]
       }
     ]
   },
+
   {
     key: "hampers",
     icon: "gift",
     title: "Pooja Items / Hamper and Gifting",
     images: "Pooja-Hampers.jpg",
     intro: "Premium pooja hampers and gifting options for festivals, weddings, and religious days.",
-    what: `Pratham Sanskruti offers a variety of pooja hampers and gifting options tailored for special occasions like festivals, weddings, and religious days.`,
-    why: `Open to public, but members get up to 15% discounts on total bill.`,
-    more: [{ title: "Pictures (Add Later)", text: "Will share pictures and add here." }]
+
+    whatPoints: [
+      "We offer pooja hampers for festivals, weddings, and religious occasions.",
+      "Gift options can be tailored for sacred events.",
+      "Products support meaningful traditional gifting.",
+      "Offerings are suitable for both family and community use."
+    ],
+
+    whyPoints: [
+      "Pooja gifting adds value to sacred celebrations.",
+      "It helps people prepare thoughtfully for ritual occasions.",
+      "Members receive special discounts on purchases.",
+      "It combines devotion with convenience."
+    ],
+
+    more: [
+      {
+        title: "Hamper Highlights",
+        points: [
+          "Festival-ready gifting",
+          "Wedding pooja support",
+          "Religious day hamper options",
+          "Member discounts available"
+        ]
+      }
+    ]
   }
 ];
 
@@ -175,8 +344,6 @@ function openStoreDetail(key) {
 
   $("detailTitle").innerText = s.title;
   $("detailIntro").innerText = s.intro;
-  $("detailBody").innerText = s.what || "";
-  $("detailWhy").innerText = s.why || "";
 
   const img = $("detailImg");
   img.src = `images/${s.images}`;
@@ -186,13 +353,76 @@ function openStoreDetail(key) {
   const iconEl = $("detailIcon");
   iconEl.setAttribute("data-feather", s.icon);
 
+
+function togglePoints(wrapId, btn) {
+  const wrap = document.getElementById(wrapId);
+  if (!wrap) return;
+
+  wrap.classList.toggle("hidden");
+  btn.innerText = wrap.classList.contains("hidden") ? "Read More" : "Show Less";
+}
+
+$("detailBody").innerHTML = `
+  <div class="service-drop-card">
+    <div class="service-drop-head">
+      <div>
+        <div class="service-mini-title">WHAT WE DO</div>
+        <h4 class="service-main-title">What</h4>
+      </div>
+      ${(s.whatPoints && s.whatPoints.length) ? `
+        <button type="button"
+          class="service-read-btn"
+          onclick="togglePoints('whatPointsWrap', this)">
+          Read More
+        </button>
+      ` : ""}
+    </div>
+
+    <div id="whatPointsWrap" class="hidden service-drop-body">
+      <ul class="service-bullet-list">
+        ${(s.whatPoints || []).map(point => `<li>${point}</li>`).join("")}
+      </ul>
+    </div>
+  </div>
+`;
+
+$("detailWhy").innerHTML = `
+  <div class="service-drop-card">
+    <div class="service-drop-head">
+      <div>
+        <div class="service-mini-title">WHY IT MATTERS</div>
+        <h4 class="service-main-title">Why</h4>
+      </div>
+      ${(s.whyPoints && s.whyPoints.length) ? `
+        <button type="button"
+          class="service-read-btn"
+          onclick="togglePoints('whyPointsWrap', this)">
+          Read More
+        </button>
+      ` : ""}
+    </div>
+
+    <div id="whyPointsWrap" class="hidden service-drop-body">
+      <ul class="service-bullet-list">
+        ${(s.whyPoints || []).map(point => `<li>${point}</li>`).join("")}
+      </ul>
+    </div>
+  </div>
+`;
+
   $("detailMoreWrap").innerHTML = "";
   $("detailMoreWrap").className = "more-grid";
 
   const moreBtn = $("moreBtn");
-  if (s.key === "calendar") moreBtn.classList.remove("hidden");
-  else if (s.more && s.more.length) moreBtn.classList.remove("hidden");
-  else moreBtn.classList.add("hidden");
+  if (s.key === "calendar") {
+    moreBtn.classList.remove("hidden");
+    moreBtn.innerText = "Open Calendar";
+  } else if (s.more && s.more.length) {
+    moreBtn.classList.remove("hidden");
+    moreBtn.innerText = "Show All";
+  } else {
+    moreBtn.classList.add("hidden");
+  }
 
   feather.replace();
   detail.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -243,7 +473,7 @@ function getMoreIcon(serviceKey, title) {
 function showMoreAll() {
   if (!currentService) return;
 
-  // Calendar month-grid inside store detail
+  // Special case for Hindu Calendar
   if (currentService.key === "calendar") {
     if (!festivalData || !festivalData.length) {
       const wrap = $("detailMoreWrap");
@@ -259,6 +489,7 @@ function showMoreAll() {
       feather.replace();
       return;
     }
+
     const now = new Date();
     mwMonthIndex = (now.getFullYear() === YEAR) ? now.getMonth() : 0;
     renderMonthWiseCalendar();
@@ -272,8 +503,38 @@ function showMoreAll() {
   wrap.className = "more-grid";
   wrap.innerHTML = "";
 
-  currentService.more.forEach(item => {
+  currentService.more.forEach((item, index) => {
     const icon = item.icon || getMoreIcon(currentService.key, item.title);
+
+    let insideHTML = "";
+
+    if (item.table && item.headers && item.rows) {
+      insideHTML = `
+        <div class="overflow-x-auto rounded-2xl border border-[var(--stroke)]">
+          <table class="min-w-full text-sm bg-white">
+            <thead style="background: rgba(240,137,5,.15);">
+              <tr>
+                ${item.headers.map(h => `<th class="px-4 py-3 text-left font-black text-[var(--chandan)]">${h}</th>`).join("")}
+              </tr>
+            </thead>
+            <tbody>
+              ${item.rows.map(row => `
+                <tr class="border-t">
+                  ${row.map(cell => `<td class="px-4 py-3 text-stone-600 font-medium">${cell}</td>`).join("")}
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+      `;
+    } else {
+      insideHTML = `
+        <ul class="list-disc pl-5 space-y-2 text-sm text-stone-600 leading-relaxed font-medium">
+          ${(item.points || []).map(point => `<li>${point}</li>`).join("")}
+        </ul>
+      `;
+    }
+
     const card = document.createElement("div");
     card.className = "more-card";
     card.innerHTML = `
@@ -281,9 +542,9 @@ function showMoreAll() {
         <div style="width:56px;height:56px;border-radius:18px;display:flex;align-items:center;justify-content:center;background:rgba(240,137,5,.18);border:2px solid var(--stroke);">
           <i data-feather="${icon}" class="w-6 h-6 text-[var(--primary-2)]"></i>
         </div>
-        <div class="max-w-md">
-          <div class="font-black text-[var(--chandan)] text-lg mb-2">${item.title || "More"}</div>
-          <div class="text-sm text-stone-600 leading-relaxed whitespace-pre-line font-medium">${item.text || ""}</div>
+        <div class="w-full">
+          <div class="font-black text-[var(--chandan)] text-lg mb-4">${item.title || "More"}</div>
+          ${insideHTML}
         </div>
       </div>
     `;
@@ -654,3 +915,20 @@ if (mobileMenu) {
 window.addEventListener("resize", () => {
   if (window.innerWidth >= 768) closeMobileMenu();
 });
+
+// hero
+
+  const slides = document.querySelectorAll("#heroSlider .slide");
+  let currentSlide = 0;
+
+  function changeSlide() {
+    slides[currentSlide].classList.remove("opacity-100");
+    slides[currentSlide].classList.add("opacity-0");
+
+    currentSlide = (currentSlide + 1) % slides.length;
+
+    slides[currentSlide].classList.remove("opacity-0");
+    slides[currentSlide].classList.add("opacity-100");
+  }
+
+  setInterval(changeSlide, 4000); // change every 4 seconds

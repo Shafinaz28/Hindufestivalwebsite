@@ -78,41 +78,52 @@
   </header>
 
   <!-- HERO (NO CHANGE) -->
-  <section id="home" class="relative overflow-hidden min-h-[92vh] flex items-center justify-center">
-    <video id="heroVideo"
-           class="absolute inset-0 w-full h-full object-cover"
-           autoplay muted loop playsinline preload="metadata"
-           poster="images/placeholder.jpg">
-      <source src="images/video.mp4" type="video/mp4">
-    </video>
+<section id="home" class="relative overflow-hidden min-h-[92vh] flex items-center justify-center">
 
-    <div class="absolute inset-0 bg-black/55"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"></div>
+  <!-- Background Image Slider -->
+  <div id="heroSlider" class="absolute inset-0 w-full h-full">
+    <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100"
+         style="background-image: url('images/bg.jpg');"></div>
 
-    <div class="relative z-10 mx-auto max-w-4xl px-4 text-center py-16">
-      <div class="inline-block text-[11px] font-black tracking-[0.45em] uppercase text-[#ffd36b] mb-4">
-        PRATHAM SANSKRUTI
-      </div>
+    <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0"
+         style="background-image: url('images/bgimg1.jpg');"></div>
 
-      <h1 class="brand-font text-4xl md:text-6xl leading-[1.05] text-white">
-        Stay aligned with every <span class="text-[#ffd36b]">tithi</span> and <span class="text-[#ffd36b]">tyohar</span>
-      </h1>
+    <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0"
+         style="background-image: url('images/img2.jpg');"></div>
 
-      <p class="mt-5 text-base md:text-lg text-white/90 max-w-2xl mx-auto">
-        Stay effortlessly aligned with every important tithi and tyohar (festival), with timely reminders for key Hindu events—
-        so you never miss an auspicious day for vrats, pujas, or family ceremonies.
-      </p>
+    <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0"
+         style="background-image: url('images/img3.jpg');"></div>
+  </div>
 
-      <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
-        <a href="#about" class="haldi-btn shadow-lg">Explore</a>
-        <a href="#calendar" class="kumkum-btn shadow-lg">Festival Calendar</a>
-        <button onclick="openJoinForm()"
-                class="px-6 py-3 rounded-full border border-white/30 bg-white/10 hover:bg-white/20 font-extrabold text-white backdrop-blur">
-          Join
-        </button>
-      </div>
+  <!-- Overlays -->
+  <div class="absolute inset-0 bg-black/55"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 mx-auto max-w-4xl px-4 text-center py-16">
+    <div class="inline-block text-[11px] font-black tracking-[0.45em] uppercase text-[#ffd36b] mb-4">
+      PRATHAM SANSKRUTI
     </div>
-  </section>
+
+    <h1 class="brand-font text-4xl md:text-6xl leading-[1.05] text-white">
+      Stay aligned with every <span class="text-[#ffd36b]">tithi</span> and <span class="text-[#ffd36b]">tyohar</span>
+    </h1>
+
+    <p class="mt-5 text-base md:text-lg text-white/90 max-w-2xl mx-auto">
+      Stay effortlessly aligned with every important tithi and tyohar (festival), with timely reminders for key Hindu events—
+      so you never miss an auspicious day for vrats, pujas, or family ceremonies.
+    </p>
+
+    <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+      <a href="#about" class="haldi-btn shadow-lg">Explore</a>
+      <a href="#calendar" class="kumkum-btn shadow-lg">Festival Calendar</a>
+      <button onclick="openJoinForm()"
+              class="px-6 py-3 rounded-full border border-white/30 bg-white/10 hover:bg-white/20 font-extrabold text-white backdrop-blur">
+        Join
+      </button>
+    </div>
+  </div>
+</section>
 
 <!-- ABOUT (UPDATED — no extra content, CTA centered, spacing fixed) -->
 <section id="about" class="mt-10">
@@ -199,7 +210,7 @@
 
       </div>
 
-      <!-- Bottom Quick Actions -->
+      <!-- Bottom Quick Actions
       <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
         <a href="calendar.html" class="kumkum-btn shadow-lg">Open Calendar</a>
         <a href="instore.html" class="haldi-btn shadow-lg">In Store</a>
@@ -207,14 +218,14 @@
           class="px-6 py-3 rounded-full border border-white/30 bg-white/10 hover:bg-white/20 font-extrabold text-[var(--primary-2)] backdrop-blur">
           Join
         </button>
-      </div>
+      </div> -->
 
     </div>
   </div>
 </section>
 
   <!-- JOIN MODAL (NO CHANGE) -->
-  <div id="joinModal" class="modal-backdrop" onclick="closeJoinForm()">
+  <!-- <div id="joinModal" class="modal-backdrop" onclick="closeJoinForm()">
     <div class="modal p-0 relative flex-col" style="max-width: 560px;" onclick="event.stopPropagation()">
       <div class="p-5 border-b border-stone-100 flex items-start justify-between gap-4">
         <div>
@@ -277,9 +288,7 @@
         </form>
       </div>
     </div>
-  </div>
-
-
+  </div> -->
   <script src="./app.js"></script>
 </body>
 </html>
