@@ -512,7 +512,9 @@
     color: rgba(31, 41, 55, .85);
     font-weight: 600;
     white-space: normal;
+    verflow-x: auto;
   }
+  
 
   .moreDropdownBody p {
     margin: 10px 0;
@@ -683,6 +685,17 @@
   display: block;
   margin-bottom: 6px;
   font-weight: 800;
+}
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: block; /* 🔥 VERY IMPORTANT */
+}
+
+.table-scroll table {
+  min-width: 600px; /* force scroll */
+  width: max-content; /* 🔥 ensures scroll works */
 }
   </style>
 </head>
@@ -1095,25 +1108,27 @@ Namaskara (prostration)`
           text: `
 <p>Hindu festivals follow sacred lunar timings (tithi) from the Panchang, aligning human life with cosmic rhythm.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Festival</th>
-      <th>Timing (Lunar)</th>
-      <th>Key Observance</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Diwali</td><td>Kartika Amavasya</td><td>Lights, Lakshmi Puja</td></tr>
-    <tr><td>Holi</td><td>Phalguna Purnima</td><td>Colors, Holika Bonfire</td></tr>
-    <tr><td>Navaratri / Durga Puja</td><td>Ashvina Shukla 1–10</td><td>Goddess Worship, Dances</td></tr>
-    <tr><td>Ganesh Chaturthi</td><td>Bhadrapada Shukla 4</td><td>Idol Immersion</td></tr>
-    <tr><td>Krishna Janmashtami</td><td>Shravana/Bhadra Krishna 8</td><td>Birth Fasting, Dances</td></tr>
-    <tr><td>Maha Shivaratri</td><td>Magha/Phalguna Krishna 14</td><td>All-Night Shiva Vigil</td></tr>
-    <tr><td>Rama Navami</td><td>Chaitra Shukla 9</td><td>Rama Birth Recitation</td></tr>
-    <tr><td>Raksha Bandhan</td><td>Shravana Purnima</td><td>Sister-Brother Ties</td></tr>
-  </tbody>
-</table>
+<div class="table-scroll">
+  <table>
+    <thead>
+      <tr>
+        <th>Festival</th>
+        <th>Timing (Lunar)</th>
+        <th>Key Observance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Diwali</td><td>Kartika Amavasya</td><td>Lights, Lakshmi Puja</td></tr>
+      <tr><td>Holi</td><td>Phalguna Purnima</td><td>Colors, Holika Bonfire</td></tr>
+      <tr><td>Navaratri / Durga Puja</td><td>Ashvina Shukla 1–10</td><td>Goddess Worship, Dances</td></tr>
+      <tr><td>Ganesh Chaturthi</td><td>Bhadrapada Shukla 4</td><td>Idol Immersion</td></tr>
+      <tr><td>Krishna Janmashtami</td><td>Shravana/Bhadra Krishna 8</td><td>Birth Fasting, Dances</td></tr>
+      <tr><td>Maha Shivaratri</td><td>Magha/Phalguna Krishna 14</td><td>All-Night Shiva Vigil</td></tr>
+      <tr><td>Rama Navami</td><td>Chaitra Shukla 9</td><td>Rama Birth Recitation</td></tr>
+      <tr><td>Raksha Bandhan</td><td>Shravana Purnima</td><td>Sister-Brother Ties</td></tr>
+    </tbody>
+  </table>
+</div>
 
 <p style="margin-top:12px;">Other notable sacred gatherings include <b>Kumbh Mela</b> and regional festivals like <b>Onam</b> and <b>Pongal</b>.</p>
 
