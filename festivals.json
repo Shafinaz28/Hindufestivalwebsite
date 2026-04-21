@@ -7,7 +7,7 @@
       "items": [
         {
           "id": 1,
-          "images": "images/akshaya-tritiya.jpg",
+          "images": "akshaya-tritiya.jpg",
           "date": "01-Jan",
           "day": "Thu",
           "englishname": "Rohini Vrat",
@@ -27,7 +27,7 @@
         },
         {
           "id": 2,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat.jpg",
           "date": "01-Jan",
           "day": "Thu",
           "englishname": "Guru Pradosh Vrat",
@@ -47,7 +47,7 @@
         },
         {
           "id": 3,
-          "images": "akshaya-tritiya.jpg",
+          "images": "Shakambhari-Purnima.jpg",
           "date": "03-Jan",
           "day": "Sat",
           "englishname": "Shakambhari Purnima",
@@ -67,7 +67,7 @@
         },
         {
           "id": 4,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pausha-purnima.jpg",
           "date": "03-Jan",
           "day": "Sat",
           "englishname": "Pausha Purnima Vrat",
@@ -87,7 +87,7 @@
         },
         {
           "id": 5,
-          "images": "akshaya-tritiya.jpg",
+          "images": "sankashti-chaturthi.jpg",
           "date": "06-Jan",
           "day": "Tue",
           "englishname": "Sakat Chauth",
@@ -107,7 +107,7 @@
         },
         {
           "id": 6,
-          "images": "akshaya-tritiya.jpg",
+          "images": "Sankashti Chaturthi.jpg",
           "date": "06-Jan",
           "day": "Tue",
           "englishname": "Lambodara Sankashti",
@@ -127,7 +127,7 @@
         },
         {
           "id": 7,
-          "images": "akshaya-tritiya.jpg",
+    "images": "kalashtami.jpg",
           "date": "10-Jan",
           "day": "Sat",
           "englishname": "Kalashtami",
@@ -147,7 +147,7 @@
         },
         {
           "id": 8,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "10-Jan",
           "day": "Sat",
           "englishname": "Masik Krishna Janmashtami",
@@ -167,7 +167,7 @@
         },
         {
           "id": 9,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img2.jpg",
           "date": "13-Jan",
           "day": "Tue",
           "englishname": "Bhogi",
@@ -186,7 +186,7 @@
         },
         {
           "id": 10,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img1.jpg",
           "date": "13-Jan",
           "day": "Tue",
           "englishname": "Lohri",
@@ -205,7 +205,7 @@
         },
         {
           "id": 11,
-          "images": "akshaya-tritiya.jpg",
+          "images": "makar-sankranti.jpg",
           "date": "14-Jan",
           "day": "Wed",
           "englishname": "Makar Sankranti",
@@ -225,7 +225,7 @@
         },
         {
           "id": 12,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "14-Jan",
           "day": "Wed",
           "englishname": "Pongal",
@@ -244,7 +244,7 @@
         },
         {
           "id": 13,
-          "images": "akshaya-tritiya.jpg",
+          "images": "shattila-ekadashi.jpg",
           "date": "14-Jan",
           "day": "Wed",
           "englishname": "Shattila Ekadashi",
@@ -264,7 +264,7 @@
         },
         {
           "id": 14,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat.jpg",
           "date": "16-Jan",
           "day": "Fri",
           "englishname": "Meru Trayodashi",
@@ -283,7 +283,7 @@
         },
         {
           "id": 15,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat-2.jpg",
           "date": "16-Jan",
           "day": "Fri",
           "englishname": "Shukra Pradosh Vrat",
@@ -303,7 +303,7 @@
         },
         {
           "id": 16,
-          "images": "akshaya-tritiya.jpg",
+          "images": "masik-shivaratri.jpg",
           "date": "16-Jan",
           "day": "Fri",
           "englishname": "Masik Shivaratri",
@@ -323,7 +323,7 @@
         },
         {
           "id": 17,
-          "images": "akshaya-tritiya.jpg",
+          "images": "mauni-amavasya.jpg",
           "date": "18-Jan",
           "day": "Sun",
           "englishname": "Mauni Amavasya",
@@ -343,7 +343,7 @@
         },
         {
           "id": 18,
-          "images": "akshaya-tritiya.jpg",
+          "images": "amavasya.jpg",
           "date": "18-Jan",
           "day": "Sun",
           "englishname": "Thai Amavasai",
@@ -362,7 +362,7 @@
         },
         {
           "id": 19,
-          "images": "akshaya-tritiya.jpg",
+          "images": "gupta-navratri.jpg",
           "date": "19-Jan",
           "day": "Mon",
           "englishname": "Magha Navratri Begins",
@@ -382,7 +382,7 @@
         },
         {
           "id": 20,
-          "images": "akshaya-tritiya.jpg",
+          "images": "chandra-darshan.jpg",
           "date": "20-Jan",
           "day": "Tue",
           "englishname": "Chandra Darshan",
@@ -402,7 +402,7 @@
         },
         {
           "id": 21,
-          "images": "akshaya-tritiya.jpg",
+          "images": "vinayaka-chaturthi.jpg",
           "date": "22-Jan",
           "day": "Thu",
           "englishname": "Ganesha Jayanti",
@@ -422,7 +422,7 @@
         },
         {
           "id": 22,
-          "images": "akshaya-tritiya.jpg",
+          "images": "vasant-panchami.jpg",
           "date": "23-Jan",
           "day": "Fri",
           "englishname": "Vasant Panchami / Saraswati Jayanti",
@@ -442,7 +442,7 @@
         },
         {
           "id": 23,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "03-Jan",
           "day": "Sat",
           "englishname": "Arudra Darshan",
@@ -462,7 +462,7 @@
         },
         {
           "id": 24,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "03-Jan",
           "day": "Sat",
           "englishname": "Anvadhan (Pausha Shukla)",
@@ -482,7 +482,7 @@
         },
         {
           "id": 25,
-          "images": "akshaya-tritiya.jpg",
+          "images": "skanda-shashti.jpg",
           "date": "04-Jan",
           "day": "Sun",
           "englishname": "Magha Begins (North)",
@@ -502,7 +502,7 @@
         },
         {
           "id": 26,
-          "images": "akshaya-tritiya.jpg",
+          "images": "bhanu-saptami.jpg",
           "date": "04-Jan",
           "day": "Sun",
           "englishname": "Ishti (Magha Krishna)",
@@ -522,7 +522,7 @@
         },
         {
           "id": 27,
-          "images": "akshaya-tritiya.jpg",
+          "images": "ratha-saptami.jpg",
           "date": "09-Jan",
           "day": "Fri",
           "englishname": "Vivekananda Jayanti (Samvat)",
@@ -542,7 +542,7 @@
         },
         {
           "id": 28,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "10-Jan",
           "day": "Sat",
           "englishname": "(Already added: Kalashtami & Masik Krishna Janmashtami)",
@@ -550,7 +550,7 @@
         },
         {
           "id": 29,
-          "images": "akshaya-tritiya.jpg",
+          "images": "bhishma-ashtami.jpg",
           "date": "12-Jan",
           "day": "Mon",
           "englishname": "Swami Vivekananda Jayanti (Govt/National)",
@@ -570,7 +570,7 @@
         },
         {
           "id": 30,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "14-Jan",
           "day": "Wed",
           "englishname": "Uttarayana",
@@ -590,7 +590,7 @@
         },
         {
           "id": 31,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "14-Jan",
           "day": "Wed",
           "englishname": "Makaravilakku",
@@ -610,7 +610,7 @@
         },
         {
           "id": 32,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "15-Jan",
           "day": "Thu",
           "englishname": "Krishna Kurma Dwadashi",
@@ -630,7 +630,7 @@
         },
         {
           "id": 33,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "15-Jan",
           "day": "Thu",
           "englishname": "Mattu Pongal",
@@ -650,7 +650,7 @@
         },
         {
           "id": 34,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "15-Jan",
           "day": "Thu",
           "englishname": "Magh Bihu / Bhogali Bihu",
@@ -670,7 +670,7 @@
         },
         {
           "id": 35,
-          "images": "akshaya-tritiya.jpg",
+          "images": "amavasya.jpg",
           "date": "18-Jan",
           "day": "Sun",
           "englishname": "Darsha Amavasya",
@@ -690,7 +690,7 @@
         },
         {
           "id": 36,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "18-Jan",
           "day": "Sun",
           "englishname": "Anvadhan (Magha Krishna)",
@@ -710,7 +710,7 @@
         },
         {
           "id": 37,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "19-Jan",
           "day": "Mon",
           "englishname": "Ishti (Magha Shukla)",
@@ -730,7 +730,7 @@
         },
         {
           "id": 38,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "22-Jan",
           "day": "Thu",
           "englishname": "Ramalala Pratishtha Diwas",
@@ -750,7 +750,7 @@
         },
         {
           "id": 39,
-          "images": "akshaya-tritiya.jpg",
+          "images": "vinayaka-chaturthi.jpg",
           "date": "22-Jan",
           "day": "Thu",
           "englishname": "Gauri Ganesha Chaturthi",
@@ -770,7 +770,7 @@
         },
         {
           "id": 40,
-          "images": "akshaya-tritiya.jpg",
+          "images": "skanda-shashti.jpg",
           "date": "24-Jan",
           "day": "Sat",
           "englishname": "Skanda Sashti",
@@ -790,7 +790,7 @@
         },
         {
           "id": 41,
-          "images": "akshaya-tritiya.jpg",
+          "images": "bhanu-saptami.jpg",
           "date": "25-Jan",
           "day": "Sun",
           "englishname": "Bhanu Saptami",
@@ -810,7 +810,7 @@
         },
         {
           "id": 42,
-          "images": "akshaya-tritiya.jpg",
+          "images": "ratha-saptami.jpg",
           "date": "25-Jan",
           "day": "Sun",
           "englishname": "Ratha Saptami",
@@ -830,7 +830,7 @@
         },
         {
           "id": 43,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "25-Jan",
           "day": "Sun",
           "englishname": "Narmada Jayanti",
@@ -850,7 +850,7 @@
         },
         {
           "id": 44,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "25-Jan",
           "day": "Sun",
           "englishname": "Brahma Savarni Manvadi",
@@ -870,7 +870,7 @@
         },
         {
           "id": 45,
-          "images": "akshaya-tritiya.jpg",
+          "images": "bhishma-ashtami.jpg",
           "date": "26-Jan",
           "day": "Mon",
           "englishname": "Bhishma Ashtami",
@@ -890,7 +890,7 @@
         },
         {
           "id": 46,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "26-Jan",
           "day": "Mon",
           "englishname": "Masik Durgashtami",
@@ -910,7 +910,7 @@
         },
         {
           "id": 47,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "27-Jan",
           "day": "Tue",
           "englishname": "Masik Karthigai",
@@ -930,7 +930,7 @@
         },
         {
           "id": 48,
-          "images": "akshaya-tritiya.jpg",
+          "images": "rohini-vrat.jpg",
           "date": "28-Jan",
           "day": "Wed",
           "englishname": "Rohini Vrat (second)",
@@ -950,7 +950,7 @@
         },
         {
           "id": 49,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "29-Jan",
           "day": "Thu",
           "englishname": "Bhishma Dwadashi",
@@ -970,7 +970,7 @@
         },
         {
           "id": 50,
-          "images": "akshaya-tritiya.jpg",
+          "images": "jaya-ekadashi.jpg",
           "date": "29-Jan",
           "day": "Thu",
           "englishname": "Jaya Ekadashi",
@@ -990,7 +990,7 @@
         },
         {
           "id": 51,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "30-Jan",
           "day": "Fri",
           "englishname": "Gandhi Punyatithi",
@@ -1010,7 +1010,7 @@
         },
         {
           "id": 52,
-          "images": "akshaya-tritiya.jpg",
+          "images": "jaya-ekadashi.jpg",
           "date": "30-Jan",
           "day": "Fri",
           "englishname": "Shukra Pradosh Vrat (second)",
@@ -1035,7 +1035,7 @@
       "items": [
         {
           "id": 53,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "01-Feb",
           "day": "Sun",
           "englishname": "Dwadashi Parana",
@@ -1055,7 +1055,7 @@
         },
         {
           "id": 54,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat-3.jpg",
           "date": "01-Feb",
           "day": "Sun",
           "englishname": "Pradosh Vrat (Shukla) – Ravi Pradosh",
@@ -1075,7 +1075,7 @@
         },
         {
           "id": 55,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "01-Feb",
           "day": "Sun",
           "englishname": "Guru Ravidas Jayanti",
@@ -1095,7 +1095,7 @@
         },
         {
           "id": 56,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "01-Feb",
           "day": "Sun",
           "englishname": "Thai Pusam",
@@ -1115,7 +1115,7 @@
         },
         {
           "id": 57,
-          "images": "akshaya-tritiya.jpg",
+          "images": "purnima.jpg",
           "date": "01-Feb",
           "day": "Sun",
           "englishname": "Magha Purnima",
@@ -1135,7 +1135,7 @@
         },
         {
           "id": 58,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "03-Feb",
           "day": "Tue",
           "englishname": "(Alt. calendar) Magh Purnima / Chandra Grahan – if using that source",
@@ -1155,7 +1155,7 @@
         },
         {
           "id": 59,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "07-Feb",
           "day": "Sat",
           "englishname": "Kumbha Sankranti",
@@ -1175,7 +1175,7 @@
         },
         {
           "id": 60,
-          "images": "akshaya-tritiya.jpg",
+          "images": "Sankashti Chaturthi.jpg",
           "date": "10-Feb",
           "day": "Tue",
           "englishname": "Sankashti Chaturthi",
@@ -1195,7 +1195,7 @@
         },
         {
           "id": 61,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "14-Feb",
           "day": "Sat",
           "englishname": "Amla Navami / Bhishma Ashtami (per Panchang.org description)",
@@ -1215,7 +1215,7 @@
         },
         {
           "id": 62,
-          "images": "akshaya-tritiya.jpg",
+          "images": "Jaya Ekadashi.jpg",
           "date": "15-Feb",
           "day": "Sun",
           "englishname": "Jaya Ekadashi",
@@ -1235,7 +1235,7 @@
         },
         {
           "id": 63,
-          "images": "akshaya-tritiya.jpg",
+          "images": "maha-shivaratri.jpg",
           "date": "15-Feb",
           "day": "Sun",
           "englishname": "Maha Shivaratri",
@@ -1255,7 +1255,7 @@
         },
         {
           "id": 64,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat.jpg",
           "date": "16-Feb",
           "day": "Mon",
           "englishname": "Pradosh Vrat (Krishna) – Soma Pradosh",
@@ -1275,7 +1275,7 @@
         },
         {
           "id": 65,
-          "images": "akshaya-tritiya.jpg",
+          "images": "masik-shivaratri.jpg",
           "date": "17-Feb",
           "day": "Tue",
           "englishname": "Masik Shivaratri",
@@ -1295,7 +1295,7 @@
         },
         {
           "id": 66,
-          "images": "akshaya-tritiya.jpg",
+          "images": "phalguna-amavasya.jpg",
           "date": "18-Feb",
           "day": "Wed",
           "englishname": "Phalguna Amavasya",
@@ -1315,7 +1315,7 @@
         },
         {
           "id": 67,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "19-Feb",
           "day": "Thu",
           "englishname": "Phalguna Month Begins (Amanta)",
@@ -1335,7 +1335,7 @@
         },
         {
           "id": 68,
-          "images": "akshaya-tritiya.jpg",
+          "images": "vinayaka-chaturthi.jpg",
           "date": "24-Feb",
           "day": "Tue",
           "englishname": "Vinayaka Chaturthi / Masik Ganesh Chaturthi",
@@ -1355,7 +1355,7 @@
         },
         {
           "id": 69,
-          "images": "akshaya-tritiya.jpg",
+          "images": "ratha-saptami.jpg",
           "date": "27-Feb",
           "day": "Fri",
           "englishname": "Ratha Saptami",
@@ -1375,7 +1375,7 @@
         },
         {
           "id": 70,
-          "images": "akshaya-tritiya.jpg",
+          "images": "jaya-ekadashi.jpg",
           "date": "28-Feb",
           "day": "Sat",
           "englishname": "Bhishma Ekadashi (Magha Shukla Ekadashi)",
@@ -1400,7 +1400,7 @@
       "items": [
         {
           "id": 71,
-          "images": "akshaya-tritiya.jpg",
+          "images": "holi.jpg",
           "date": "03-Mar",
           "day": "Tue",
           "englishname": "Holika Dahan",
@@ -1420,7 +1420,7 @@
         },
         {
           "id": 72,
-          "images": "akshaya-tritiya.jpg",
+          "images": "holi.jpg",
           "date": "04-Mar",
           "day": "Wed",
           "englishname": "Holi / Dhulandi",
@@ -1440,7 +1440,7 @@
         },
         {
           "id": 73,
-          "images": "akshaya-tritiya.jpg",
+          "images": "Sankashti Chaturthi.jpg",
           "date": "06-Mar",
           "day": "Fri",
           "englishname": "Sankashti Chaturthi",
@@ -1460,7 +1460,7 @@
         },
         {
           "id": 74,
-          "images": "akshaya-tritiya.jpg",
+          "images": "mesha-sankranti.jpg",
           "date": "11-Mar",
           "day": "Wed",
           "englishname": "Meena Sankranti",
@@ -1480,7 +1480,7 @@
         },
         {
           "id": 75,
-          "images": "akshaya-tritiya.jpg",
+          "images": "papmochani-ekadashi.jpg",
           "date": "13-Mar",
           "day": "Fri",
           "englishname": "Papmochani Ekadashi",
@@ -1500,7 +1500,7 @@
         },
         {
           "id": 76,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat-4.jpg",
           "date": "14-Mar",
           "day": "Sat",
           "englishname": "Pradosh Vrat (Krishna) – Shani Pradosh",
@@ -1520,7 +1520,7 @@
         },
         {
           "id": 77,
-          "images": "akshaya-tritiya.jpg",
+          "images": "masik-shivaratri.jpg",
           "date": "15-Mar",
           "day": "Sun",
           "englishname": "Masik Shivaratri",
@@ -1540,7 +1540,7 @@
         },
         {
           "id": 78,
-          "images": "akshaya-tritiya.jpg",
+          "images": "phalguna-amavasya.jpg",
           "date": "17-Mar",
           "day": "Tue",
           "englishname": "Phalguna Amavasya (South India)",
@@ -1560,7 +1560,7 @@
         },
         {
           "id": 79,
-          "images": "akshaya-tritiya.jpg",
+          "images": "purnima.jpg",
           "date": "19-Mar",
           "day": "Thu",
           "englishname": "Phalguna Purnima (South calendar Holi)",
@@ -1580,7 +1580,7 @@
         },
         {
           "id": 80,
-          "images": "akshaya-tritiya.jpg",
+          "images": "chaitra-krishna-pratipada.jpg",
           "date": "20-Mar",
           "day": "Fri",
           "englishname": "Chaitra Month Begins (North India, Purnimanta)",
@@ -1600,7 +1600,7 @@
         },
         {
           "id": 81,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "22-Mar",
           "day": "Sun",
           "englishname": "Gudi Padwa / Ugadi",
@@ -1620,7 +1620,7 @@
         },
         {
           "id": 82,
-          "images": "akshaya-tritiya.jpg",
+          "images": "chaitra-navratri-day-1.jpg",
           "date": "25-Mar",
           "day": "Wed",
           "englishname": "Chaitra Navratri Begins / Ghatsthapana",
@@ -1638,29 +1638,10 @@
           "daan": "Food, fruits, clothes to Kanya (little girls), distribution of prasad.",
           "notes": "Standard Navratri mantra set per day:\n\nDay 1 Shailaputri – “ॐ देवी शैलपुत्र्यै नमः” 108.\n\nDay 2 Brahmacharini – “ॐ देवी ब्रह्मचारिण्यै नमः” 108.\n\nDay 3 Chandraghanta – “ॐ देवी चन्द्रघंटायै नमः” 108.\n\nDay 4 Kushmanda – “ॐ देवी कूष्मांडायै नमः” 108.\n\nDay 5 Skandamata – “ॐ देवी स्कन्दमातायै नमः” 108.\n\nDay 6 Katyayani – “ॐ देवी कात्यायन्यै नमः” 108.\n\nDay 7 Kalaratri – “ॐ देवी कालरात्र्यै नमः” 108.\n\nDay 8 Mahagauri – “ॐ देवी महागौर्यै नमः” 108.\n\nDay 9 Siddhidatri – “ॐ देवी सिद्धिदात्र्यै नमः” 108."
         },
-        {
-          "id": 83,
-          "images": "akshaya-tritiya.jpg",
-          "date": "28-Mar",
-          "day": "",
-          "englishname": "Panguni Uthiram ",
-          "hindiname": "",
-          "type": "",
-          "tithimonth": "",
-          "muhurat": "",
-          "focus": "",
-          "significance": "",
-          "katha": "",
-          "morning": "",
-          "daytime": "",
-          "mainpuja": "",
-          "fastingrules": "",
-          "daan": "",
-          "notes": "For Murugan: “ॐ सरवनभवाय नमः” 108.\n\nFor divine couples (Rama–Sita, Shiva–Parvati): “सीताराम” japa or “ॐ गौरी शंकराय नमः” 108."
-        },
+        
         {
           "id": 84,
-          "images": "akshaya-tritiya.jpg",
+          "images": "rama-navami.jpg",
           "date": "30-Mar",
           "day": "Mon",
           "englishname": "Ram Navami",
@@ -1685,7 +1666,7 @@
       "items": [
         {
           "id": 86,
-          "images": "akshaya-tritiya.jpg",
+          "images": "chaitra-navratri-ashtami.jpg",
           "date": "01-Apr",
           "day": "Wed",
           "englishname": "Durga Ashtami (Chaitra Navratri Ashtami)",
@@ -1705,7 +1686,7 @@
         },
         {
           "id": 87,
-          "images": "akshaya-tritiya.jpg",
+          "images": "rama-navami.jpg",
           "date": "02-Apr",
           "day": "Thu",
           "englishname": "Ram Navami",
@@ -1725,7 +1706,7 @@
         },
         {
           "id": 88,
-          "images": "akshaya-tritiya.jpg",
+          "images": "chaitra-navratri-navami.jpg",
           "date": "03-Apr",
           "day": "Fri",
           "englishname": "Navratri Parana / Chaitra Navratri Ends",
@@ -1745,7 +1726,7 @@
         },
         {
           "id": 89,
-          "images": "akshaya-tritiya.jpg",
+          "images": "papmochani-ekadashi.jpg",
           "date": "05-Apr",
           "day": "Sun",
           "englishname": "Papmochani Ekadashi",
@@ -1765,7 +1746,7 @@
         },
         {
           "id": 90,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat.jpg",
           "date": "06-Apr",
           "day": "Mon",
           "englishname": "Pradosh Vrat (Krishna Paksha) – Soma Pradosh",
@@ -1785,7 +1766,7 @@
         },
         {
           "id": 91,
-          "images": "akshaya-tritiya.jpg",
+          "images": "masik-shivaratri.jpg",
           "date": "07-Apr",
           "day": "Tue",
           "englishname": "Masik Shivaratri",
@@ -1805,7 +1786,7 @@
         },
         {
           "id": 92,
-          "images": "akshaya-tritiya.jpg",
+          "images": "chaitra-amavasya.jpg",
           "date": "08-Apr",
           "day": "Wed",
           "englishname": "Chaitra Amavasya",
@@ -1825,7 +1806,7 @@
         },
         {
           "id": 93,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "09-Apr",
           "day": "Thu",
           "englishname": "Chaitra Shukla Pratipada – Hindu New Year (North/Vikram Samvat 2083)",
@@ -1845,7 +1826,7 @@
         },
         {
           "id": 94,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "09-Apr",
           "day": "Thu",
           "englishname": "Gudi Padwa / Ugadi",
@@ -1865,7 +1846,7 @@
         },
         {
           "id": 95,
-          "images": "akshaya-tritiya.jpg",
+          "images": "vinayaka-chaturthi.jpg",
           "date": "11-Apr",
           "day": "Sat",
           "englishname": "Vinayaka Chaturthi (Chaitra)",
@@ -1885,7 +1866,7 @@
         },
         {
           "id": 96,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "13-Apr",
           "day": "Mon",
           "englishname": "Gangaur Puja",
@@ -1905,7 +1886,7 @@
         },
         {
           "id": 97,
-          "images": "akshaya-tritiya.jpg",
+          "images": "mesha-sankranti.jpg",
           "date": "14-Apr",
           "day": "Tue",
           "englishname": "Mesha Sankranti / Baisakhi / Tamil Puthandu",
@@ -1925,7 +1906,7 @@
         },
         {
           "id": 98,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "15-Apr",
           "day": "Wed",
           "englishname": "Pohela Boishakh / Vishu",
@@ -1945,7 +1926,7 @@
         },
         {
           "id": 99,
-          "images": "akshaya-tritiya.jpg",
+          "images": "varuthini-ekadashi.jpg",
           "date": "17-Apr",
           "day": "Fri",
           "englishname": "Varuthini Ekadashi",
@@ -1965,7 +1946,7 @@
         },
         {
           "id": 100,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat-4.jpg",
           "date": "18-Apr",
           "day": "Sat",
           "englishname": "Pradosh Vrat (Shukla Paksha) – Shani Pradosh",
@@ -1985,7 +1966,7 @@
         },
         {
           "id": 101,
-          "images": "akshaya-tritiya.jpg",
+          "images": "hanuman-jayanti.jpg",
           "date": "19-Apr",
           "day": "Sun",
           "englishname": "Hanuman Jayanti",
@@ -2005,7 +1986,7 @@
         },
         {
           "id": 102,
-          "images": "akshaya-tritiya.jpg",
+          "images": "chaitra-purnima.jpg",
           "date": "22-Apr",
           "day": "Wed",
           "englishname": "Chaitra Purnima",
@@ -2025,7 +2006,7 @@
         },
         {
           "id": 103,
-          "images": "akshaya-tritiya.jpg",
+          "images": "chandra-darshan.jpg",
           "date": "23-Apr",
           "day": "Thu",
           "englishname": "Chandra Darshan",
@@ -2045,7 +2026,7 @@
         },
         {
           "id": 104,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "24-Apr",
           "day": "Fri",
           "englishname": "Vaishakha Month Begins (North India)",
@@ -2065,7 +2046,7 @@
         },
         {
           "id": 105,
-          "images": "akshaya-tritiya.jpg",
+          "images": "vinayaka-chaturthi.jpg",
           "date": "26-Apr",
           "day": "Sun",
           "englishname": "Vinayaka Chaturthi (Vaishakha)",
@@ -2105,7 +2086,7 @@
         },
         {
           "id": 107,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat.jpg",
           "date": "28-Apr",
           "day": "Tue",
           "englishname": "Pradosh Vrat (Krishna Paksha)",
@@ -2125,7 +2106,7 @@
         },
         {
           "id": 108,
-          "images": "akshaya-tritiya.jpg",
+          "images": "masik-shivaratri.jpg",
           "date": "29-Apr",
           "day": "Wed",
           "englishname": "Masik Shivaratri",
@@ -2145,7 +2126,7 @@
         },
         {
           "id": 109,
-          "images": "akshaya-tritiya.jpg",
+          "images": "amavasya.jpg",
           "date": "30-Apr",
           "day": "Thu",
           "englishname": "Vaishakha Amavasya",
@@ -2170,7 +2151,7 @@
       "items": [
         {
           "id": 110,
-          "images": "akshaya-tritiya.jpg",
+          "images": "jyestha-purnima.jpg",
           "date": "01-May",
           "day": "Fri",
           "englishname": "Vaishakha Purnima",
@@ -2190,7 +2171,7 @@
         },
         {
           "id": 111,
-          "images": "akshaya-tritiya.jpg",
+          "images": "purnima.jpg",
           "date": "01-May",
           "day": "Fri",
           "englishname": "Buddha Purnima / Vesak",
@@ -2210,7 +2191,7 @@
         },
         {
           "id": 112,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "3–4 May",
           "day": "Sun–Mon",
           "englishname": "Narada Jayanti (tithi falls just after Vaishakh Purnima)",
@@ -2230,7 +2211,7 @@
         },
         {
           "id": 113,
-          "images": "akshaya-tritiya.jpg",
+          "images": "Sankashti Chaturthi.jpg",
           "date": "05-May",
           "day": "Tue",
           "englishname": "Sankashti Chaturthi",
@@ -2250,7 +2231,7 @@
         },
         {
           "id": 114,
-          "images": "akshaya-tritiya.jpg",
+          "images": "apara-ekadashi.jpg",
           "date": "13-May",
           "day": "Wed",
           "englishname": "Apara Ekadashi",
@@ -2270,7 +2251,7 @@
         },
         {
           "id": 115,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat.jpg",
           "date": "14-May",
           "day": "Thu",
           "englishname": "Krishna Pradosh Vrat",
@@ -2290,7 +2271,7 @@
         },
         {
           "id": 116,
-          "images": "akshaya-tritiya.jpg",
+          "images": "masik-shivaratri.jpg",
           "date": "15-May",
           "day": "Fri",
           "englishname": "Masik Shivaratri",
@@ -2310,7 +2291,7 @@
         },
         {
           "id": 117,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "15-May",
           "day": "Fri",
           "englishname": "Vrishabha Sankranti",
@@ -2330,7 +2311,7 @@
         },
         {
           "id": 118,
-          "images": "akshaya-tritiya.jpg",
+          "images": "amavasya.jpg",
           "date": "16-May",
           "day": "Sat",
           "englishname": "Jyeshtha Amavasya",
@@ -2350,7 +2331,7 @@
         },
         {
           "id": 119,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "16-May",
           "day": "Sat",
           "englishname": "Vat Savitri Vrat (North date may vary; BankBazaar notes 16 May)",
@@ -2370,7 +2351,7 @@
         },
         {
           "id": 120,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "17-May",
           "day": "Sun",
           "englishname": "Shani Jayanti (per some lists on Jyeshtha Amavasya or the next day)",
@@ -2390,7 +2371,7 @@
         },
         {
           "id": 121,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "20-May",
           "day": "Wed",
           "englishname": "Shukla Pratipada – Ashadha Month (South calendars may differ)",
@@ -2410,7 +2391,7 @@
         },
         {
           "id": 122,
-          "images": "akshaya-tritiya.jpg",
+          "images": "vinayaka-chaturthi.jpg",
           "date": "23-May",
           "day": "Sat",
           "englishname": "Shukla Paksha Sankashti / Vinayaka Chaturthi",
@@ -2430,7 +2411,7 @@
         },
         {
           "id": 123,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "27-May",
           "day": "Wed",
           "englishname": "Nirjala Ekadashi (may fall in early June depending on tithi; if May in your chosen panchang, add here)",
@@ -2455,7 +2436,7 @@
       "items": [
         {
           "id": 124,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "08-Jun",
           "day": "Mon",
           "englishname": "Ganga Dussehra",
@@ -2475,7 +2456,7 @@
         },
         {
           "id": 125,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "08-Jun",
           "day": "Mon",
           "englishname": "Gayatri Jayanti",
@@ -2495,7 +2476,7 @@
         },
         {
           "id": 126,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "09-Jun",
           "day": "Tue",
           "englishname": "Vat Savitri Vrat (Purnimanta calendars)",
@@ -2515,7 +2496,7 @@
         },
         {
           "id": 127,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat.jpg",
           "date": "10-Jun",
           "day": "Wed",
           "englishname": "Yogini Ekadashi",
@@ -2535,7 +2516,7 @@
         },
         {
           "id": 128,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "11-Jun",
           "day": "Thu",
           "englishname": "Krishna Pradosh Vrat",
@@ -2555,7 +2536,7 @@
         },
         {
           "id": 129,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "21-Jun",
           "day": "Sun",
           "englishname": "Mithuna Sankranti",
@@ -2575,7 +2556,7 @@
         },
         {
           "id": 130,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "23-Jun",
           "day": "Tue",
           "englishname": "Gayatri Jayanti (alt. date – DrikPanchang)",
@@ -2595,7 +2576,7 @@
         },
         {
           "id": 131,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "25-Jun",
           "day": "Thu",
           "englishname": "Nirjala Ekadashi",
@@ -2615,7 +2596,7 @@
         },
         {
           "id": 132,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "25-Jun",
           "day": "Thu",
           "englishname": "Ramalakshmana Dwadashi",
@@ -2635,7 +2616,7 @@
         },
         {
           "id": 133,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat.jpg",
           "date": "25-Jun",
           "day": "Thu",
           "englishname": "Shukra Pradosh Vrat",
@@ -2655,7 +2636,7 @@
         },
         {
           "id": 134,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "26-Jun",
           "day": "Fri",
           "englishname": "Nirjala Ekadashi Parana (per DrikPanchang)",
@@ -2695,7 +2676,7 @@
         },
         {
           "id": 136,
-          "images": "akshaya-tritiya.jpg",
+          "images": "amavasya.jpg",
           "date": "25/26 Jun",
           "day": "Thu/Fri",
           "englishname": "Ashadha Amavasya (per Panchang.org: June 25; some list 26)",
@@ -2720,7 +2701,7 @@
       "items": [
         {
           "id": 137,
-          "images": "akshaya-tritiya.jpg",
+          "images": "guru-purnima.jpg",
           "date": "01-Jul",
           "day": "Wed",
           "englishname": "Guru Purnima / Vyasa Puja",
@@ -2740,7 +2721,7 @@
         },
         {
           "id": 138,
-          "images": "akshaya-tritiya.jpg",
+          "images": "Sankashti Chaturthi.jpg",
           "date": "03-Jul",
           "day": "Fri",
           "englishname": "Krishnapingala Sankashti Chaturthi",
@@ -2760,7 +2741,7 @@
         },
         {
           "id": 139,
-          "images": "akshaya-tritiya.jpg",
+          "images": "kalashtami.jpg",
           "date": "07-Jul",
           "day": "Tue",
           "englishname": "Kalashtami & Masik Krishna Janmashtami",
@@ -2780,7 +2761,7 @@
         },
         {
           "id": 140,
-          "images": "akshaya-tritiya.jpg",
+          "images": "yogini-ekadashi.jpg",
           "date": "10-Jul",
           "day": "Fri",
           "englishname": "Yogini Ekadashi",
@@ -2800,7 +2781,7 @@
         },
         {
           "id": 141,
-          "images": "akshaya-tritiya.jpg",
+          "images": "yogini-ekadashi.jpg",
           "date": "11-Jul",
           "day": "Sat",
           "englishname": "Vaishnava Yogini Ekadashi & Ramalakshmana Dwadashi",
@@ -2820,7 +2801,7 @@
         },
         {
           "id": 142,
-          "images": "akshaya-tritiya.jpg",
+          "images": "rohini-vrat.jpg",
           "date": "12-Jul",
           "day": "Sun",
           "englishname": "Rohini Vrat",
@@ -2840,7 +2821,7 @@
         },
         {
           "id": 143,
-          "images": "akshaya-tritiya.jpg",
+          "images": "masik-shivaratri.jpg",
           "date": "12-Jul",
           "day": "Sun",
           "englishname": "Ravi Pradosh Vrat & Masik Shivaratri",
@@ -2860,7 +2841,7 @@
         },
         {
           "id": 144,
-          "images": "akshaya-tritiya.jpg",
+          "images": "amavasya.jpg",
           "date": "14-Jul",
           "day": "Tue",
           "englishname": "Darsha Amavasya / Ashadha Amavasya",
@@ -2880,7 +2861,7 @@
         },
         {
           "id": 145,
-          "images": "akshaya-tritiya.jpg",
+          "images": "chandra-darshan.jpg",
           "date": "15-Jul",
           "day": "Wed",
           "englishname": "Ashadha Navratri Begins & Chandra Darshan",
@@ -2900,7 +2881,7 @@
         },
         {
           "id": 146,
-          "images": "akshaya-tritiya.jpg",
+          "images": "jagannath-rath-yatra.jpg",
           "date": "16-Jul",
           "day": "Thu",
           "englishname": "Jagannath Rathyatra & Karka Sankranti",
@@ -2920,7 +2901,7 @@
         },
         {
           "id": 147,
-          "images": "akshaya-tritiya.jpg",
+          "images": "vinayaka-chaturthi.jpg",
           "date": "17-Jul",
           "day": "Fri",
           "englishname": "Aniruddha Chaturthi",
@@ -2940,7 +2921,7 @@
         },
         {
           "id": 148,
-          "images": "akshaya-tritiya.jpg",
+          "images": "skanda-shashti.jpg",
           "date": "19-Jul",
           "day": "Sun",
           "englishname": "Skanda Sashti",
@@ -2960,7 +2941,7 @@
         },
         {
           "id": 149,
-          "images": "akshaya-tritiya.jpg",
+          "images": "durga-ashtami.jpg",
           "date": "21-Jul",
           "day": "Tue",
           "englishname": "Parvati Jayanti & Masik Durgashtami",
@@ -2980,7 +2961,7 @@
         },
         {
           "id": 150,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "22-Jul",
           "day": "Wed",
           "englishname": "Bhadali Navami",
@@ -3000,7 +2981,7 @@
         },
         {
           "id": 151,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "24-Jul",
           "day": "Fri",
           "englishname": "Asha Dashami Vrat & Raivata Manvadi",
@@ -3020,7 +3001,7 @@
         },
         {
           "id": 152,
-          "images": "akshaya-tritiya.jpg",
+          "images": "devshayani-ekadashi.jpg",
           "date": "25-Jul",
           "day": "Sat",
           "englishname": "Devshayani Ekadashi & Vasudeva Dwadashi, Gauri Vrat Begins",
@@ -3040,7 +3021,7 @@
         },
         {
           "id": 153,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat.jpg",
           "date": "26-Jul",
           "day": "Sun",
           "englishname": "Ravi Pradosh Vrat",
@@ -3060,7 +3041,7 @@
         },
         {
           "id": 154,
-          "images": "akshaya-tritiya.jpg",
+          "images": "parvati-vrat.jpg",
           "date": "27-Jul",
           "day": "Mon",
           "englishname": "Jayaparvati Vrat Begins",
@@ -3080,7 +3061,7 @@
         },
         {
           "id": 155,
-          "images": "akshaya-tritiya.jpg",
+          "images": "purnima.jpg",
           "date": "28-Jul",
           "day": "Tue",
           "englishname": "Kokila Vrat & Ashadha Chaumasi Chaudas",
@@ -3100,7 +3081,7 @@
         },
         {
           "id": 156,
-          "images": "akshaya-tritiya.jpg",
+          "images": "guru-purnima.jpg",
           "date": "29-Jul",
           "day": "Wed",
           "englishname": "Ashadha Purnima, Guru Purnima (alt South)",
@@ -3120,7 +3101,7 @@
         },
         {
           "id": 157,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "30-Jul",
           "day": "Thu",
           "englishname": "Shravana Maas Begins (North India)",
@@ -3145,7 +3126,7 @@
       "items": [
         {
           "id": 158,
-          "images": "akshaya-tritiya.jpg",
+          "images": "parvati-vrat.jpg",
           "date": "01-Aug",
           "day": "Sat",
           "englishname": "Jayaparvati Vrat Ends",
@@ -3165,7 +3146,7 @@
         },
         {
           "id": 159,
-          "images": "akshaya-tritiya.jpg",
+          "images": "Sankashti Chaturthi.jpg",
           "date": "02-Aug",
           "day": "Sun",
           "englishname": "Gajanana Sankashti Chaturthi",
@@ -3185,7 +3166,7 @@
         },
         {
           "id": 160,
-          "images": "akshaya-tritiya.jpg",
+          "images": "shravan-somvar.jpg",
           "date": "03-Aug",
           "day": "Mon",
           "englishname": "First Shravan Somvar Vrat; Aadi Perukku (TN)",
@@ -3205,7 +3186,7 @@
         },
         {
           "id": 161,
-          "images": "akshaya-tritiya.jpg",
+          "images": "mangala-gauri.jpg",
           "date": "04-Aug",
           "day": "Tue",
           "englishname": "First Mangala Gauri Vrat",
@@ -3225,7 +3206,7 @@
         },
         {
           "id": 162,
-          "images": "akshaya-tritiya.jpg",
+          "images": "kalashtami.jpg",
           "date": "05-Aug",
           "day": "Wed",
           "englishname": "Kalashtami; Masik Krishna Janmashtami",
@@ -3245,7 +3226,7 @@
         },
         {
           "id": 163,
-          "images": "akshaya-tritiya.jpg",
+          "images": "karthigai.jpg",
           "date": "07-Aug",
           "day": "Fri",
           "englishname": "Masik Karthigai",
@@ -3265,7 +3246,7 @@
         },
         {
           "id": 164,
-          "images": "akshaya-tritiya.jpg",
+          "images": "rohini-vrat.jpg",
           "date": "08-Aug",
           "day": "Sat",
           "englishname": "Rohini Vrat",
@@ -3285,7 +3266,7 @@
         },
         {
           "id": 165,
-          "images": "akshaya-tritiya.jpg",
+          "images": "kamika-ekadashi.jpg",
           "date": "09-Aug",
           "day": "Sun",
           "englishname": "Kamika Ekadashi; Krishna Vasudeva Dwadashi",
@@ -3305,7 +3286,7 @@
         },
         {
           "id": 166,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat.jpg",
           "date": "10-Aug",
           "day": "Mon",
           "englishname": "Second Shravan Somvar; Soma Pradosh Vrat",
@@ -3325,7 +3306,7 @@
         },
         {
           "id": 167,
-          "images": "akshaya-tritiya.jpg",
+          "images": "masik-shivaratri.jpg",
           "date": "11-Aug",
           "day": "Tue",
           "englishname": "Sawan Shivaratri; Second Mangala Gauri; Masik Shivaratri",
@@ -3345,7 +3326,7 @@
         },
         {
           "id": 168,
-          "images": "akshaya-tritiya.jpg",
+          "images": "amavasya.jpg",
           "date": "12-Aug",
           "day": "Wed",
           "englishname": "Hariyali Amavasya; Aadi Amavasai; Surya Grahan (Purna)",
@@ -3365,7 +3346,7 @@
         },
         {
           "id": 169,
-          "images": "akshaya-tritiya.jpg",
+          "images": "chandra-darshan.jpg",
           "date": "14-Aug",
           "day": "Fri",
           "englishname": "Chandra Darshan",
@@ -3385,7 +3366,7 @@
         },
         {
           "id": 170,
-          "images": "akshaya-tritiya.jpg",
+          "images": "teej.jpg",
           "date": "15-Aug",
           "day": "Sat",
           "englishname": "Hariyali Teej; Independence Day",
@@ -3405,7 +3386,7 @@
         },
         {
           "id": 171,
-          "images": "akshaya-tritiya.jpg",
+          "images": "vinayaka-chaturthi.jpg",
           "date": "16-Aug",
           "day": "Sun",
           "englishname": "Durva Ganapati Chaturthi",
@@ -3425,7 +3406,7 @@
         },
         {
           "id": 172,
-          "images": "akshaya-tritiya.jpg",
+          "images": "nag-panchami.jpg",
           "date": "17-Aug",
           "day": "Mon",
           "englishname": "Nag Panchami; 3rd Shravan Somvar; Simha Sankranti; Malayalam New Year (Chingam 1); Skanda Sashti",
@@ -3445,7 +3426,7 @@
         },
         {
           "id": 173,
-          "images": "akshaya-tritiya.jpg",
+          "images": "mangala-gauri.jpg",
           "date": "18-Aug",
           "day": "Tue",
           "englishname": "Kalki Jayanti; 3rd Mangala Gauri Vrat",
@@ -3465,7 +3446,7 @@
         },
         {
           "id": 174,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "19-Aug",
           "day": "Wed",
           "englishname": "Tulsidas Jayanti",
@@ -3485,7 +3466,7 @@
         },
         {
           "id": 175,
-          "images": "akshaya-tritiya.jpg",
+          "images": "durga-ashtami.jpg",
           "date": "20-Aug",
           "day": "Thu",
           "englishname": "Masik Durgashtami",
@@ -3505,7 +3486,7 @@
         },
         {
           "id": 176,
-          "images": "akshaya-tritiya.jpg",
+          "images": "putrada-ekadashi.jpg",
           "date": "23-Aug",
           "day": "Sun",
           "englishname": "Shravana Putrada Ekadashi",
@@ -3525,7 +3506,7 @@
         },
         {
           "id": 177,
-          "images": "akshaya-tritiya.jpg",
+          "images": "shravan-somvar.jpg",
           "date": "24-Aug",
           "day": "Mon",
           "englishname": "Vaishnava Putrada Ekadashi; 4th Shravan Somvar; Damodara Dwadashi",
@@ -3545,7 +3526,7 @@
         },
         {
           "id": 178,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat.jpg",
           "date": "25-Aug",
           "day": "Tue",
           "englishname": "4th Mangala Gauri Vrat; Bhauma Pradosh Vrat",
@@ -3565,7 +3546,7 @@
         },
         {
           "id": 179,
-          "images": "akshaya-tritiya.jpg",
+          "images": "onam.jpg",
           "date": "26-Aug",
           "day": "Wed",
           "englishname": "Rigveda Upakarma; Onam (Thiruvonam in Kerala often 26/27)",
@@ -3585,7 +3566,7 @@
         },
         {
           "id": 180,
-          "images": "akshaya-tritiya.jpg",
+          "images": "purnima.jpg",
           "date": "27-Aug",
           "day": "Thu",
           "englishname": "Yajurveda Upakarma; Hayagriva Jayanti; Shravana Purnima Vrat",
@@ -3605,7 +3586,7 @@
         },
         {
           "id": 181,
-          "images": "akshaya-tritiya.jpg",
+          "images": "raksha-bandhan.jpg",
           "date": "28-Aug",
           "day": "Fri",
           "englishname": "Varalakshmi Vrat; Raksha Bandhan; Gayatri Jayanti; Narali Purnima; Sanskrit Diwas; Chandra Grahan (Partial)",
@@ -3625,7 +3606,7 @@
         },
         {
           "id": 182,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "29-Aug",
           "day": "Sat",
           "englishname": "Bhadrapada Maas Begins (North India)",
@@ -3645,7 +3626,7 @@
         },
         {
           "id": 183,
-          "images": "akshaya-tritiya.jpg",
+          "images": "Sankashti Chaturthi.jpg",
           "date": "31-Aug",
           "day": "Mon",
           "englishname": "Kajari Teej; Bahula Chaturthi; Maha Sangada Hara Chathurti; Heramba Sankashti",
@@ -3670,7 +3651,7 @@
       "items": [
         {
           "id": 184,
-          "images": "akshaya-tritiya.jpg",
+          "images": "teej.jpg",
           "date": "01-Sep",
           "day": "Tue",
           "englishname": "Hartalika Teej",
@@ -3690,7 +3671,7 @@
         },
         {
           "id": 185,
-          "images": "akshaya-tritiya.jpg",
+          "images": "ganesh-chaturthi.jpg",
           "date": "02-Sep",
           "day": "Wed",
           "englishname": "Ganesh Chaturthi (Prana Pratishtha)",
@@ -3710,7 +3691,7 @@
         },
         {
           "id": 186,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "03-Sep",
           "day": "Thu",
           "englishname": "Rishi Panchami",
@@ -3730,7 +3711,7 @@
         },
         {
           "id": 187,
-          "images": "akshaya-tritiya.jpg",
+          "images": "janmashtami.jpg",
           "date": "04-Sep",
           "day": "Fri",
           "englishname": "Sri Krishna Janmashtami",
@@ -3750,7 +3731,7 @@
         },
         {
           "id": 188,
-          "images": "akshaya-tritiya.jpg",
+          "images": "janmashtami.jpg",
           "date": "04-Sep",
           "day": "Fri",
           "englishname": "Dahi Handi (Janmashtami celebration)",
@@ -3770,7 +3751,7 @@
         },
         {
           "id": 189,
-          "images": "akshaya-tritiya.jpg",
+          "images": "janmashtami.jpg",
           "date": "05-Sep",
           "day": "Sat",
           "englishname": "(ISKCON) Janmashtami / Nandotsav (if following Vaishnava calendar)",
@@ -3790,7 +3771,7 @@
         },
         {
           "id": 190,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat.jpg",
           "date": "08-Sep",
           "day": "Tue",
           "englishname": "Bhauma Pradosh Vrat",
@@ -3810,7 +3791,7 @@
         },
         {
           "id": 191,
-          "images": "akshaya-tritiya.jpg",
+          "images": "masik-shivaratri.jpg",
           "date": "09-Sep",
           "day": "Wed",
           "englishname": "Masik Shivaratri",
@@ -3830,7 +3811,7 @@
         },
         {
           "id": 192,
-          "images": "akshaya-tritiya.jpg",
+          "images": "amavasya.jpg",
           "date": "10-Sep",
           "day": "Thu",
           "englishname": "Bhadrapada Amavasya",
@@ -3850,7 +3831,7 @@
         },
         {
           "id": 193,
-          "images": "akshaya-tritiya.jpg",
+          "images": "parivartini-ekadashi.jpg",
           "date": "14-Sep",
           "day": "Mon",
           "englishname": "Parivartini Ekadashi (Parsva)",
@@ -3870,7 +3851,7 @@
         },
         {
           "id": 194,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat.jpg",
           "date": "15-Sep",
           "day": "Tue",
           "englishname": "Shukla Pradosh Vrat",
@@ -3890,7 +3871,7 @@
         },
         {
           "id": 195,
-          "images": "akshaya-tritiya.jpg",
+          "images": "ganesh-visarjan.jpg",
           "date": "16-Sep",
           "day": "Wed",
           "englishname": "Anant Chaturdashi & Ganesh Visarjan",
@@ -3910,7 +3891,7 @@
         },
         {
           "id": 196,
-          "images": "akshaya-tritiya.jpg",
+          "images": "purnima.jpg",
           "date": "18-Sep",
           "day": "Fri",
           "englishname": "Bhadrapada Purnima",
@@ -3930,7 +3911,7 @@
         },
         {
           "id": 197,
-          "images": "akshaya-tritiya.jpg",
+          "images": "vishwakarma-puja.jpg",
           "date": "20-Sep",
           "day": "Sun",
           "englishname": "Vishwakarma Puja (industry date; some regions on 17/18/20 depending solar transit)",
@@ -3950,7 +3931,7 @@
         },
         {
           "id": 198,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat.jpg",
           "date": "23-Sep",
           "day": "Wed",
           "englishname": "Budha Pradosh Vrat",
@@ -3970,7 +3951,7 @@
         },
         {
           "id": 199,
-          "images": "akshaya-tritiya.jpg",
+          "images": "ganesh-visarjan.jpg",
           "date": "25-Sep",
           "day": "Fri",
           "englishname": "(Alt date) Ganesh Visarjan / Anant Chaturdashi (per DrikPanchang for some states)",
@@ -3990,7 +3971,7 @@
         },
         {
           "id": 200,
-          "images": "akshaya-tritiya.jpg",
+          "images": "indira-ekadashi.jpg",
           "date": "27-Sep",
           "day": "Sun",
           "englishname": "Indira Ekadashi (Pitru Paksha Ekadashi)",
@@ -4010,7 +3991,7 @@
         },
         {
           "id": 201,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat.jpg",
           "date": "29-Sep",
           "day": "Tue",
           "englishname": "Krishna Pradosh Vrat",
@@ -4030,7 +4011,7 @@
         },
         {
           "id": 202,
-          "images": "akshaya-tritiya.jpg",
+          "images": "amavasya.jpg",
           "date": "30-Sep",
           "day": "Wed",
           "englishname": "Mahalaya Amavasya – Pitru Paksha Begins",
@@ -4055,7 +4036,7 @@
       "items": [
         {
           "id": 203,
-          "images": "akshaya-tritiya.jpg",
+          "images": "gupta-navratri.jpg",
           "date": "11-Oct",
           "day": "Sun",
           "englishname": "Sharad Navratri Begins / Ghatasthapana",
@@ -4075,7 +4056,7 @@
         },
         {
           "id": 204,
-          "images": "akshaya-tritiya.jpg",
+          "images": "gupta-navratri-day-2.jpg",
           "date": "12-Oct",
           "day": "Mon",
           "englishname": "Navratri – Dwitiya",
@@ -4095,7 +4076,7 @@
         },
         {
           "id": 205,
-          "images": "akshaya-tritiya.jpg",
+          "images": "gupta-navratri-day-3.jpg",
           "date": "13-Oct",
           "day": "Tue",
           "englishname": "Navratri – Tritiya",
@@ -4115,7 +4096,7 @@
         },
         {
           "id": 206,
-          "images": "akshaya-tritiya.jpg",
+          "images": "chandra-darshan.jpg",
           "date": "14-Oct",
           "day": "Wed",
           "englishname": "Navratri – Chaturthi & Chandra Darshan",
@@ -4135,7 +4116,7 @@
         },
         {
           "id": 207,
-          "images": "akshaya-tritiya.jpg",
+          "images": "gupta-navratri-day-5.jpg",
           "date": "15-Oct",
           "day": "Thu",
           "englishname": "Navratri – Panchami / Skandamata",
@@ -4155,7 +4136,7 @@
         },
         {
           "id": 208,
-          "images": "akshaya-tritiya.jpg",
+          "images": "gupta-navratri-day-6.jpg",
           "date": "16-Oct",
           "day": "Fri",
           "englishname": "Navratri – Shashthi / Katyayani",
@@ -4175,7 +4156,7 @@
         },
         {
           "id": 209,
-          "images": "akshaya-tritiya.jpg",
+          "images": "gupta-navratri-day-6.jpg",
           "date": "17-Oct",
           "day": "Sat",
           "englishname": "Navratri – Saptami / Kalaratri",
@@ -4195,7 +4176,7 @@
         },
         {
           "id": 210,
-          "images": "akshaya-tritiya.jpg",
+          "images": "chaitra-navratri-ashtami.jpg",
           "date": "18-Oct",
           "day": "Sun",
           "englishname": "Durga Ashtami (Maha Ashtami)",
@@ -4215,7 +4196,7 @@
         },
         {
           "id": 211,
-          "images": "akshaya-tritiya.jpg",
+          "images": "chaitra-navratri-navami.jpg",
           "date": "19-Oct",
           "day": "Mon",
           "englishname": "Maha Navami (Navratri Navami)",
@@ -4235,7 +4216,7 @@
         },
         {
           "id": 212,
-          "images": "akshaya-tritiya.jpg",
+          "images": "vijaya-ekadashi.jpg",
           "date": "20-Oct",
           "day": "Tue",
           "englishname": "Vijayadashami / Dussehra",
@@ -4255,7 +4236,7 @@
         },
         {
           "id": 213,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "22-Oct",
           "day": "Thu",
           "englishname": "Papankusha Ekadashi",
@@ -4275,7 +4256,7 @@
         },
         {
           "id": 214,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat.jpg",
           "date": "23-Oct",
           "day": "Fri",
           "englishname": "Shukla Pradosh Vrat",
@@ -4295,7 +4276,7 @@
         },
         {
           "id": 215,
-          "images": "akshaya-tritiya.jpg",
+          "images": "purnima.jpg",
           "date": "25/26 Oct",
           "day": "Sun/Mon",
           "englishname": "Sharad Purnima / Kojagari Lakshmi Puja",
@@ -4315,7 +4296,7 @@
         },
         {
           "id": 216,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "28-Oct",
           "day": "Wed",
           "englishname": "Karwa Chauth",
@@ -4335,7 +4316,7 @@
         },
         {
           "id": 217,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "29-Oct",
           "day": "Thu",
           "englishname": "Ahoi Ashtami",
@@ -4355,7 +4336,7 @@
         },
         {
           "id": 218,
-          "images": "akshaya-tritiya.jpg",
+          "images": "rama-navami.jpg",
           "date": "30-Oct",
           "day": "Fri",
           "englishname": "Rama Ekadashi",
@@ -4375,7 +4356,7 @@
         },
         {
           "id": 219,
-          "images": "akshaya-tritiya.jpg",
+          "images": "Pooja-Hampers.jpg",
           "date": "31-Oct",
           "day": "Sat",
           "englishname": "Dhanteras / Dhantrayodashi (per some lists, alt: 26 Oct)",
@@ -4400,7 +4381,7 @@
       "items": [
         {
           "id": 220,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "02-Nov",
           "day": "Mon",
           "englishname": "Labh Panchami (regional; last Diwali business day)",
@@ -4420,7 +4401,7 @@
         },
         {
           "id": 221,
-          "images": "akshaya-tritiya.jpg",
+          "images": "dev-utthani-ekadashi.jpg",
           "date": "05-Nov",
           "day": "Thu",
           "englishname": "Dev Uthani Ekadashi (Prabodhini)",
@@ -4440,7 +4421,7 @@
         },
         {
           "id": 222,
-          "images": "akshaya-tritiya.jpg",
+          "images": "images/tulsi-vivah.jpg",
           "date": "06-Nov",
           "day": "Fri",
           "englishname": "Tulsi Vivah",
@@ -4460,7 +4441,7 @@
         },
         {
           "id": 223,
-          "images": "akshaya-tritiya.jpg",
+          "images": "Pooja-Hampers.jpg",
           "date": "07-Nov",
           "day": "Sat",
           "englishname": "Dhanteras / Dhantrayodashi",
@@ -4480,7 +4461,7 @@
         },
         {
           "id": 224,
-          "images": "akshaya-tritiya.jpg",
+          "images": "diya.png",
           "date": "08-Nov",
           "day": "Sun",
           "englishname": "Naraka Chaturdashi (Choti Diwali) & Lakshmi Puja / Diwali; Narak Nivaran Chaturdashi; Kedar Gauri Vrat",
@@ -4500,7 +4481,7 @@
         },
         {
           "id": 225,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "09-Nov",
           "day": "Mon",
           "englishname": "Govardhan Puja / Annakut; Bali Pratipada",
@@ -4520,7 +4501,7 @@
         },
         {
           "id": 226,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "10-Nov",
           "day": "Tue",
           "englishname": "Bhai Dooj / Bhaiya Duj",
@@ -4540,7 +4521,7 @@
         },
         {
           "id": 227,
-          "images": "akshaya-tritiya.jpg",
+          "images": "purnima.jpg",
           "date": "08-Nov",
           "day": "Sun",
           "englishname": "Dev Diwali & Kartik Purnima",
@@ -4560,7 +4541,7 @@
         },
         {
           "id": 228,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "10-Nov",
           "day": "Tue",
           "englishname": "Margashirsha Month Begins",
@@ -4580,7 +4561,7 @@
         },
         {
           "id": 229,
-          "images": "akshaya-tritiya.jpg",
+          "images": "Sankashti Chaturthi.jpg",
           "date": "13-Nov",
           "day": "Fri",
           "englishname": "Sankashti Chaturthi",
@@ -4600,7 +4581,7 @@
         },
         {
           "id": 230,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "17-Nov",
           "day": "Tue",
           "englishname": "Utpanna Ekadashi",
@@ -4620,7 +4601,7 @@
         },
         {
           "id": 231,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat.jpg",
           "date": "18-Nov",
           "day": "Wed",
           "englishname": "Pradosh Vrat (Krishna)",
@@ -4640,7 +4621,7 @@
         },
         {
           "id": 232,
-          "images": "akshaya-tritiya.jpg",
+          "images": "masik-shivaratri.jpg",
           "date": "19-Nov",
           "day": "Thu",
           "englishname": "Masik Shivaratri",
@@ -4660,7 +4641,7 @@
         },
         {
           "id": 233,
-          "images": "akshaya-tritiya.jpg",
+          "images": "amavasya.jpg",
           "date": "20-Nov",
           "day": "Fri",
           "englishname": "Darsha Amavasya",
@@ -4680,7 +4661,7 @@
         },
         {
           "id": 234,
-          "images": "akshaya-tritiya.jpg",
+          "images": "chandra-darshan.jpg",
           "date": "22-Nov",
           "day": "Sun",
           "englishname": "Chandra Darshan",
@@ -4700,7 +4681,7 @@
         },
         {
           "id": 235,
-          "images": "akshaya-tritiya.jpg",
+          "images": "vinayaka-chaturthi.jpg",
           "date": "25-Nov",
           "day": "Wed",
           "englishname": "Vinayaka (Sankashti) Chaturthi",
@@ -4720,7 +4701,7 @@
         },
         {
           "id": 236,
-          "images": "akshaya-tritiya.jpg",
+          "images": "skanda-shashti.jpg",
           "date": "27-Nov",
           "day": "Fri",
           "englishname": "Subrahmanya Shashti",
@@ -4740,7 +4721,7 @@
         },
         {
           "id": 237,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "28-Nov",
           "day": "Sat",
           "englishname": "Masik Durgashtami",
@@ -4780,7 +4761,7 @@
         },
         {
           "id": 239,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "30-Nov",
           "day": "Mon",
           "englishname": "(Regional) Jagaddhatri Puja Continues / Margashirsha Somvar Begins",
@@ -4805,7 +4786,7 @@
       "items": [
         {
           "id": 240,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "04-Dec",
           "day": "Fri",
           "englishname": "Utpanna Ekadashi",
@@ -4825,7 +4806,7 @@
         },
         {
           "id": 241,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat.jpg",
           "date": "05-Dec",
           "day": "Sat",
           "englishname": "Shani Pradosh Vrat & Masik Shivaratri",
@@ -4845,7 +4826,7 @@
         },
         {
           "id": 242,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "06-Dec",
           "day": "Sun",
           "englishname": "Bala Jayanti (regional)",
@@ -4865,7 +4846,7 @@
         },
         {
           "id": 243,
-          "images": "akshaya-tritiya.jpg",
+          "images": "amavasya.jpg",
           "date": "08-Dec",
           "day": "Tue",
           "englishname": "Margashirsha Amavasya",
@@ -4885,7 +4866,7 @@
         },
         {
           "id": 244,
-          "images": "akshaya-tritiya.jpg",
+          "images": "chandra-darshan.jpg",
           "date": "09-Dec",
           "day": "Wed",
           "englishname": "Chandra Darshan",
@@ -4905,7 +4886,7 @@
         },
         {
           "id": 245,
-          "images": "akshaya-tritiya.jpg",
+          "images": "rama-navami.jpg",
           "date": "12-Dec",
           "day": "Sat",
           "englishname": "Vivah Panchami",
@@ -4925,7 +4906,7 @@
         },
         {
           "id": 246,
-          "images": "akshaya-tritiya.jpg",
+          "images": "skanda-shashti.jpg",
           "date": "14-Dec",
           "day": "Mon",
           "englishname": "Subrahmanya Shashti & Champa Shashthi",
@@ -4945,7 +4926,7 @@
         },
         {
           "id": 247,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "15-Dec",
           "day": "Tue",
           "englishname": "Dhanu Sankranti",
@@ -4965,7 +4946,7 @@
         },
         {
           "id": 248,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "17-Dec",
           "day": "Thu",
           "englishname": "Masik Durgashtami",
@@ -4985,7 +4966,7 @@
         },
         {
           "id": 249,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "20-Dec",
           "day": "Sun",
           "englishname": "Vaikuntha Ekadashi (Mokshada Ekadashi & Gita Jayanti)",
@@ -5005,7 +4986,7 @@
         },
         {
           "id": 250,
-          "images": "akshaya-tritiya.jpg",
+          "images": "pradosh-vrat.jpg",
           "date": "21-Dec",
           "day": "Mon",
           "englishname": "Shukla Pradosh Vrat",
@@ -5025,7 +5006,7 @@
         },
         {
           "id": 251,
-          "images": "akshaya-tritiya.jpg",
+          "images": "purnima.jpg",
           "date": "23-Dec",
           "day": "Wed",
           "englishname": "Margashirsha Purnima & Dattatreya Jayanti",
@@ -5045,7 +5026,7 @@
         },
         {
           "id": 252,
-          "images": "akshaya-tritiya.jpg",
+          "images": "Sankashti Chaturthi.jpg",
           "date": "26-Dec",
           "day": "Sat",
           "englishname": "Sankashti Chaturthi",
@@ -5065,7 +5046,7 @@
         },
         {
           "id": 253,
-          "images": "akshaya-tritiya.jpg",
+          "images": "img3.jpg",
           "date": "31-Dec",
           "day": "Thu",
           "englishname": "(No major national festival; year‑end sadhana focus)",

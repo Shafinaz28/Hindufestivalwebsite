@@ -901,11 +901,19 @@
     </section>
   </main>
 
+
 <!-- FESTIVAL INFO MODAL -->
 <div id="festivalInfoModal" class="modal-backdrop" onclick="closeFestivalInfoModal()">
   <div class="modal" style="max-width: 980px;" onclick="event.stopPropagation()">
+
     <div class="md:w-1/2 w-full h-64 md:h-auto bg-stone-100 flex-shrink-0">
-      <img id="festivalModalImg" class="w-full h-full object-cover" src="images/placeholder.jpg" alt="Festival Image" onerror="this.src='images/placeholder.jpg'">
+      <img
+        id="festivalModalImg"
+        class="w-full h-full object-cover"
+        src=""
+        alt="Festival Image"
+        style="display:none;"
+      >
     </div>
 
     <div class="md:w-1/2 w-full p-6 overflow-y-auto flex-1 min-w-0">
@@ -1670,81 +1678,97 @@ Open to Public but members get upto 15% discounts on total bill.
   // -----------------------------
   // FESTIVAL MODAL
   // -----------------------------
-  function openFestivalInfoModal(ev) {
-    const modal = document.getElementById("festivalInfoModal");
-    modal.style.display = "flex";
-    document.body.style.overflow = "hidden";
+function openFestivalInfoModal(ev) {
+  const modal = document.getElementById("festivalInfoModal");
+  const img = document.getElementById("festivalModalImg");
 
-    document.getElementById("festivalModalImg").src = ev.images ? `images/${ev.images}` : "images/placeholder.jpg";
-    document.getElementById("festivalModalTitle").textContent = safeText(ev.englishname);
-    document.getElementById("festivalModalHindi").textContent = safeText(ev.hindiname);
+  modal.style.display = "flex";
+  document.body.style.overflow = "hidden";
 
-    const meta = [
-      safeText(MONTHS_FULL[calMonth]),
-      safeText(ev.date),
-      safeText(ev.day),
-      safeText(ev.type),
-      safeText(ev.tithimonth),
-      safeText(ev.muhurat),
-      safeText(ev.focus)
-    ].filter(Boolean);
+  // reset old image first
+  img.src = "";
+  img.onerror = null;
 
-    document.getElementById("festivalModalMeta").textContent = meta.join(" • ");
-    document.getElementById("festivalModalSignificance").textContent = safeText(ev.significance) || "—";
+  if (ev.images && ev.images.trim() !== "") {
+    img.src = `images/${ev.images.trim()}`;
+    img.style.display = "block";
 
-    const kBlock = document.getElementById("festivalModalKathaBlock");
-    if (ev.katha) {
-      kBlock.classList.remove("hidden");
-      document.getElementById("festivalModalKatha").textContent = safeText(ev.katha);
-    } else {
-      kBlock.classList.add("hidden");
-    }
-
-    const procedureParts = [];
-    if (ev.morning) procedureParts.push(`<p><b>Morning:</b> ${safeText(ev.morning)}</p>`);
-    if (ev.daytime) procedureParts.push(`<p><b>Daytime:</b> ${safeText(ev.daytime)}</p>`);
-    if (ev.mainpuja) procedureParts.push(`<p><b>Main Puja:</b> ${safeText(ev.mainpuja)}</p>`);
-
-    const pBlock = document.getElementById("festivalModalProcedureBlock");
-    if (procedureParts.length) {
-      pBlock.classList.remove("hidden");
-      document.getElementById("festivalModalProcedure").innerHTML = procedureParts.join("");
-    } else {
-      pBlock.classList.add("hidden");
-      document.getElementById("festivalModalProcedure").innerHTML = "";
-    }
-
-    const fBlock = document.getElementById("festivalModalFastingBlock");
-    if (ev.fastingrules) {
-      fBlock.classList.remove("hidden");
-      document.getElementById("festivalModalFasting").textContent = safeText(ev.fastingrules);
-    } else {
-      fBlock.classList.add("hidden");
-    }
-
-    const dBlock = document.getElementById("festivalModalDaanBlock");
-    if (ev.daan) {
-      dBlock.classList.remove("hidden");
-      document.getElementById("festivalModalDaan").textContent = safeText(ev.daan);
-    } else {
-      dBlock.classList.add("hidden");
-    }
-
-    const nBlock = document.getElementById("festivalModalNotesBlock");
-    if (ev.notes) {
-      nBlock.classList.remove("hidden");
-      document.getElementById("festivalModalNotes").textContent = safeText(ev.notes);
-    } else {
-      nBlock.classList.add("hidden");
-    }
-
-    feather.replace();
+    img.onerror = function () {
+      this.style.display = "none";
+    };
+  } else {
+    img.style.display = "none";
   }
 
-  function closeFestivalInfoModal() {
-    document.getElementById("festivalInfoModal").style.display = "none";
-    document.body.style.overflow = "auto";
+  document.getElementById("festivalModalTitle").textContent = safeText(ev.englishname);
+  document.getElementById("festivalModalHindi").textContent = safeText(ev.hindiname);
+
+  const meta = [
+    safeText(MONTHS_FULL[calMonth]),
+    safeText(ev.date),
+    safeText(ev.day),
+    safeText(ev.type),
+    safeText(ev.tithimonth),
+    safeText(ev.muhurat),
+    safeText(ev.focus)
+  ].filter(Boolean);
+
+  document.getElementById("festivalModalMeta").textContent = meta.join(" • ");
+  document.getElementById("festivalModalSignificance").textContent = safeText(ev.significance) || "—";
+
+  const kBlock = document.getElementById("festivalModalKathaBlock");
+  if (ev.katha) {
+    kBlock.classList.remove("hidden");
+    document.getElementById("festivalModalKatha").textContent = safeText(ev.katha);
+  } else {
+    kBlock.classList.add("hidden");
   }
+
+  const procedureParts = [];
+  if (ev.morning) procedureParts.push(`<p><b>Morning:</b> ${safeText(ev.morning)}</p>`);
+  if (ev.daytime) procedureParts.push(`<p><b>Daytime:</b> ${safeText(ev.daytime)}</p>`);
+  if (ev.mainpuja) procedureParts.push(`<p><b>Main Puja:</b> ${safeText(ev.mainpuja)}</p>`);
+
+  const pBlock = document.getElementById("festivalModalProcedureBlock");
+  if (procedureParts.length) {
+    pBlock.classList.remove("hidden");
+    document.getElementById("festivalModalProcedure").innerHTML = procedureParts.join("");
+  } else {
+    pBlock.classList.add("hidden");
+    document.getElementById("festivalModalProcedure").innerHTML = "";
+  }
+
+  const fBlock = document.getElementById("festivalModalFastingBlock");
+  if (ev.fastingrules) {
+    fBlock.classList.remove("hidden");
+    document.getElementById("festivalModalFasting").textContent = safeText(ev.fastingrules);
+  } else {
+    fBlock.classList.add("hidden");
+  }
+
+  const dBlock = document.getElementById("festivalModalDaanBlock");
+  if (ev.daan) {
+    dBlock.classList.remove("hidden");
+    document.getElementById("festivalModalDaan").textContent = safeText(ev.daan);
+  } else {
+    dBlock.classList.add("hidden");
+  }
+
+  const nBlock = document.getElementById("festivalModalNotesBlock");
+  if (ev.notes) {
+    nBlock.classList.remove("hidden");
+    document.getElementById("festivalModalNotes").textContent = safeText(ev.notes);
+  } else {
+    nBlock.classList.add("hidden");
+  }
+
+  feather.replace();
+}
+
+function closeFestivalInfoModal() {
+  document.getElementById("festivalInfoModal").style.display = "none";
+  document.body.style.overflow = "auto";
+}
 
   // -----------------------------
   // JOIN MODAL
